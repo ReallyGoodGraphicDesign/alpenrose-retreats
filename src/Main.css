@@ -12,6 +12,17 @@ If a row contains a text box and no image panels, you can optionally assign a he
 .main {
         padding: 0 4px 4px 4px;
 }
+@media (min-width: 601px) and (max-width: 1024px) {
+.main {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.main {
+        display: none;        
+        opacity: 1;
+}
+}
 /* #endregion TOP_LEVEL_STUFF_AND_NOTES */
 
 /* #region ROWS_COMMONALITIES_AND_UNIQUETIES */
