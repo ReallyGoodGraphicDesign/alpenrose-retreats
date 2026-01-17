@@ -32,6 +32,18 @@ button:active, .button:active {
         transition: background-color .4s ease;
         font-weight: bold;
 }  
+@media (min-width: 601px) and (max-width: 1024px) {
+.XXXXXXXXXXXXXX {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.XXXXXXXXXXXXXX {
+        opacity: 1;
+        margin: 10px 0 0 0;
+        padding: 10px 10px;
+}
+}
 button:hover, .button:hover {
         background: var(--button-bg-hover);
         color: var(--button-text-hover);

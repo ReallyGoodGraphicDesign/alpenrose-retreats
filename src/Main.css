@@ -303,12 +303,12 @@ If a row contains a text box and no image panels, you can optionally assign a he
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .image-panel p { 
-        opacity: 1;
+        padding: 0;
 }
 }
 @media (max-width: 600px) {
 .image-panel p { 
-        opacity: 1;
+        padding: 0;
 }
 }
 /* #endregion IMAGE_PANEL_COMMONALITIES */
@@ -869,11 +869,13 @@ If a row contains a text box and no image panels, you can optionally assign a he
 @media (min-width: 601px) and (max-width: 1024px) {
 .text-panel {
         opacity: 1;
+        padding: 20px 100px;
 }
 }
 @media (max-width: 600px) {
 .text-panel {
         opacity: 1;
+        padding: 4px;
 }
 }
 .section-title {
@@ -892,6 +894,7 @@ If a row contains a text box and no image panels, you can optionally assign a he
 @media (max-width: 600px) {
 .section-title {
         opacity: 1;
+        margin: 0 0 10px 0;
 }
 }
 .section-text {
