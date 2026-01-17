@@ -23,7 +23,7 @@ button:active, .button:active {
 .learn-more-button {
         background-color: var(--button-bg);
         border: none;
-        margin: 10px 0 0 0;
+        margin: 25px 0 0 0;
         padding: 20px 20px;
         border-radius: 4px;
         text-decoration: none;
@@ -52,7 +52,7 @@ button:active, .button:active {
         --photo-6: url("assets/06_creek.jpeg");
         --photo-7: url("assets/07_dinner.jpeg");
         --photo-8: url("assets/08_eagles_nest.jpeg");
-        --photo-9: url("assets/09_entire_group.jpg");
+        --photo-9: url("assets/09_shutterstock_55724620.jpg");
         --photo-10: url("assets/10_fence.jpg");
         --photo-11: url("assets/11_great_room.jpg");
         --photo-12: url("assets/12_group_activity.jpg");
@@ -81,7 +81,6 @@ button:active, .button:active {
         --photo-35: url("assets/35_smores.jpeg");
         --photo-36: url("assets/36_teaching_at_guesthouse.jpeg");
         --photo-37: url("assets/37_tish_on_stump.jpeg");
-        --photo-38: url("assets/38_shutterstock_55724620.jpg");
 }
 /* #endregion PHOTOS */
 
@@ -120,18 +119,18 @@ button:active, .button:active {
                 rgb(52, 52, 52);
         --text-panel-a:
                 linear-gradient(
-                rgba(var(--alpenrose-1-alpha),.4),
-                rgba(var(--alpenrose-1-alpha),.4)), 
+                rgba(var(--alpenrose-1-alpha),.25),
+                rgba(var(--alpenrose-1-alpha),.25)), 
                 rgb(255, 255, 255);
         --text-panel-b:
                 linear-gradient(
-                rgba(var(--alpenrose-2-alpha),.4),
-                rgba(var(--alpenrose-2-alpha),.4)), 
+                rgba(var(--alpenrose-2-alpha),.25),
+                rgba(var(--alpenrose-2-alpha),.25)), 
                 rgb(255, 255, 255);
         --text-panel-c:
                 linear-gradient(
-                rgba(var(--alpenrose-3-alpha),.4),
-                rgba(var(--alpenrose-3-alpha),.4)), 
+                rgba(var(--alpenrose-3-alpha),.25),
+                rgba(var(--alpenrose-3-alpha),.25)), 
                 rgb(255, 255, 255);
 }
 

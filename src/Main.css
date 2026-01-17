@@ -1,9 +1,25 @@
+/* #region TOP_LEVEL_STUFF_AND_NOTES */
+/*
+Don't assign height to an indiv image panel. 
+
+Default width of all indiv image panels is 100%. A row of images w 100% widths will all have equal widths. Feel free to tweak them. You MUST tweak widths of   
+
+If a row is all images, you need to assign a height to the row - cannot be auto and cannot be blank. 
+
+If a row contains a text box and no image panels, you can optionally assign a height to that row, or auto. 
+*/
+
 .main {
-        padding: 0 4px 12px 4px;
+        padding: 0 4px 4px 4px;
 }
+/* #endregion TOP_LEVEL_STUFF_AND_NOTES */
+
+/* #region ROWS_COMMONALITIES_AND_UNIQUETIES */
 .row {
         display: flex;
+        flex-direction: row;
         width: 100%;
+        height: auto;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .row {
@@ -13,90 +29,250 @@
 @media (max-width: 600px) {
 .row {
         opacity: 1;
+        flex-direction: column;
 }
 }
+.row-1 {
+        opacity: 1;
+        height:300px;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.row-1 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.row-1 {
+        opacity: 1;
+}
+}
+.row-2 {
+        opacity: 1;
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.row-2 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.row-2 {
+        opacity: 1;
+}
+}
+.row-3 {
+        opacity: 1;
+        height: 300px;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.row-3 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.row-3 {
+        opacity: 1;
+}
+}
+.row-4 {
+        opacity: 1;
+        height: 325px;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.row-4 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.row-4 {
+        opacity: 1;
+}
+}
+.row-5 {
+        opacity: 1;
+        height: 300px;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.row-5 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.row-5 {
+        opacity: 1;
+}
+}
+.row-6 {
+        opacity: 1;
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.row-6 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.row-6 {
+        opacity: 1;
+}
+}
+.row-7 {
+        opacity: 1;
+        height: 380px;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.row-7 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.row-7 {
+        opacity: 1;
+}
+}
+.row-8 {
+        opacity: 1;
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.row-8 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.row-8 {
+        opacity: 1;
+}
+}
+.row-9 {
+        opacity: 1;
+        height: 300px;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.row-9 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.row-9 {
+        opacity: 1;
+}
+}
+.row-10 {
+        opacity: 1;
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.row-10 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.row-10 {
+        opacity: 1;
+}
+}
+.row-11 {
+        opacity: 1;
+        height: 290px;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.row-11 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.row-11 {
+        opacity: 1;
+}
+}
+.row-12 {
+        opacity: 1;
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.row-12 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.row-12 {
+        opacity: 1;
+}
+}
+.row-13 {
+        opacity: 1;
+        height: 300px;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.row-13 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.row-13 {
+        opacity: 1;
+}
+}
+.row-14 {
+        opacity: 1;
+        height: 300px;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.row-14 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.row-14 {
+        opacity: 1;
+}
+}
+.row-15 {
+        opacity: 1;
+        height: 300px;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.row-15 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.row-15 {
+        opacity: 1;
+}
+}
+.row-16 {
+        opacity: 1;
+        height: 300px;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.row-16 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.row-16 {
+        opacity: 1;
+}
+}
+.row-17 {
+        opacity: 1;
+        height: 300px;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.row-17 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.row-17 {
+        opacity: 1;
+}
+}
+/* #endregion ROWS_COMMONALITIES_AND_UNIQUETIES */
 
-/* #region ROWS */
-.row-1 {
-        height: 240px;
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.row-1 {
-        opacity: 1;
-}
-}
-@media (max-width: 600px) {
-.row-1 {
-        opacity: 1;
-}
-}
-.row-2 {
-        height: 240px;
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.row-2 {
-        opacity: 1;
-}
-}
-@media (max-width: 600px) {
-.row-2 {
-        opacity: 1;
-}
-}
-.row-3 {
-        height: 240px;
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.row-3 {
-        opacity: 1;
-}
-}
-@media (max-width: 600px) {
-.row-3 {
-        opacity: 1;
-}
-}
-.row-4 {
-        height: 240px;
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.row-4 {
-        opacity: 1;
-}
-}
-@media (max-width: 600px) {
-.row-4 {
-        opacity: 1;
-}
-}
-.row-5 {
-        height: 240px;
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.row-5 {
-        opacity: 1;
-}
-}
-@media (max-width: 600px) {
-.row-5 {
-        opacity: 1;
-}
-}
-.row-6 {
-        height: 240px;
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.row-6 {
-        opacity: 1;
-}
-}
-@media (max-width: 600px) {
-.row-6 {
-        opacity: 1;
-}
-}
-/* #endregion ROWS */
-
+/* #region IMAGE_PANEL_COMMONALITIES */
 .image-panel { 
         height: 100%;
         padding: 0;
@@ -104,6 +280,7 @@
         background-size: cover;    
         background-position: center; 
         background-repeat: no-repeat;
+        height: auto;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .image-panel { 
@@ -115,10 +292,31 @@
         opacity: 1;
 }
 }
+.image-panel p { 
+        opacity: .25;
+        color: rgb(160, 0, 80);
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1.25;
+        margin: 5px 0 0 10px;
+        padding: 0;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.image-panel p { 
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.image-panel p { 
+        opacity: 1;
+}
+}
+/* #endregion IMAGE_PANEL_COMMONALITIES */
 
-/* #region IMAGE_PANELS */
+/* #region IMAGE_PANELS_UNIQUETIES */
+
 .panel-1 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-1);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -132,7 +330,7 @@
 }
 }
 .panel-2 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-2);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -146,7 +344,7 @@
 }
 }
 .panel-3 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-3);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -160,7 +358,7 @@
 }
 }
 .panel-4 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-4);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -174,7 +372,7 @@
 }
 }
 .panel-5 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-5);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -188,7 +386,7 @@
 }
 }
 .panel-6 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-6);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -202,7 +400,7 @@
 }
 }
 .panel-7 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-7);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -216,7 +414,7 @@
 }
 }
 .panel-8 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-8);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -230,7 +428,7 @@
 }
 }
 .panel-9 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-9);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -244,7 +442,7 @@
 }
 }
 .panel-10 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-10);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -258,7 +456,7 @@
 }
 }
 .panel-11 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-11);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -272,7 +470,7 @@
 }
 }
 .panel-12 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-12);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -286,7 +484,7 @@
 }
 }
 .panel-13 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-13);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -300,7 +498,7 @@
 }
 }
 .panel-14 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-14);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -314,7 +512,7 @@
 }
 }
 .panel-15 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-15);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -328,7 +526,7 @@
 }
 }
 .panel-16 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-16);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -342,7 +540,7 @@
 }
 }
 .panel-17 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-17);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -356,7 +554,7 @@
 }
 }
 .panel-18 {
-        width: 33.33%; 
+        width: 100%; 
         background-image: var(--photo-18);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -369,17 +567,304 @@
         opacity: 1;
 }
 }
-
+.panel-19 {
+        width: 100%; 
+        background-image: var(--photo-19);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-19 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-19 {
+        opacity: 1;
+}
+}
+.panel-20 {
+        width: 100%; 
+        background-image: var(--photo-20);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-20 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-20 {
+        opacity: 1;
+}
+}
+.panel-21 {
+        width: 100%; 
+        background-image: var(--photo-21);
+        height: auto;
+        transform: scaleX(-1);    
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-21 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-21 {
+        opacity: 1;
+}
+}
+.panel-22 {
+        width: 100%; 
+        background-image: var(--photo-22);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-22 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-22 {
+        opacity: 1;
+}
+}
+.panel-23 {
+        width: 100%; 
+        background-image: var(--photo-23);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-23 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-23 {
+        opacity: 1;
+}
+}
+.panel-24 {
+        width: 100%; 
+        background-image: var(--photo-24);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-24 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-24 {
+        opacity: 1;
+}
+}
+.panel-25 {
+        width: 100%; 
+        background-image: var(--photo-25);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-25 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-25 {
+        opacity: 1;
+}
+}
+.panel-26 {
+        width: 100%; 
+        background-image: var(--photo-26);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-26 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-26 {
+        opacity: 1;
+}
+}
+.panel-27 {
+        width: 100%; 
+        background-image: var(--photo-27);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-27 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-27 {
+        opacity: 1;
+}
+}
+.panel-28 {
+        width: 100%; 
+        background-image: var(--photo-28);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-28 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-28 {
+        opacity: 1;
+}
+}
+.panel-29 {
+        width: 100%; 
+        background-image: var(--photo-29);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-29 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-29 {
+        opacity: 1;
+}
+}
+.panel-30 {
+        width: 100%; 
+        background-image: var(--photo-30);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-30 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-30 {
+        opacity: 1;
+}
+}
+.panel-31 {
+        width: 100%; 
+        background-image: var(--photo-31);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-31 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-31 {
+        opacity: 1;
+}
+}
+.panel-32 {
+        width: 100%; 
+        background-image: var(--photo-32);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-32 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-32 {
+        opacity: 1;
+}
+}
+.panel-33 {
+        width: 100%; 
+        background-image: var(--photo-33);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-33 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-33 {
+        opacity: 1;
+}
+}
+.panel-34 {
+        width: 100%; 
+        background-image: var(--photo-34);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-34 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-34 {
+        opacity: 1;
+}
+}
+.panel-35 {
+        width: 100%; 
+        background-image: var(--photo-35);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-35 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-35 {
+        opacity: 1;
+}
+}
+.panel-36 {
+        width: 100%; 
+        background-image: var(--photo-36);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-36 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-36 {
+        opacity: 1;
+}
+}
+.panel-37 {
+        width: 100%; 
+        background-image: var(--photo-37);
+        height: auto;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-37 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-37 {
+        opacity: 1;
+}
+}
 /* #endregion IMAGE_PANELS */
 
+/* #region TEXT_PANEL_COMMONALITIES */
 .text-panel {
         max-width: 100%;
         display: flex;
         flex-direction: column;
-        margin: 12px 4px 4px 4px;
-        padding: 12px 10px 10px 10px;
+        margin: 4px;
+        padding: 20px 100px;
         box-sizing: border-box;
         scroll-margin-top: 153px;
+        height: auto;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .text-panel {
@@ -395,7 +880,7 @@
         color: var(--header-footer-text);
         font-size: 1.75rem;
         line-height: 1;
-        margin: 0 0 10px 0;
+        margin: 0 0 20px 0;
         padding: 0;
         text-transform: uppercase;
 }
@@ -413,7 +898,7 @@
         color: var(--header-footer-text);
         font-size: 1.125rem;
         line-height: 1.25;
-        margin: 0 0 6px 0;
+        margin: 0;
         padding: 0;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -445,76 +930,50 @@
         opacity: 1;
 }
 }
+/* #endregion TEXT_PANEL_COMMONALITIES */
 
-
-/* #region TEXT_PANELS */
-.text-panel-1 {
+/* #region TEXT_PANEL_UNIQUETIES */
+.text-panel-intro {
         background: var(--text-panel-a);
-        max-width: 100%;
-        height: 240px;  
+        width: 100%;
         align-items: center;    
         justify-content: center; 
         text-align: center;
-        font-size: 1.5rem;
-        font-weight: 400;
 }
-
-.text-panel-2 {
+.text-panel-scr {
         background: var(--text-panel-b);
-        max-width: 100%;
-        height: 240px;  
+        width: 100%;
         align-items: center;    
         justify-content: center; 
         text-align: center;
-        font-size: 1.5rem;
-        font-weight: 400;
+        padding: 0px 0px;
 }
 .text-panel-3 {
         background: var(--text-panel-c);
-        max-width: 100%;
-        height: 240px;  
+        width: 100%;
         align-items: center;    
         justify-content: center; 
         text-align: center;
-        font-size: 1.5rem;
-        font-weight: 400;
 }
 .text-panel-4 {
         background: var(--text-panel-a);
         max-width: 100%;
-        height: 240px;  
         align-items: center;    
         justify-content: center; 
         text-align: center;
-        font-size: 1.5rem;
-        font-weight: 400;
 }
 .text-panel-5 {
         background: var(--text-panel-b);
         max-width: 100%;
-        height: 240px;  
         align-items: center;    
         justify-content: center; 
         text-align: center;
-        font-size: 1.5rem;
-        font-weight: 400;
 }
 .text-panel-6 {
         background: var(--text-panel-c);
         max-width: 100%;
-        height: 240px;  
         align-items: center;    
         justify-content: center; 
         text-align: center;
-        font-size: 1.5rem;
-        font-weight: 400;
 }
-/* #endregion TEXT_PANELS */
-
-
-
-
-
-
-
-
+/* #endregion TEXT_PANEL_UNIQUETIES */
