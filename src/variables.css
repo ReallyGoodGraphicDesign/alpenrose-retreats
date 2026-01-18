@@ -129,6 +129,8 @@ button:active, .button:active {
                 rgba(var(--alpenrose-2-alpha),.15),
                 rgba(var(--alpenrose-2-alpha),.15)), 
                 rgb(52, 52, 52);
+        --row-bg: none;
+        --image-panel-bg: none;
         --text-panel-a:
                 linear-gradient(
                 rgba(var(--alpenrose-1-alpha),.25),
@@ -159,6 +161,7 @@ button:active, .button:active {
                 rgba(var(--alpenrose-1-alpha),.1),
                 rgba(var(--alpenrose-1-alpha),.1)), 
                 rgb(40, 40, 40);
+        --html-bg: var(--header-footer-bg);
         --header-footer-bg: red;
         --header-footer-inner-bg: rgb(200, 94, 112);
         --header-footer-left-bg: rgb(169, 26, 26);
@@ -167,9 +170,10 @@ button:active, .button:active {
         --header-footer-text: white;
         --logo-button-bg: magenta;
         --logo-button-bg-hover: skyblue;
-        --text-panel: red;
+        --row-bg: yellow;
+        --image-panel-bg: rgb(139, 204, 139);
+        --text-panel-bg: red;
 }
-
 /* #region MASTER_COLORS */       
 :root {
         /* COPY THESE FROM .ASE ONLY */

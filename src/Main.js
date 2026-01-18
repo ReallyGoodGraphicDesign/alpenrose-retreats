@@ -34,7 +34,7 @@ return (
                 <div className="image-panel panel-9"><p>IMAGE 9</p></div>
         </div>
         <div className="row row-6">
-                <div className="text-panel text-panel-3" id="your-journey">
+                <div className="text-panel text-panel-your-journey" id="your-journey">
                         <h2 className="section-title">Your Journey</h2>
                         <p className="section-text">No two journeys are meant to look the same. This experience meets you exactly where you are, offering space for reflection, connection, and renewal. You’ll move at a pace that feels intentional and grounded. What unfolds is yours to define.</p> 
                         <button className="learn-more-button"><p className="learn-more">Learn More</p></button>
@@ -93,7 +93,6 @@ return (
                 <div className="image-panel panel-27"><p>IMAGE 27</p></div>
                 <div className="image-panel panel-28"><p>IMAGE 28</p></div>
                 <div className="image-panel panel-29"><p>IMAGE 29</p></div>
-                <div className="image-panel panel-30"><p>IMAGE 30</p></div>
         </div>
         <div className="row row-16">
                 <div className="image-panel panel-32"><p>IMAGE 32</p></div>
@@ -103,6 +102,9 @@ return (
         <div className="row row-17">
                 <div className="image-panel panel-35"><p>IMAGE 35</p></div>
                 <div className="image-panel panel-3"><p>IMAGE 3</p></div>
+        </div>
+        <div className="row row-18">
+                <div className="image-panel panel-30"><p>IMAGE 30</p></div>
         </div>
 
 </div>
