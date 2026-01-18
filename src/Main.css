@@ -13,13 +13,13 @@ If row contains text box only (CHECK IF THIS IS ALSO TRUE FOR MULTIPLE TEXT BOXE
                 -- text: absent. 
         -- set row height manually:
                 -- row height: pixels. 
-                -- text-panel: fill. 
+                -- text-panel: stretch. 
 
 If row is mixed:
         -- height must be set manually:
                 -- row height: pixels. 
                 -- image height: absent. 
-                -- text height: fill.
+                -- text height: stretch.
 
 
 WIDTH WIDTH WIDTH WIDTH 
@@ -996,7 +996,7 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
         align-items: center;    
         justify-content: center; 
         text-align: center;
-        height: fill;
+        height: stretch;
 }
 .text-panel-your-journey {
         background: var(--text-panel-c);
