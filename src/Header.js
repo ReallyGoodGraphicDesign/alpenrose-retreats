@@ -7,7 +7,7 @@ return (
 <header className="header">
         <div className="header-inner">
                 <div className="header-tdl">
-                        <h1 className="title">Alpenrose 1935</h1>
+                        <h1 className="title">Alpenrose Retreat</h1>
                         <h2 className="date-location">May 30 - June 2</h2>
                         <h2 className="date-location">Kremmling, Colorado</h2>
                 </div>
@@ -20,7 +20,7 @@ return (
                 </div>
                 <div className="header-nav">
                         <a href="#introduction">Introduction</a>
-                        <a href="#shadow-creek-ranch">Shadow Creek Ranch</a>
+                        <a href="#shadow-creek-ranch">Shadow Creek 2028</a>
                         <a href="#your-journey">Your Journey</a>
                         <a href="#investment">Investment</a>
                         <a href="#accommodations">Accommodations</a>
