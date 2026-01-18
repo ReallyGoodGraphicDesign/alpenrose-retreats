@@ -8,13 +8,11 @@ If row is all images:
                 -- row height: pixels. 
                 -- image height: absent. 
         -- flex columns (tablet & mobile)
-                -- if you want all images same height
-                        -- row height: pixels (each image height will be equal fraction). 
                 -- if you want specific height each image
-                        -- row height: 'auto?????????checking...'.
+                        -- row height: auto.
                         -- image height: pixels.
-
-
+                -- can do it this way, but no reason to: if you want all images same height
+                        -- row height: pixels (each image height will be equal fraction). 
 
 
 If row contains text box only (CHECK IF THIS IS ALSO TRUE FOR MULTIPLE TEXT BOXES):
@@ -91,6 +89,7 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .row-1 {
         opacity: 1;
+        height: auto;
 }
 }
 @media (max-width: 600px) {
@@ -126,11 +125,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .row-3 {
         opacity: 1;
+        height: auto;
 }
 }
 @media (max-width: 600px) {
 .row-3 {
         opacity: 1;
+        height: auto;
 }
 }
 .row-4 {
@@ -154,11 +155,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .row-5 {
         opacity: 1;
+        height: auto;
 }
 }
 @media (max-width: 600px) {
 .row-5 {
         opacity: 1;
+        height: auto;
 }
 }
 .row-6 {
@@ -182,11 +185,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .row-7 {
         opacity: 1;
+        height: auto;
 }
 }
 @media (max-width: 600px) {
 .row-7 {
         opacity: 1;
+        height: auto;
 }
 }
 .row-8 {
@@ -210,11 +215,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .row-9 {
         opacity: 1;
+        height: auto;
 }
 }
 @media (max-width: 600px) {
 .row-9 {
         opacity: 1;
+        height: auto;
 }
 }
 .row-10 {
@@ -238,11 +245,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .row-11 {
         opacity: 1;
+        height: auto;
 }
 }
 @media (max-width: 600px) {
 .row-11 {
         opacity: 1;
+        height: auto;
 }
 }
 .row-12 {
@@ -266,11 +275,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .row-13 {
         opacity: 1;
+        height: auto;
 }
 }
 @media (max-width: 600px) {
 .row-13 {
         opacity: 1;
+        height: auto;
 }
 }
 .row-14 {
@@ -280,11 +291,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .row-14 {
         opacity: 1;
+        height: auto;
 }
 }
 @media (max-width: 600px) {
 .row-14 {
         opacity: 1;
+        height: auto;
 }
 }
 .row-15 {
@@ -294,11 +307,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .row-15 {
         opacity: 1;
+        height: auto;
 }
 }
 @media (max-width: 600px) {
 .row-15 {
         opacity: 1;
+        height: auto;
 }
 }
 .row-16 {
@@ -308,11 +323,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .row-16 {
         opacity: 1;
+        height: auto;
 }
 }
 @media (max-width: 600px) {
 .row-16 {
         opacity: 1;
+        height: auto;
 }
 }
 .row-17 {
@@ -322,11 +339,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .row-17 {
         opacity: 1;
+        height: auto;
 }
 }
 @media (max-width: 600px) {
 .row-17 {
         opacity: 1;
+        height: auto;
 }
 }
 .row-18 {
@@ -336,11 +355,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .row-18 {
         opacity: 1;
+        height: auto;
 }
 }
 @media (max-width: 600px) {
 .row-18 {
         opacity: 1;
+        height: auto;
 }
 }
 /* #endregion ROWS_COMMONALITIES_AND_UNIQUETIES */
@@ -398,11 +419,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-1 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-1 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-2 {
@@ -412,12 +435,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-2 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-2 {
         opacity: 1;
-        height: 550px;
+        height: 301px;
 }
 }
 .panel-3 {
@@ -427,11 +451,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-3 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-3 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-4 {
@@ -441,11 +467,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-4 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-4 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-5 {
@@ -455,12 +483,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-5 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-5 {
         opacity: 1;
-        height: 350px;
+        height: 301px;
 }
 }
 .panel-6 {
@@ -470,11 +499,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-6 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-6 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-7 {
@@ -484,11 +515,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-7 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-7 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-8 {
@@ -498,11 +531,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-8 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-8 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-9 {
@@ -512,11 +547,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-9 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-9 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-10 {
@@ -526,11 +563,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-10 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-10 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-11 {
@@ -540,11 +579,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-11 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-11 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-12 {
@@ -554,11 +595,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-12 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-12 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-13 {
@@ -568,11 +611,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-13 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-13 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-14 {
@@ -582,11 +627,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-14 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-14 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-15 {
@@ -596,11 +643,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-15 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-15 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-16 {
@@ -610,11 +659,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-16 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-16 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-17 {
@@ -624,12 +675,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-17 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-17 {
         opacity: 1;
-        height: 350px;
+        height: 301px;
 }
 }
 .panel-18 {
@@ -639,11 +691,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-18 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-18 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-19 {
@@ -653,11 +707,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-19 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-19 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-20 {
@@ -667,11 +723,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-20 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-20 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-21 {
@@ -683,11 +741,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-21 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-21 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-22 {
@@ -697,11 +757,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-22 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-22 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-23 {
@@ -711,11 +773,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-23 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-23 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-24 {
@@ -725,11 +789,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-24 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-24 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-25 {
@@ -739,11 +805,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-25 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-25 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-26 {
@@ -753,11 +821,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-26 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-26 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-27 {
@@ -767,11 +837,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-27 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-27 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-28 {
@@ -781,11 +853,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-28 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-28 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-29 {
@@ -795,11 +869,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-29 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-29 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-30 {
@@ -809,11 +885,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-30 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-30 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-31 {
@@ -823,11 +901,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-31 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-31 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-32 {
@@ -837,11 +917,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-32 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-32 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-33 {
@@ -851,11 +933,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-33 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-33 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-34 {
@@ -865,11 +949,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-34 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-34 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-35 {
@@ -879,11 +965,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-35 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-35 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-36 {
@@ -893,11 +981,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-36 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-36 {
         opacity: 1;
+        height: 301px;
 }
 }
 .panel-37 {
@@ -907,11 +997,13 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-37 {
         opacity: 1;
+        height: 301px;
 }
 }
 @media (max-width: 600px) {
 .panel-37 {
         opacity: 1;
+        height: 301px;
 }
 }
 /* #endregion IMAGE_PANELS */

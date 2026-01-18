@@ -3,7 +3,7 @@ import "./Main.css";
 function Main() {
 return (
 <div className="main">
-        <div className="row row-1">
+        <div className="row row-1"> 
                 <div className="image-panel panel-5"><p>IMAGE 5</p></div>
                 <div className="image-panel panel-2"><p>IMAGE 2</p></div>
                 <div className="image-panel panel-17"><p>IMAGE 17</p></div>
