@@ -416,7 +416,7 @@ Default width of all indiv image panels is 100%. A row of images w 100% widths w
 @media (max-width: 600px) {
 .panel-2 {
         opacity: 1;
-        height: 350px;
+        height: 550px;
 }
 }
 .panel-3 {
