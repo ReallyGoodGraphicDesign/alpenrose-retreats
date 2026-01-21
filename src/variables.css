@@ -22,35 +22,37 @@ button:active, .button:active {
         color: var(--button-text-active);
 }
 .learn-more-button {
-        margin: 25px 0 0 0;
+        margin: 0 0 0 0;
         padding: 20px 20px;
         font-weight: bold;
 }  
 @media (min-width: 601px) and (max-width: 1024px) {
 .learn-more-button {
         opacity: 1;
+        padding: 17.5px 17.5px;
 }
 }
 @media (max-width: 600px) {
 .learn-more-button {
         opacity: 1;
-        margin: 10px 0 0 0;
-        padding: 10px 10px;
+        margin: 0 0 0 0;
+        padding: 15px 15px;
 }
 }
 .learn-more-button-alpenrose {
         background: var(--learn-more-button-alpenrose-bg);
+        margin: 0 0 8px 0;
 }  
 @media (min-width: 601px) and (max-width: 1024px) {
 .learn-more-button-alpenrose {
         opacity: 1;
+        margin: 10px 0 10px 0;
 }
 }
 @media (max-width: 600px) {
 .learn-more-button-alpenrose {
         opacity: 1;
-        margin: 10px 0 0 0;
-        padding: 10px 10px;
+        margin: 10px 0 10px 0;
 }
 }
 .learn-more-button-alpenrose:hover {
@@ -70,7 +72,8 @@ button:active, .button:active {
         position: absolute;
         top: 24px;
         right: 24px;
-}
+        top: 6px;
+        right: 8px;}
 }
 @media (max-width: 600px) {
 .list_and_close_btns {
