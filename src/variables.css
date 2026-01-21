@@ -1,6 +1,7 @@
 /* #region BUTTONS */     
 button, .button {
         background-color: var(--button-bg);
+        color: var(--button-text);
         border: none;
         margin: 0;
         padding: 0;
@@ -21,37 +22,70 @@ button:active, .button:active {
         color: var(--button-text-active);
 }
 .learn-more-button {
-        background-color: var(--button-bg);
-        border: none;
         margin: 25px 0 0 0;
         padding: 20px 20px;
-        border-radius: 4px;
-        text-decoration: none;
-        cursor: pointer;
-        line-height: 0;
-        transition: background-color .4s ease;
         font-weight: bold;
 }  
 @media (min-width: 601px) and (max-width: 1024px) {
-.XXXXXXXXXXXXXX {
+.learn-more-button {
         opacity: 1;
 }
 }
 @media (max-width: 600px) {
-.XXXXXXXXXXXXXX {
+.learn-more-button {
         opacity: 1;
         margin: 10px 0 0 0;
         padding: 10px 10px;
 }
 }
-button:hover, .button:hover {
-        background: var(--button-bg-hover);
-        color: var(--button-text-hover);
+.learn-more-button-alpenrose {
+        background: var(--learn-more-button-alpenrose-bg);
+}  
+@media (min-width: 601px) and (max-width: 1024px) {
+.learn-more-button-alpenrose {
+        opacity: 1;
 }
-button:active, .button:active {
-        background: var(--button-bg-active);
-        color: var(--button-text-active);
 }
+@media (max-width: 600px) {
+.learn-more-button-alpenrose {
+        opacity: 1;
+        margin: 10px 0 0 0;
+        padding: 10px 10px;
+}
+}
+.learn-more-button-alpenrose:hover {
+        background: var(--learn-more-button-alpenrose-bg-hover);
+}  
+.learn-more-button-alpenrose:active {
+        background: var(--learn-more-button-alpenrose-bg-active);
+}  
+.list_and_close_btns {
+        display: none;
+        font-size: 2.5rem;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.list_and_close_btns {
+        opacity: 1;
+        display: block;
+        position: absolute;
+        top: 24px;
+        right: 24px;
+}
+}
+@media (max-width: 600px) {
+.list_and_close_btns {
+        opacity: 1;
+        display: block;
+        position: absolute;
+        top: 6px;
+        right: 8px;
+}
+}
+
+
+
+
+
 /* #endregion BUTTONS */       
 
 /* #region PHOTOS */
@@ -98,12 +132,15 @@ button:active, .button:active {
 
 /* #region COLORS */      
 :root, :root[data-theme='actual'] {
-        --button-bg: rgba(255,255,255,.5);
-        --button-bg-hover: rgba(255,255,255,.7);
-        --button-bg-active: rgba(255,255,255,.9);
-        --button-text: rgba(255,255,255,.5);        
-        --button-text-hover: rgba(255,255,255,.75);        
-        --button-text-active: rgba(255,255,255,1);        
+        --button-bg: rgba(255,255,255,.55);
+        --button-bg-hover: rgba(255,255,255,.95);
+        --button-bg-active: rgba(187, 187, 187,.3);
+        --button-text: var(--header-footer-text);        
+        --button-text-hover: rgb(255, 255, 255);        
+        --button-text-active: rgba(255,255,255,1);
+        --learn-more-button-alpenrose-bg: #d982b346; 
+        --learn-more-button-alpenrose-bg-hover: #d982b36f; 
+        --learn-more-button-alpenrose-bg-active: #d982b3ba; 
         --text-color: rgb(0, 0, 0);
         --html-bg: var(--header-footer-bg);
         --header-footer-bg: white;
