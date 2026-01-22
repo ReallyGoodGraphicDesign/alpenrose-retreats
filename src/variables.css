@@ -87,29 +87,6 @@ button:active, .button:active {
         right: 6px;
 }
 }
-.list_close_btn:hover {
-        background-color: var(--list_close_btn_bg_hover);
-        color: var(--list_close_btn_text_hover);
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.list_close_btn:hover {
-        background-color: var(--list_close_btn_bg_hover);
-        color: var(--list_close_btn_text_hover);        opacity: 1;
-        display: block;
-        position: absolute;
-        top: 6px;
-        right: 6px;}
-}
-@media (max-width: 600px) {
-.list_close_btn:hover {
-        background-color: var(--list_close_btn_bg_hover);
-        color: var(--list_close_btn_text_hover);        opacity: 1;
-        display: block;
-        position: absolute;
-        top: 6px;
-        right: 6px;
-}
-}
 .list_close_btn:active {
         background-color: var(--list_close_btn_bg_active);
         color: var(--list_close_btn_text_active);
@@ -135,12 +112,38 @@ button:active, .button:active {
 }
 }
 
+
+
+
+
+
+
+
+
+
+
+
 @media (hover: hover) and (pointer: fine) {
-.list_close_btn:hover {
-        background-color: var(--list_close_btn_bg_hover);
-        color: var(--list_close_btn_text_hover);        
+  .list_close_btn:hover {
+    background-color: var(--list_close_btn_bg_hover);
+    color: var(--list_close_btn_text_hover);
+  }
 }
+
+
+
+
+.list_close_btn:focus:not(:focus-visible) {
+  outline: none;
 }
+
+
+
+
+
+
+
+
 
 
 /* #endregion BUTTONS */       
