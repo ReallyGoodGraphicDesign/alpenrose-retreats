@@ -86,6 +86,23 @@ button:active, .button:active {
         top: 6px;
         right: 6px;}
 }
+@media (min-width: 601px) and (max-width: 1024px) {
+.list_close_btn:hover {
+        background-color: var(--list_close_btn_bg);
+        color: var(--list_close_btn_text);        opacity: 1;
+        display: block;
+        position: absolute;
+        top: 6px;
+        right: 6px;}
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.list_close_btn:active {
+        opacity: 1;
+        display: block;
+        position: absolute;
+        top: 6px;
+        right: 6px;}
+}
 @media (max-width: 600px) {
 .list_close_btn {
         opacity: 1;
@@ -95,11 +112,25 @@ button:active, .button:active {
         right: 6px;
 }
 }
-
-
-
-
-
+@media (max-width: 600px) {
+.list_close_btn:hover {
+        background-color: var(--list_close_btn_bg);
+        color: var(--list_close_btn_text);        opacity: 1;
+        display: block;
+        position: absolute;
+        top: 6px;
+        right: 6px;
+}
+}
+@media (max-width: 600px) {
+.list_close_btn:active {
+        opacity: 1;
+        display: block;
+        position: absolute;
+        top: 6px;
+        right: 6px;
+}
+}
 /* #endregion BUTTONS */       
 
 /* #region PHOTOS */
