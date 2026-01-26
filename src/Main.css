@@ -920,12 +920,12 @@
 }
 .text-panel-retreat {
         background: var(--text-panel-b);
-        height: stretch;
+        
 }
 .text-panel-journey {
         background: var(--text-panel-c);
         width: 100%;
-        height: stretch;
+        
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .text-panel-journey {
@@ -942,16 +942,16 @@
 .text-panel-investment {
         background: var(--text-panel-a);
         width: 100%;
-        height: stretch;
+        
 }
 .text-panel-accommodations {
         background: var(--text-panel-b);
         width: 100%;
-        height: stretch;
+        
 }
 .text-panel-logistics {
         background: var(--text-panel-c);
         width: 100%;
-        height: stretch;
+        
 }
 /* #endregion TEXT_PANEL_UNIQUETIES */
