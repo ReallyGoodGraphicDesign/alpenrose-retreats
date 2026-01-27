@@ -46,7 +46,7 @@ button:active, .button:active {
 }
 .learn-more-button-alpenrose {
         background: var(--learn-more-button-alpenrose-bg);
-        margin: 0;
+        margin: 50px 0;
 }  
 @media (min-width: 601px) and (max-width: 1024px) {
 .learn-more-button-alpenrose {
@@ -131,7 +131,7 @@ button:active, .button:active {
         --photo-6: url("assets/06_creek.jpeg");
         --photo-7: url("assets/07_dinner.jpeg");
         --photo-8: url("assets/08_eagles_nest.jpeg");
-        --photo-9: url("assets/09_shutterstock_55724620.jpg");
+        --photo-9: url("assets/09_teaching_at_guesthouse.jpeg");
         --photo-10: url("assets/10_fence.jpg");
         --photo-11: url("assets/11_great_room.jpg");
         --photo-12: url("assets/12_group_activity.jpg");
@@ -148,7 +148,7 @@ button:active, .button:active {
         --photo-23: url("assets/23_leadership_poses.jpeg");
         --photo-24: url("assets/24_linda_tish.jpeg");
         --photo-25: url("assets/25_lodge.jpg");
-        --photo-26: url("assets/26_lodge.jpg");
+        --photo-26: url("assets/26_tish_on_stump.jpeg");
         --photo-27: url("assets/27_lodge_and_guest_house.jpg");
         --photo-28: url("assets/28_main_lodge.jpg");
         --photo-29: url("assets/29_painting_day.jpeg");
@@ -158,8 +158,6 @@ button:active, .button:active {
         --photo-33: url("assets/33_sleeping_warrior.jpeg");
         --photo-34: url("assets/34_sleeping_warrior.jpeg");
         --photo-35: url("assets/35_smores.jpeg");
-        --photo-36: url("assets/36_teaching_at_guesthouse.jpeg");
-        --photo-37: url("assets/37_tish_on_stump.jpeg");
 }
 /* #endregion PHOTOS */
 

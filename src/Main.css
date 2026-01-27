@@ -7,7 +7,7 @@
         box-sizing: border-box;
         gap: 4px;      
         grid-template-columns: repeat(24, 1fr);
-        grid-auto-rows: minmax(200px, auto);
+        grid-auto-rows: minmax(280px, auto);
         }
 @media (min-width: 601px) and (max-width: 1024px) {
 .main {
@@ -30,7 +30,7 @@
         background-size: cover;    
         background-position: center; 
         background-repeat: no-repeat;
-        grid-column: span 3;
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .image-panel { 
@@ -44,7 +44,7 @@
 }
 }
 .image-panel p { 
-        opacity: 0.8;
+        opacity: 0;
         color: rgb(255, 0, 208);
         background-color: white;
         width: 22px;
@@ -72,21 +72,9 @@
 /* panel-??? always matches photo-??? --- don't alter this. Also don't change the order of these panels. Should stay 1, 2, 3... Only change 'em up in html. */
 
 .panel-1 {
-        /*
-        display: none;
-        */
         background-image: var(--photo-1);
-        /*
-        background-image: var(--photo-1);
-        background-image: none;
-        */
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 4;
-        grid-column: span 6;
-        /* START */ 
-        grid-column: span 6;
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-1 {
@@ -96,17 +84,13 @@
 @media (max-width: 600px) {
 .panel-1 {
         opacity: 1;
+        grid-column: span 12;
 }
 }
 .panel-2 {
         background-image: var(--photo-2);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
+        background-position: calc(50% + 0px) calc(50% - 0px);
         grid-column: span 8;
-        /* START */ 
-        grid-column: span 6;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-2 {
@@ -119,40 +103,26 @@
 }
 }
 .panel-3 {
-        /*
-        display: none;
-        */
         background-image: var(--photo-3);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 4;
-        grid-column: span 6;
-        /* START */
-        grid-column: span 6;
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.panel-3 {
-        opacity: 1;
-}
-}
-@media (max-width: 600px) {
-.panel-3 {
-        opacity: 1;
-}
-}
-.panel-4 {
-        /*
-        display: none;
-        */
-        background-image: var(--photo-4);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
+        background-position: calc(50% + 0px) calc(50% - 0px);
         grid-column: span 8;
-        /* START */
-        grid-column: span 6;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.panel-3 {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.panel-3 {
+        display: none;
+        opacity: 1;
+        grid-column: span 12;
+}
+}
+.panel-4 {
+        background-image: var(--photo-4);
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-4 {
@@ -162,37 +132,30 @@
 @media (max-width: 600px) {
 .panel-4 {
         opacity: 1;
+        grid-column: span 24;
 }
 }
 .panel-5 {
         background-image: var(--photo-5);
-        /*
-        grid-column: span 3;
-        END
+        background-position: calc(50% + 0px) calc(50% - 0px);
         grid-column: span 8;
-        grid-column: span 6;
-        /* START */
-        grid-column: span 6;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-5 {
         opacity: 1;
+        grid-column: span 12;
 }
 }
 @media (max-width: 600px) {
 .panel-5 {
         opacity: 1;
+        grid-column: span 12;
 }
 }
 .panel-6 {
         background-image: var(--photo-6);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 4;
-        grid-column: span 6;
-        /* START */
-        grid-column: span 6;
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-6 {
@@ -206,13 +169,8 @@
 }
 .panel-7 {
         background-image: var(--photo-7);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
+        background-position: calc(50% + 0px) calc(50% - 0px);
         grid-column: span 8;
-        /* START */
-        grid-column: span 6;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-7 {
@@ -226,13 +184,8 @@
 }
 .panel-8 {
         background-image: var(--photo-8);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 4;
-        grid-column: span 6;
-        /* START */
-        grid-column: span 6;
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-8 {
@@ -246,13 +199,8 @@
 }
 .panel-9 {
         background-image: var(--photo-9);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 4;
-        grid-column: span 6;
-        /* START */
-        grid-column: span 6;
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-9 {
@@ -266,33 +214,25 @@
 }
 .panel-10 {
         background-image: var(--photo-10);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
+        background-position: calc(50% + 0px) calc(50% - 0px);
         grid-column: span 8;
-        /* START */
-        grid-column: span 6;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-10 {
         opacity: 1;
+        grid-column: span 12;
 }
 }
 @media (max-width: 600px) {
 .panel-10 {
         opacity: 1;
+        grid-column: span 12;
 }
 }
 .panel-11 {
         background-image: var(--photo-11);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 4;
-        grid-column: span 6;
-        /* START */
-        grid-column: span 6;
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-11 {
@@ -306,13 +246,8 @@
 }
 .panel-12 {
         background-image: var(--photo-12);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
+        background-position: calc(50% + 0px) calc(50% - 0px);
         grid-column: span 8;
-        /* START */
-        grid-column: span 6;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-12 {
@@ -326,11 +261,8 @@
 }
 .panel-13 {
         background-image: var(--photo-13);
-        /*
-        grid-column: span 3;
-        END
+        background-position: calc(50% + 0px) calc(50% - 0px);
         grid-column: span 8;
-        /* START */
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-13 {
@@ -344,11 +276,8 @@
 }
 .panel-14 {
         background-image: var(--photo-14);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 4;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-14 {
@@ -362,11 +291,8 @@
 }
 .panel-15 {
         background-image: var(--photo-15);
-        /*
-        grid-column: span 3;
-        END
+        background-position: calc(50% + 0px) calc(50% - 0px);
         grid-column: span 8;
-        /* START */
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-15 {
@@ -380,11 +306,8 @@
 }
 .panel-16 {
         background-image: var(--photo-16);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 4;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-16 {
@@ -398,29 +321,25 @@
 }
 .panel-17 {
         background-image: var(--photo-17);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 4;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-17 {
         opacity: 1;
+        grid-column: span 12;
 }
 }
 @media (max-width: 600px) {
 .panel-17 {
         opacity: 1;
+        grid-column: span 12;
 }
 }
 .panel-18 {
         background-image: var(--photo-18);
-        /*
-        grid-column: span 3;
-        END
+        background-position: calc(50% + 0px) calc(50% - 0px);
         grid-column: span 8;
-        /* START */
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-18 {
@@ -434,11 +353,8 @@
 }
 .panel-19 {
         background-image: var(--photo-19);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 4;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-19 {
@@ -452,11 +368,8 @@
 }
 .panel-20 {
         background-image: var(--photo-20);
-        /*
-        grid-column: span 3;
-        END
+        background-position: calc(50% + 0px) calc(50% - 0px);
         grid-column: span 8;
-        /* START */
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-20 {
@@ -470,29 +383,25 @@
 }
 .panel-21 {
         background-image: var(--photo-21);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-21 {
         opacity: 1;
+        grid-column: span 12;
 }
 }
 @media (max-width: 600px) {
 .panel-21 {
         opacity: 1;
+        grid-column: span 12;
 }
 }
 .panel-22 {
         background-image: var(--photo-22);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-22 {
@@ -506,11 +415,8 @@
 }
 .panel-23 {
         background-image: var(--photo-23);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-23 {
@@ -524,11 +430,8 @@
 }
 .panel-24 {
         background-image: var(--photo-24);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-24 {
@@ -542,11 +445,8 @@
 }
 .panel-25 {
         background-image: var(--photo-25);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-25 {
@@ -560,31 +460,23 @@
 }
 .panel-26 {
         background-image: var(--photo-26);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-26 {
         opacity: 1;
-
 }
 }
 @media (max-width: 600px) {
 .panel-26 {
         opacity: 1;
-
 }
 }
 .panel-27 {
         background-image: var(--photo-27);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-27 {
@@ -598,11 +490,8 @@
 }
 .panel-28 {
         background-image: var(--photo-28);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-28 {
@@ -616,11 +505,8 @@
 }
 .panel-29 {
         background-image: var(--photo-29);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-29 {
@@ -634,11 +520,8 @@
 }
 .panel-30 {
         background-image: var(--photo-30);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-30 {
@@ -652,11 +535,8 @@
 }
 .panel-31 {
         background-image: var(--photo-31);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-31 {
@@ -670,11 +550,8 @@
 }
 .panel-32 {
         background-image: var(--photo-32);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-32 {
@@ -688,11 +565,8 @@
 }
 .panel-33 {
         background-image: var(--photo-33);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-33 {
@@ -706,11 +580,8 @@
 }
 .panel-34 {
         background-image: var(--photo-34);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-34 {
@@ -724,11 +595,8 @@
 }
 .panel-35 {
         background-image: var(--photo-35);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-35 {
@@ -742,11 +610,9 @@
 }
 .panel-36 {
         background-image: var(--photo-36);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
-        /* START */
+        background-position: calc(50% + 0px) calc(50% - 0px);
+        grid-column: span 8;
+ 
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-36 {
@@ -759,24 +625,7 @@
         opacity: 1;
 }
 }
-.panel-37 {
-        background-image: var(--photo-37);
-        /*
-        grid-column: span 3;
-        END
-        grid-column: span 6;
-        /* START */
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.panel-37 {
-        opacity: 1;
-}
-}
-@media (max-width: 600px) {
-.panel-37 {
-        opacity: 1;
-}
-}
+
 /* #endregion IMAGE_PANELS */
 
 /* #region TEXT_PANEL_COMMONALITIES */
@@ -793,10 +642,6 @@
         justify-content: center; 
         text-align: center;
         padding: 30px;
-        /*
-        grid-column: span 24;
-        grid-column: 1 / -1;
-        */
         grid-column: span 24;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -833,7 +678,7 @@
 .section-text {
         color: var(--header-footer-text);
         font-size: 1.125rem;
-        line-height: 1.25;
+        line-height: 1.4;
         margin: 0 0 20px 0;
         padding: 0;
 }
@@ -871,7 +716,7 @@
 /* #region TEXT_PANEL_UNIQUETIES */
 .text-panel-alpenrose {
         background: none;
-        padding: 30px 30px 30px 30px; 
+        padding: 30px 50px; 
 }
 .section-title-alpenrose {
         font-family: Aboreto;
@@ -901,7 +746,7 @@
 }
 .section-text-alpenrose {
         color: var(--header-footer-text);
-        font-size: 1.125rem;
+        font-size: 1.375rem;
         line-height: 1.5;
         margin: 0;
         padding: 0 0 25px 0;
@@ -920,38 +765,85 @@
 }
 .text-panel-retreat {
         background: var(--text-panel-b);
+        grid-column: span 16;
         
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.text-panel-retreat {
+        opacity: 1;
+        grid-column: span 24;
+}
+}
+@media (max-width: 600px) {
+.text-panel-retreat {
+        opacity: 1;
+        grid-column: span 24;
+}
 }
 .text-panel-journey {
         background: var(--text-panel-c);
-        width: 100%;
+        grid-column: span 16;
         
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .text-panel-journey {
         opacity: 1;
-        width: 100%;
+        grid-column: span 24;
 }
 }
 @media (max-width: 600px) {
 .text-panel-journey {
         opacity: 1;
-        width: 100%;
+        grid-column: span 24;
 }
 }
 .text-panel-investment {
         background: var(--text-panel-a);
         width: 100%;
-        
+        grid-column: span 16;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.text-panel-investment {
+        opacity: 1;
+        grid-column: span 24;
+}
+}
+@media (max-width: 600px) {
+.text-panel-investment {
+        opacity: 1;
+        grid-column: span 24;
+}
 }
 .text-panel-accommodations {
         background: var(--text-panel-b);
-        width: 100%;
-        
+        grid-column: span 16;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.text-panel-accommodations {
+        opacity: 1;
+        grid-column: span 24;
+}
+}
+@media (max-width: 600px) {
+.text-panel-accommodations {
+        opacity: 1;
+        grid-column: span 24;
+}
 }
 .text-panel-logistics {
         background: var(--text-panel-c);
-        width: 100%;
-        
+        grid-column: span 16;        
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.text-panel-logistics {
+        opacity: 1;
+        grid-column: span 24;
+}
+}
+@media (max-width: 600px) {
+.text-panel-logistics {
+        opacity: 1;
+        grid-column: span 24;
+}
 }
 /* #endregion TEXT_PANEL_UNIQUETIES */
