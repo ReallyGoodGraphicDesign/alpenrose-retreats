@@ -558,7 +558,7 @@
         display: none;
         background-image: var(--photo-31);
         background-position: calc(50% + 0px) calc(50% - 0px);
-        grid-column: span 8;
+        grid-column: span 24;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-31-tm {
