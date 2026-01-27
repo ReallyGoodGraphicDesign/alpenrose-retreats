@@ -30,6 +30,7 @@
         background-size: cover;    
         background-position: center; 
         background-repeat: no-repeat;
+        border-radius: 6px;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -44,16 +45,17 @@
 }
 }
 .image-panel p { 
-        opacity: 0.8;
+        opacity: 0.65;
         color: rgb(255, 0, 208);
         background-color: white;
         width: 22px;
         font-size: 1rem;
         font-weight: bold;
         line-height: 1;
-        margin: 3px;
+        margin: 8px;
         padding: 3px 0;
         text-align: center;
+        border-radius: 4px;
         box-sizing: border-box;
         }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -632,29 +634,12 @@
         opacity: 1;
 }
 }
-.panel-36 {
-        background-image: var(--photo-36);
-        background-position: calc(50% + 0px) calc(50% - 0px);
-        grid-column: span 8;
- 
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.panel-36 {
-        opacity: 1;
-        width: 100%;  
-}
-}
-@media (max-width: 600px) {
-.panel-36 {
-        opacity: 1;
-}
-}
 
 /* #endregion IMAGE_PANELS */
 
-/* #region TEXT_PANEL_COMMONALITIES */
+/* #region TEXT_PANELS_COMMONALITIES */
 .text-panel {
-        background-color: var(--text-panel-bg);      
+        background-color: var(--text-panel-a);      
         max-width: 100%;
         display: flex;
         flex-direction: column;
@@ -666,23 +651,27 @@
         justify-content: center; 
         text-align: center;
         padding: 30px;
-        grid-column: span 24;
+        grid-column: span 16;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .text-panel {
         opacity: 1;
         padding: 20px 100px;
+        grid-column: span 24;
 }
 }
 @media (max-width: 600px) {
 .text-panel {
         opacity: 1;
         padding: 20px;
+        grid-column: span 24;
 }
 }
 .section-title {
-        color: var(--header-footer-text);
-        font-size: 1.75rem;
+        font-family: Aboreto;
+        font-weight: 500;
+        color: var(--section-title-text);
+        font-size: 2.5rem;
         line-height: 1;
         margin: 0 0 20px 0;
         padding: 0;
@@ -735,12 +724,12 @@
         opacity: 1;
 }
 }
-/* #endregion TEXT_PANEL_COMMONALITIES */
+/* #endregion TEXT_PANELS_COMMONALITIES */
 
-/* #region TEXT_PANEL_UNIQUETIES */
+/* #region TEXT_PANEL_ALPENROSE */
 .text-panel-alpenrose {
-        background: none;
         padding: 30px 50px; 
+        grid-column: span 24;
 }
 .section-title-alpenrose {
         font-family: Aboreto;
@@ -751,7 +740,7 @@
         margin: 20px 0 40px 0;
         padding: 0;
         text-transform: uppercase;
-        background: linear-gradient(90deg, #d16ba5, #86a8e7, #5ffbf1);
+        background: var(--button-bg3);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -787,87 +776,4 @@
         padding: 0 0 18px 0;
 }
 }
-.text-panel-retreat {
-        background: var(--text-panel-b);
-        grid-column: span 16;
-        
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.text-panel-retreat {
-        opacity: 1;
-        grid-column: span 24;
-}
-}
-@media (max-width: 600px) {
-.text-panel-retreat {
-        opacity: 1;
-        grid-column: span 24;
-}
-}
-.text-panel-journey {
-        background: var(--text-panel-c);
-        grid-column: span 16;
-        
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.text-panel-journey {
-        opacity: 1;
-        grid-column: span 24;
-}
-}
-@media (max-width: 600px) {
-.text-panel-journey {
-        opacity: 1;
-        grid-column: span 24;
-}
-}
-.text-panel-investment {
-        background: var(--text-panel-a);
-        width: 100%;
-        grid-column: span 16;
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.text-panel-investment {
-        opacity: 1;
-        grid-column: span 24;
-}
-}
-@media (max-width: 600px) {
-.text-panel-investment {
-        opacity: 1;
-        grid-column: span 24;
-}
-}
-.text-panel-accommodations {
-        background: var(--text-panel-b);
-        grid-column: span 16;
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.text-panel-accommodations {
-        opacity: 1;
-        grid-column: span 24;
-}
-}
-@media (max-width: 600px) {
-.text-panel-accommodations {
-        opacity: 1;
-        grid-column: span 24;
-}
-}
-.text-panel-logistics {
-        background: var(--text-panel-c);
-        grid-column: span 16;        
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.text-panel-logistics {
-        opacity: 1;
-        grid-column: span 24;
-}
-}
-@media (max-width: 600px) {
-.text-panel-logistics {
-        opacity: 1;
-        grid-column: span 24;
-}
-}
-/* #endregion TEXT_PANEL_UNIQUETIES */
+/* #endregion TEXT_PANEL_ALPENROSE */
