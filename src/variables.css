@@ -178,6 +178,9 @@ button:active, .button:active {
 /* #endregion PHOTOS */
 
 /* #region COLORS */      
+:root[data-theme='push_verify'] {
+        --button-bg3: linear-gradient(90deg, #2bb700, #000000, #05dbcd); 
+}
 :root, :root[data-theme='actual'] {
         --button-bg: rgba(var(--alpenrose-1-alpha),.25);
         --button-bg-hover: rgba(var(--alpenrose-1-alpha),.25);
@@ -278,10 +281,6 @@ button:active, .button:active {
         --text-panel-a: pink;
         --text-panel-b: lightgreen;
         --text-panel-c: lightblue;
-}
-:root[data-theme='push_verify'] {
-        --button-bg3: linear-gradient(90deg, #fc27a0, #b0c6f1, #9bfcf6);
-
 }
 /* #region MASTER_COLORS */       
 :root {
