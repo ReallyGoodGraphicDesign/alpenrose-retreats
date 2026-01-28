@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
+import SectionModal from "./SectionModal";
 import "./Main.css";
+import { useEffect, useState } from "react";
 
 function Main() {
+const [activeSection, setActiveSection] = useState(null);
   const [content, setContent] = useState(null);
 
   useEffect(() => {
@@ -20,12 +22,14 @@ function Main() {
   if (!content) return null; // or a loading state
 
   return (
+        <>
     <div className="main">
       <div className="text-panel text-panel-alpenrose" id="alpenrose">
         <h1 className="section-title-alpenrose">{content.alpenrose?.title}</h1>
         <p className="section-text-alpenrose">{content.alpenrose?.text}</p>
-        <button className="lmb lmb-alpenrose">
-          <p className="learn-more">Learn More</p>
+        <button className="lmb lmb-alpenrose"
+        onClick={() => setActiveSection("alpenrose")}>
+        <p className="learn-more">Learn More</p>
         </button>
       </div>
 
@@ -37,8 +41,9 @@ function Main() {
       <div className="text-panel text-panel-retreat" id="retreat">
         <h2 className="section-title">{content.retreat.title}</h2>
         <p className="section-text">{content.retreat.text}</p>
-        <button className="lmb lmb-retreat">
-          <p className="learn-more">Learn More</p>
+        <button className="lmb lmb-retreat"
+        onClick={() => setActiveSection("retreat")}>
+        <p className="learn-more">Learn More</p>
         </button>
       </div>
 
@@ -50,8 +55,9 @@ function Main() {
       <div className="text-panel text-panel-journey" id="journey">
         <h2 className="section-title">{content.journey.title}</h2>
         <p className="section-text">{content.journey.text}</p>
-        <button className="lmb lmb-journey">
-          <p className="learn-more">Learn More</p>
+        <button className="lmb lmb-journey"
+        onClick={() => setActiveSection("journey")}>
+        <p className="learn-more">Learn More</p>
         </button>
       </div>
 
@@ -64,8 +70,9 @@ function Main() {
       <div className="text-panel text-panel-investment" id="investment">
         <h2 className="section-title">{content.investment.title}</h2>
         <p className="section-text">{content.investment.text}</p>
-        <button className="lmb lmb-investment">
-          <p className="learn-more">Learn More</p>
+        <button className="lmb lmb-investment"
+        onClick={() => setActiveSection("investment")}>
+        <p className="learn-more">Learn More</p>
         </button>
       </div>
 
@@ -76,40 +83,50 @@ function Main() {
       <div className="text-panel text-panel-accommodations" id="accommodations">
         <h2 className="section-title">{content.accommodations.title}</h2>
         <p className="section-text">{content.accommodations.text}</p>
-        <button className="lmb lmb-accommodations">
-          <p className="learn-more">Learn More</p>
+        <button className="lmb lmb-accommodations"
+        onClick={() => setActiveSection("accommodations")}>
+        <p className="learn-more">Learn More</p>
         </button>
       </div>
 
       <div className="image-panel panel-9"><p>9</p></div>
       <div className="image-panel panel-20"><p>20</p></div>
-      <div className="image-panel panel-34"><p>34</p></div>
-      <div className="image-panel panel-6"><p>6</p></div>
       <div className="image-panel panel-28"><p>28</p></div>
+      <div className="image-panel panel-6"><p>6</p></div>
+      <div className="image-panel panel-34"><p>34</p></div>
 
       <div className="text-panel text-panel-logistics" id="logistics">
         <h2 className="section-title">{content.logistics.title}</h2>
         <p className="section-text">{content.logistics.text}</p>
-        <button className="lmb lmb-logistics">
-          <p className="learn-more">Learn More</p>
+        <button className="lmb lmb-logistics"
+        onClick={() => setActiveSection("logistics")}>
+        <p className="learn-more">Learn More</p>
         </button>
       </div>
-        <div className="image-panel panel-19"><p>19</p></div>
+        <div className="image-panel panel-29"><p>29</p></div>
         <div className="image-panel panel-16"><p>16</p></div>
         <div className="image-panel panel-26"><p>26</p></div>
-        <div className="image-panel panel-3"><p>3</p></div>
         <div className="image-panel panel-1"><p>1</p></div>
-        <div className="image-panel panel-11"><p>11</p></div>
-        <div className="image-panel panel-12"><p>12</p></div>
-        <div className="image-panel panel-13"><p>13</p></div>
+        <div className="image-panel panel-3"><p>3</p></div>
         <div className="image-panel panel-14"><p>14</p></div>
+        <div className="image-panel panel-19"><p>19</p></div>
+        <div className="image-panel panel-13"><p>13</p></div>
+        <div className="image-panel panel-11"><p>11</p></div>
         <div className="image-panel panel-15"><p>15</p></div>
-        <div className="image-panel panel-22"><p>22</p></div>
-        <div className="image-panel panel-24"><p>24</p></div>
-        <div className="image-panel panel-29"><p>29</p></div>
         <div className="image-panel panel-32"><p>32</p></div>
+        <div className="image-panel panel-24"><p>24</p></div>
+        <div className="image-panel panel-12"><p>12</p></div>
+        <div className="image-panel panel-22"><p>22</p></div>
         <div className="image-panel panel-35"><p>35</p></div>
 </div>
+
+{activeSection && (
+  <SectionModal
+    section={content[activeSection]}
+    onClose={() => setActiveSection(null)}
+  />
+)}
+</>
 );
 }
 

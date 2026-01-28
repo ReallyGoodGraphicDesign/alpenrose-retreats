@@ -75,7 +75,8 @@
 
 .panel-1 {
         background-image: var(--photo-1);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(50% + 0px) calc(0% - 0px);
+        background-size: 106%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -91,7 +92,8 @@
 }
 .panel-2 {
         background-image: var(--photo-2);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: 50% 85%;
+        background-size: 100%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -108,7 +110,8 @@
 }
 .panel-3 {
         background-image: var(--photo-3);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(77% + 0px) calc(43% - 0px);
+        background-size: 140%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -126,6 +129,7 @@
 .panel-4 {
         background-image: var(--photo-4);
         background-position: calc(50% + 0px) calc(50% - 0px);
+        background-size: 100%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -141,7 +145,8 @@
 }
 .panel-5 {
         background-image: var(--photo-5);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(50% + 0px) calc(100% - 0px);
+        background-size: 100%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -158,7 +163,8 @@
 }
 .panel-6 {
         background-image: var(--photo-6);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(0% + 0px) calc(100% - 0px);
+        background-size: 100%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -173,7 +179,8 @@
 }
 .panel-7 {
         background-image: var(--photo-7);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(80% - 0px) calc(50% - 0px);
+        background-size: 110%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -190,7 +197,8 @@
 }
 .panel-8 {
         background-image: var(--photo-8);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(0% - 0px) calc(90% - 0px);
+        background-size: 130%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -205,7 +213,8 @@
 }
 .panel-9 {
         background-image: var(--photo-9);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(15% + 0px) calc(50% - 0px);
+        background-size: 130%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -220,7 +229,8 @@
 }
 .panel-10 {
         background-image: var(--photo-10);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(50% + 0px) calc(30% - 0px);
+        background-size: 100%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -267,7 +277,8 @@
 }
 .panel-13 {
         background-image: var(--photo-13);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(50% + 0px) calc(40% - 0px);
+        background-size: 100%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -328,6 +339,7 @@
 .panel-17 {
         background-image: var(--photo-17);
         background-position: calc(50% + 0px) calc(50% - 0px);
+        background-size: 100%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -361,7 +373,8 @@
 }
 .panel-19 {
         background-image: var(--photo-19);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(50% + 0px) calc(12% - 0px);
+        background-size: 100%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -376,7 +389,8 @@
 }
 .panel-20 {
         background-image: var(--photo-20);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(50% + 0px) calc(44% - 0px);
+        background-size: 100%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -391,7 +405,8 @@
 }
 .panel-21 {
         background-image: var(--photo-21);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(50% - 0px) calc(50% + 20px);
+        background-size: 100%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -409,6 +424,7 @@
 .panel-22 {
         background-image: var(--photo-22);
         background-position: calc(50% + 0px) calc(50% - 0px);
+        background-size: 100%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -423,7 +439,8 @@
 }
 .panel-23 {
         background-image: var(--photo-23);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(70%) calc(50% + 5px);
+        background-size: 138%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -438,7 +455,8 @@
 }
 .panel-24 {
         background-image: var(--photo-24);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(50% + 0px) calc(30% - 0px);
+        background-size: 100%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -453,7 +471,8 @@
 }
 .panel-25 {
         background-image: var(--photo-25);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(50% + 0px) calc(100% - 0px);
+        background-size: 100%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -498,7 +517,8 @@
 }
 .panel-28 {
         background-image: var(--photo-28);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(50% + 0px) calc(100% - 0px);
+        background-size: 100%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -513,7 +533,8 @@
 }
 .panel-29 {
         background-image: var(--photo-29);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(15% + 0px) calc(50% - 0px);
+        background-size: 110%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -528,7 +549,8 @@
 }
 .panel-30 {
         background-image: var(--photo-30);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(50% + 0px) calc(60% - 0px);
+        background-size: 100%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -543,7 +565,8 @@
 }
 .panel-31 {
         background-image: var(--photo-31);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(100% + 0px) calc(40% - 0px);
+        background-size: 130%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -578,7 +601,8 @@
 }
 .panel-32 {
         background-image: var(--photo-32);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(20% + 0px) calc(15% - 0px);
+        background-size: 130%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -608,7 +632,8 @@
 }
 .panel-34 {
         background-image: var(--photo-34);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(50% + 0px) calc(100% - 0px);
+        background-size: 120%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -623,7 +648,8 @@
 }
 .panel-35 {
         background-image: var(--photo-35);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+        background-position: calc(50% + 0px) calc(20% - 0px);
+        background-size: 100%;
         grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
