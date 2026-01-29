@@ -12,7 +12,7 @@ return (
         <div className="image-panel panel-5"><p>5</p></div>
         <div className="image-panel panel-21"><p>21</p></div>
         <div className="image-panel panel-10"><p>10</p></div>
-        <div className="text-panel text-panel-retreat" id="retreat">
+        <div className="text-panel text-panel-retreats" id="retreats">
                 <h2 className="section-title">section-title-from-google-sheet</h2>
                 <p className="section-text">section-text-from-google-sheet</p> 
                 <button className="learn-more-button"><p className="learn-more">Learn More</p></button>

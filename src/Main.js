@@ -53,7 +53,7 @@ const [activeSection, setActiveSection] = useState(null);
 
 
 {content.retreat?.enabled && (
-  <div className="text-panel text-panel-retreat" id="retreat">
+  <div className="text-panel text-panel-retreats" id="retreats">
     <h2 className="section-title">{content.retreat.title}</h2>
     <p className="section-text">{content.retreat.text}</p>
         <button
@@ -62,7 +62,7 @@ const [activeSection, setActiveSection] = useState(null);
         if (e.detail !== 0) { // mouse click, not keyboard
         e.currentTarget.blur();
         }
-        setActiveSection("retreat");
+        setActiveSection("retreats");
         }}
         >
         <p className="learn-more">

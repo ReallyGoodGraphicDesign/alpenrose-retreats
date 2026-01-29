@@ -11,7 +11,7 @@ return (
         <div className="image-panel panel-17"><p>17</p></div>
         <div className="image-panel panel-5"><p>5</p></div>
         <div className="image-panel panel-21"><p>21</p></div>
-        <div className="text-panel text-panel-retreat" id="retreat">
+        <div className="text-panel text-panel-retreats" id="retreats">
                 <h2 className="section-title">Spring/Summer 2026 Retreat</h2>
                 <p className="section-text">This section gives info about this particular retreat. Set against open land and quiet horizons, Shadow Creek Ranch offers a rare sense of arrival. The landscape invites you to slow down, breathe deeply, and be fully present. Nature isn't a backdrop here — it's part of the experience. The setting does much of the work for you.</p> 
                 <button className="learn-more-button"><p className="learn-more">Learn More</p></button>
