@@ -25,13 +25,17 @@ const [activeSection, setActiveSection] = useState(null);
         <>
     <div className="main">
 {content.alpenrose?.enabled && (
+
+
+
+
   <div className="text-panel text-panel-alpenrose" id="alpenrose">
     <h2 className="section-title">{content.alpenrose.title}</h2>
     <p className="section-text">{content.alpenrose.text}</p>
         <button
         className="cta"
         onClick={(e) => {
-        if (e.detail !== 0) { // mouse click, not keyboard
+        if (e.detail !== 0) { 
         e.currentTarget.blur();
         }
         setActiveSection("alpenrose");
@@ -44,14 +48,15 @@ const [activeSection, setActiveSection] = useState(null);
   </div>
 )}
 
+
+
       <div className="image-panel panel-17"><p>17</p></div>
       <div className="image-panel panel-5"><p>5</p></div>
       <div className="image-panel panel-21"><p>21</p></div>
+
+
+
       <div className="image-panel panel-10"><p>10</p></div>
-
-
-
-
 {content.retreat?.enabled && (
   <div className="text-panel text-panel-retreats" id="retreats">
     <h2 className="section-title">{content.retreat.title}</h2>
@@ -59,7 +64,7 @@ const [activeSection, setActiveSection] = useState(null);
         <button
         className="cta"
         onClick={(e) => {
-        if (e.detail !== 0) { // mouse click, not keyboard
+        if (e.detail !== 0) { 
         e.currentTarget.blur();
         }
         setActiveSection("retreats");
@@ -69,18 +74,14 @@ const [activeSection, setActiveSection] = useState(null);
         {content.retreat.cta_label || "Learn More"}
         </p>
         </button>
-  </div>
-)}
-
-
+  </div>)}
 
 
       <div className="image-panel panel-7"><p>7</p></div>
       <div className="image-panel panel-31"><p>31</p></div>
       <div className="image-panel panel-18"><p>18</p></div>
 
-
-
+      <div className="image-panel panel-2_"><p>2</p></div>
 
 
 {content.journey?.enabled && (
@@ -90,7 +91,7 @@ const [activeSection, setActiveSection] = useState(null);
         <button
         className="cta"
         onClick={(e) => {
-        if (e.detail !== 0) { // mouse click, not keyboard
+        if (e.detail !== 0) { 
         e.currentTarget.blur();
         }
         setActiveSection("journey");
@@ -100,24 +101,20 @@ const [activeSection, setActiveSection] = useState(null);
         {content.journey.cta_label || "Learn More"}
         </p>
         </button>
-
-  </div>
-)}
-
-
-
-
-
+  </div>)}
       <div className="image-panel panel-2"><p>2</p></div>
+
+
+
+
       <div className="image-panel panel-4"><p>4</p></div>
       <div className="image-panel panel-8"><p>8</p></div>
       <div className="image-panel panel-30"><p>30</p></div>
+
+
+
+
       <div className="image-panel panel-23"><p>23</p></div>
-
-
-
-
-
 {content.investment?.enabled && (
   <div className="text-panel text-panel-investment" id="investment">
     <h2 className="section-title">{content.investment.title}</h2>
@@ -125,7 +122,7 @@ const [activeSection, setActiveSection] = useState(null);
         <button
         className="cta"
         onClick={(e) => {
-        if (e.detail !== 0) { // mouse click, not keyboard
+        if (e.detail !== 0) { 
         e.currentTarget.blur();
         }
         setActiveSection("investment");
@@ -139,15 +136,11 @@ const [activeSection, setActiveSection] = useState(null);
 )}
 
 
-
-
-
       <div className="image-panel panel-33"><p>33</p></div>
       <div className="image-panel panel-25"><p>25</p></div>
       <div className="image-panel panel-27"><p>27</p></div>
 
-
-
+      <div className="image-panel panel-9_"><p>9</p></div>
 
 
 {content.accommodations?.enabled && (
@@ -157,7 +150,7 @@ const [activeSection, setActiveSection] = useState(null);
         <button
         className="cta"
         onClick={(e) => {
-        if (e.detail !== 0) { // mouse click, not keyboard
+        if (e.detail !== 0) { 
         e.currentTarget.blur();
         }
         setActiveSection("accommodations");
@@ -167,25 +160,20 @@ const [activeSection, setActiveSection] = useState(null);
         {content.accommodations.cta_label || "Learn More"}
         </p>
         </button>
-  </div>
-)}
-
-
-
-
-
-
+  </div>)}
       <div className="image-panel panel-9"><p>9</p></div>
+
+
+
+
       <div className="image-panel panel-20"><p>20</p></div>
       <div className="image-panel panel-28"><p>28</p></div>
       <div className="image-panel panel-6"><p>6</p></div>
+
+
+
+
       <div className="image-panel panel-34"><p>34</p></div>
-
-
-
-
-
-
 {content.our_story?.enabled && (
   <div className="text-panel text-panel-our_story" id="our_story">
     <h2 className="section-title">{content.our_story.title}</h2>
@@ -193,7 +181,7 @@ const [activeSection, setActiveSection] = useState(null);
         <button
         className="cta"
         onClick={(e) => {
-        if (e.detail !== 0) { // mouse click, not keyboard
+        if (e.detail !== 0) { 
         e.currentTarget.blur();
         }
         setActiveSection("our_story");
@@ -207,21 +195,23 @@ const [activeSection, setActiveSection] = useState(null);
 )}
 
 
-        <div className="image-panel panel-29"><p>29</p></div>
-        <div className="image-panel panel-16"><p>16</p></div>
-        <div className="image-panel panel-26"><p>26</p></div>
-        <div className="image-panel panel-1"><p>1</p></div>
-        <div className="image-panel panel-3"><p>3</p></div>
-        <div className="image-panel panel-14"><p>14</p></div>
-        <div className="image-panel panel-19"><p>19</p></div>
-        <div className="image-panel panel-13"><p>13</p></div>
-        <div className="image-panel panel-11"><p>11</p></div>
-        <div className="image-panel panel-15"><p>15</p></div>
-        <div className="image-panel panel-32"><p>32</p></div>
-        <div className="image-panel panel-24"><p>24</p></div>
-        <div className="image-panel panel-12"><p>12</p></div>
-        <div className="image-panel panel-22"><p>22</p></div>
-        <div className="image-panel panel-35"><p>35</p></div>
+
+
+        <div className="image-panel panel-29 dregs"><p>29</p></div>
+        <div className="image-panel panel-16 dregs"><p>16</p></div>
+        <div className="image-panel panel-26 dregs"><p>26</p></div>
+        <div className="image-panel panel-1 dregs"><p>1</p></div>
+        <div className="image-panel panel-3 dregs"><p>3</p></div>
+        <div className="image-panel panel-14 dregs"><p>14</p></div>
+        <div className="image-panel panel-19 dregs"><p>19</p></div>
+        <div className="image-panel panel-13 dregs"><p>13</p></div>
+        <div className="image-panel panel-11 dregs"><p>11</p></div>
+        <div className="image-panel panel-15 dregs"><p>15</p></div>
+        <div className="image-panel panel-32 dregs"><p>32</p></div>
+        <div className="image-panel panel-24 dregs"><p>24</p></div>
+        <div className="image-panel panel-12 dregs"><p>12</p></div>
+        <div className="image-panel panel-22 dregs"><p>22</p></div>
+        <div className="image-panel panel-35 dregs"><p>35</p></div>
 </div>
 
 {activeSection && (

@@ -102,9 +102,10 @@ button:active, .button:active {
 
 /* #region PHOTOS */
 :root {
-        --image-panel-height-1: 19vw;
+        --image-panel-height-1: 20vw;
         --image-panel-height-2: 10vw;
-        --image-panel-height-3: 15vw;
+        --image-panel-height-3: 30vw;
+        --image-panel-height-4: 17vw; 
         --photo-1: url("assets/01_aurora_halo.jpeg");
         --photo-2: url("assets/02_blue_river_cabin_day_1.jpeg");
         --photo-3: url("assets/03_jude_rashmi_veronica.jpeg");
