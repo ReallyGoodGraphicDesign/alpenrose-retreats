@@ -19,8 +19,8 @@ return (
         <div className="image-panel panel-10"><p>10</p></div>
         <div className="image-panel panel-2"><p>2</p></div>
         <div className="image-panel panel-8"><p>8</p></div>
-        <div className="text-panel text-panel-journey" id="journey">
-                <h2 className="section-title">Your Journey</h2>
+        <div className="text-panel text-panel-schedule" id="schedule">
+                <h2 className="section-title">Schedule</h2>
                 <p className="section-text">No two journeys are meant to look the same. This experience meets you exactly where you are, offering space for reflection, connection, and renewal. You'll move at a pace that feels intentional and grounded. What unfolds is yours to define.</p> 
                 <button className="learn-more-button"><p className="learn-more">Learn More</p></button>
         </div>

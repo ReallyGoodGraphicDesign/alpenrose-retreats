@@ -751,7 +751,6 @@
         height: auto;
         align-items: center;    
         justify-content: center; 
-        text-align: center;
         padding: 30px;
         grid-column: span 16;
 }
@@ -767,45 +766,6 @@
         opacity: 1;
         padding: 20px;
         grid-column: span 24;
-}
-}
-.section-title {
-        font-family: Aboreto;
-        font-weight: 500;
-        color: var(--section-title-text);
-        font-size: 2.5rem;
-        line-height: 1;
-        margin: 0 0 20px 0;
-        padding: 0;
-        text-transform: uppercase;
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.section-title {
-        opacity: 1;
-}
-}
-@media (max-width: 600px) {
-.section-title {
-        opacity: 1;
-        margin: 0 0 10px 0;
-        font-size: 1.75rem;
-}
-}
-.section-text {
-        color: var(--header-footer-text);
-        font-size: 1.125rem;
-        line-height: 1.4;
-        margin: 0 0 20px 0;
-        padding: 0;
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-.section-text {
-        opacity: 1;
-}
-}
-@media (max-width: 600px) {
-.section-text {
-        opacity: 1;
 }
 }
 .learn-more {
@@ -835,9 +795,7 @@
         grid-column: span 24;
 }
 .text-panel-alpenrose h2 {
-        font-family: Aboreto;
         font-weight: 400;
-        color: var(--header-footer-text);
         font-size: 5rem;
         line-height: 1;
         margin: 20px 0 40px 0;
@@ -864,6 +822,7 @@
         color: var(--header-footer-text);
         font-size: 1.375rem;
         line-height: 1.5;
+        text-align: center;
         margin: 0;
         padding: 0 0 25px 0;
 }

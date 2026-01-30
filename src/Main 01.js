@@ -21,7 +21,7 @@ return (
         <div className="image-panel panel-31"><p>31</p></div>
         <div className="image-panel panel-18"><p>18</p></div>
         <div className="image-panel panel-31-tm"><p>31.</p></div>
-        <div className="text-panel text-panel-journey" id="journey">
+        <div className="text-panel text-panel-schedule" id="schedule">
                 <h2 className="section-title">section-title-from-google-sheet</h2>
                 <p className="section-text">section-text-from-google-sheet</p> 
                 <button className="learn-more-button"><p className="learn-more">Learn More</p></button>

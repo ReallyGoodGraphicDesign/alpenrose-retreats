@@ -1,17 +1,49 @@
 import Modal from "./Modal";
 
+// Inside your modal (or wherever you render long content), add a helper:
+function parseBlocks(longText) {
+  if (!longText) return [];
+
+  try {
+    return JSON.parse(longText);
+  } catch (e) {
+    console.error("Invalid long_text JSON:", e);
+    return [];
+  }
+}
+// Create a small renderer function (keep this near the modal):
+function renderBlocks(blocks) {
+  return blocks.map((block, i) => {
+    switch (block.type) {
+      case "h3":
+        return <h3 key={i}>{block.text}</h3>;
+
+      case "p":
+        return <p key={i}>{block.text}</p>;
+
+      case "ul":
+        return (
+          <ul key={i}>
+            {block.items.map((item, j) => (
+              <li key={j}>{item}</li>
+            ))}
+          </ul>
+        );
+
+      default:
+        return null;
+    }
+  });
+}
 function SectionModal({ section, onClose }) {
-  if (!section) return null;
+  const blocks = parseBlocks(section.long_text);
 
   return (
     <Modal onClose={onClose}>
-      <h2>{section.title}</h2>
-
-      {(section.long_text || section.text)
-        .split("\n")
-        .map((paragraph, i) => (
-          <p key={i}>{paragraph}</p>
-        ))}
+      <div className="modal-content">
+        <h2 className="section-title">{section.title}</h2>
+        {renderBlocks(blocks)}
+      </div>
     </Modal>
   );
 }

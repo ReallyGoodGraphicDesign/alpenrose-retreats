@@ -102,10 +102,11 @@ button:active, .button:active {
 
 /* #region PHOTOS */
 :root {
-        --image-panel-height-1: 20vw;
-        --image-panel-height-2: 10vw;
-        --image-panel-height-3: 30vw;
-        --image-panel-height-4: 17vw; 
+        --image-shortenizer: 1;
+        --image-panel-height-1: calc(20vw * var(--image-shortenizer));
+        --image-panel-height-2: calc(10vw * var(--image-shortenizer));
+        --image-panel-height-3: calc(30vw * var(--image-shortenizer));
+        --image-panel-height-4: calc(17vw * var(--image-shortenizer)); 
         --photo-1: url("assets/01_aurora_halo.jpeg");
         --photo-2: url("assets/02_blue_river_cabin_day_1.jpeg");
         --photo-3: url("assets/03_jude_rashmi_veronica.jpeg");
@@ -173,7 +174,13 @@ button:active, .button:active {
         --list_close_btn_text: rgb(175, 175, 175);
         --list_close_btn_text_hover: rgb(122, 122, 122);
         --list_close_btn_text_active: rgb(88, 88, 88);
-        --text-color: rgb(0, 0, 0);
+        --text-color-p: rgba(var(--text-color-all),.85);
+        --text-color-h4: rgba(var(--text-color-all),.75);
+        --text-color-h3: rgba(var(--text-color-all),.65);
+        --text-color-h2: rgba(var(--text-color-all),.55);
+        --text-color-allzzz: rgb(102, 102, 102);
+        --text-color-all: 102, 102, 102;
+
         --html-bg: var(--header-footer-bg);
         --header-footer-bg: white;
         /*
@@ -239,7 +246,7 @@ button:active, .button:active {
         --header-footer-left-bg: rgb(210, 213, 26);
         --header-footer-mid-bg: rgb(81, 227, 71);
         --header-footer-right-bg: rgb(175, 20, 213);
-        --header-footer-text: white;
+        --header-footer-text: rgb(72, 227, 0);
         --logo-button-bg: magenta;
         --logo-button-bg-hover: skyblue;
         --row-bg: yellow;
@@ -264,7 +271,7 @@ button:active, .button:active {
 
 /* #region FONT_VARIABLES */       
 :root {
-  --font-heading: "Arboreto", sans-serif;
+  --font-heading: "Aboreto", sans-serif;
   --font-body: "Figtree", sans-serif;
 
   --weight-light: 300;
@@ -282,7 +289,7 @@ body {
         font-weight: var(--weight-regular);
         line-height: 1.6;
         font-size: 16px;
-        color: var(--text-color);
+        color: var(--text-color-p);
         margin: 0;
 }
 ul {
@@ -290,7 +297,7 @@ ul {
         margin-bottom: 2rem;
 }
 h2 {
-        color: inherit;
+        color: var(--text-color-h2);
         font-family: var(--font-heading);
         font-weight: var(--weight-semi-bold);
         font-size: 1.8rem;
@@ -298,15 +305,15 @@ h2 {
         margin: 0;
 }
 h3 {
-        color: inherit;
+        color: var(--text-color-h3);
         font-family: var(--font-heading);
-        font-weight: var(--weight-semi-bold);
+        font-weight: var(--weight-regular);
         font-size: 1.8rem;
         line-height: 1;
         margin: 0;
 }
 h4 {
-        color: inherit;
+        color: var(--text-color-h4);
         font-family: var(--font-heading);
         font-weight: var(--weight-semi-bold);
         font-size: 1.8rem;
@@ -323,5 +330,50 @@ h4 {
         margin-top: 0;
         margin-bottom: 0;
 }
+.section-title {
+        font-family: Aboreto;
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 1.125;
+        margin: 0 0 20px 0;
+        padding: 0;
+        text-align: center;
+        text-transform: uppercase;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.section-title {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.section-title {
+        opacity: 1;
+        margin: 0 0 10px 0;
+        font-size: 1.75rem;
+}
+}
+.modal-content .section-title {
+        font-size: 3.25rem;
+        margin: 0 0 30px 0;
+        text-align: left;
+}
+.section-text {
+        font-size: 1.125rem;
+        line-height: 1.4;
+        text-align: justify;
+        margin: 0 0 20px 0;
+        padding: 0;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+.section-text {
+        opacity: 1;
+}
+}
+@media (max-width: 600px) {
+.section-text {
+        opacity: 1;
+}
+}
+
 /* #endregion TEXT_VAR_STYLES */       
 

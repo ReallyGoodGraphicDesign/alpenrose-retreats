@@ -167,7 +167,7 @@
 }
 .header-nav a {
         text-decoration: none;
-        color: var(--header-footer-text);
+        color: var(--text-color-p);
         font-size: 1rem;
         margin-top: 3px;
         text-align: center;

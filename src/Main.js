@@ -57,21 +57,21 @@ const [activeSection, setActiveSection] = useState(null);
 
 
       <div className="image-panel panel-10"><p>10</p></div>
-{content.retreat?.enabled && (
-  <div className="text-panel text-panel-retreats" id="retreats">
-    <h2 className="section-title">{content.retreat.title}</h2>
-    <p className="section-text">{content.retreat.text}</p>
+{content.silvies?.enabled && (
+  <div className="text-panel text-panel-silvies" id="silvies">
+    <h2 className="section-title">{content.silvies.title}</h2>
+    <p className="section-text">{content.silvies.text}</p>
         <button
         className="cta"
         onClick={(e) => {
         if (e.detail !== 0) { 
         e.currentTarget.blur();
         }
-        setActiveSection("retreats");
+        setActiveSection("silvies");
         }}
         >
         <p className="learn-more">
-        {content.retreat.cta_label || "Learn More"}
+        {content.silvies.cta_label || "Learn More"}
         </p>
         </button>
   </div>)}
@@ -84,21 +84,21 @@ const [activeSection, setActiveSection] = useState(null);
       <div className="image-panel panel-2_"><p>2</p></div>
 
 
-{content.journey?.enabled && (
-  <div className="text-panel text-panel-journey" id="journey">
-    <h2 className="section-title">{content.journey.title}</h2>
-    <p className="section-text">{content.journey.text}</p>
+{content.schedule?.enabled && (
+  <div className="text-panel text-panel-schedule" id="schedule">
+    <h2 className="section-title">{content.schedule.title}</h2>
+    <p className="section-text">{content.schedule.text}</p>
         <button
         className="cta"
         onClick={(e) => {
         if (e.detail !== 0) { 
         e.currentTarget.blur();
         }
-        setActiveSection("journey");
+        setActiveSection("schedule");
         }}
         >
         <p className="learn-more">
-        {content.journey.cta_label || "Learn More"}
+        {content.schedule.cta_label || "Learn More"}
         </p>
         </button>
   </div>)}
@@ -193,8 +193,6 @@ const [activeSection, setActiveSection] = useState(null);
         </button>
   </div>
 )}
-
-
 
 
         <div className="image-panel panel-29 dregs"><p>29</p></div>
