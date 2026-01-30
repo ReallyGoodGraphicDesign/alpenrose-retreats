@@ -99,7 +99,20 @@
 /* #endregion TOP_LEVEL_STUFF_AND_NOTES */
 
 /* #region IMAGE_PANEL_COMMONALITIES */ 
-.image-panel { 
+.image-panel p { /* this really goes after 'dregs', but, well, since you use it so much... */
+        opacity: 0;
+        color: rgb(255, 0, 208);
+        background-color: white;
+        width: 22px;
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 1;
+        margin: 8px;
+        padding: 3px 0;
+        text-align: center;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }.image-panel { 
         background-color: peachpuff;        
         height: 100%;
         padding: 0;
@@ -137,20 +150,8 @@
         opacity: 1;
         grid-column: span 6;
 }
-}.image-panel p { 
-        opacity: 0.5;
-        color: rgb(255, 0, 208);
-        background-color: white;
-        width: 22px;
-        font-size: 1rem;
-        font-weight: bold;
-        line-height: 1;
-        margin: 8px;
-        padding: 3px 0;
-        text-align: center;
-        border-radius: 4px;
-        box-sizing: border-box;
-        }
+}
+
 @media (min-width: 601px) and (max-width: 1024px) {
 .image-panel p { 
         padding: 0;
