@@ -17,42 +17,21 @@
         color: #111;
         width: 100%;
         height: 100vh;
-        overflow-y: auto;
-
-        border-radius: 6px;
-        box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.2);
-
+        overflow-y: auto;        
         padding: 0;
         box-sizing: border-box;
-
         position: relative;
 }
-
 .modal-header {
         position: sticky;
         top: 0;
-        background: rgb(255, 255, 255); /* important */
+        background: rgb(49, 49, 49); /* important */
         z-index: 2;
         display: flex;
         justify-content: flex-end;
         align-items: center;
         padding: 8px;
         height: 38px;
-}
-.modal-close {
-        position: absolute;
-        top: 16px;
-        right: 16px;
-        background: transparent;
-        border: none;
-        font-size: 1.5rem;
-        line-height: 1;
-        cursor: pointer;
-        color: #666;
-}
-.modal-close:hover {
-  color: #000;
 }
 .modal-content {
         background: none;
