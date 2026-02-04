@@ -173,8 +173,6 @@ const [activeModal, setActiveModal] = useState(null);
         </button>
   </div>
 )}
-
-
         <div className="image-panel panel-29 dregs"><p>29</p></div>
         <div className="image-panel panel-16 dregs"><p>16</p></div>
         <div className="image-panel panel-26 dregs"><p>26</p></div>

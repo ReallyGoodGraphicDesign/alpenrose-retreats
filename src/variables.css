@@ -115,6 +115,11 @@ button:active, .button:active {
         --image-panel-height-2: calc(10vw * var(--image-shortenizer));
         --image-panel-height-3: calc(30vw * var(--image-shortenizer));
         --image-panel-height-4: calc(17vw * var(--image-shortenizer)); 
+        /*
+        --photo-17: url("assets/17_guest_house.jpg");
+        --photo-17: url("assets/17_guest_house_test.jpg");
+        */
+        --photo-17: url("assets/17_guest_house_test.jpg");
         --photo-1: url("assets/01_aurora_halo.jpeg");
         --photo-2: url("assets/02_blue_river_cabin_day_1.jpeg");
         --photo-3: url("assets/03_jude_rashmi_veronica.jpeg");
@@ -131,7 +136,9 @@ button:active, .button:active {
         --photo-14: url("assets/14_upper_bedroom.jpg");
         --photo-15: url("assets/15_upper_living_room.jpg");
         --photo-16: url("assets/16_guest_house.jpg");
-        --photo-17: url("assets/17_guest_house.jpg");
+        /*
+        photo 17 is the verifier, at the top of the list.
+        */
         --photo-18: url("assets/18_guest_kitchen.jpg");
         --photo-19: url("assets/19_hiking.jpeg");
         --photo-20: url("assets/20_hiking.jpeg");
