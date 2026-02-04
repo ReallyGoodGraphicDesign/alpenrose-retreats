@@ -3,6 +3,13 @@ import ScheduleModal from "./ScheduleModal";
 import "./Main.css";
 import { useEffect, useState } from "react";
 
+function decodeHTMLEntities(str) {
+  if (!str) return str;
+  const textarea = document.createElement("textarea");
+  textarea.innerHTML = str;
+  return textarea.value;
+}
+
 function Main() {
 const [activeModal, setActiveModal] = useState(null);
   const [content, setContent] = useState(null);
@@ -17,6 +24,7 @@ const [activeModal, setActiveModal] = useState(null);
       })
       .catch(err => console.error(err));
   }, []);
+
   if (!content) return null; // or a loading state
   return (
         <>
@@ -117,7 +125,7 @@ const [activeModal, setActiveModal] = useState(null);
       <div className="image-panel panel-9_"><p>9</p></div>
 {content.accommodations?.enabled && (
   <div className="text-panel text-panel-accommodations" id="accommodations">
-    <h2 className="section-title">{content.accommodations.title}</h2>
+    <h2 className="section-title">{decodeHTMLEntities(content.accommodations.title)}</h2>
     <p className="section-text">{content.accommodations.text}</p>
         <button
         className="cta"
