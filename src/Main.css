@@ -778,13 +778,13 @@
 @media (min-width: 601px) and (max-width: 1024px) {
 .text-panel-alpenrose {
         opacity: 1;
-        padding: 25px 40px; 
+        padding: 30px 40px; 
 }
 }
 @media (max-width: 600px) {
 .text-panel-alpenrose {
         opacity: 1;
-        padding: 30px 50px; 
+        padding: 20px 30px; 
 }
 }
 .text-panel-alpenrose h2 {
@@ -822,13 +822,13 @@
 @media (min-width: 601px) and (max-width: 1024px) {
 .text-panel-alpenrose > p {
         opacity: 1;
-        padding: 0 0 20px 0;
+        margin: 20px 0 0 0;
 }
 }
 @media (max-width: 600px) {
 .text-panel-alpenrose > p {
         opacity: 1;
-        padding: 0 0 18px 0;
+        margin: 20px 0 0 0;
         text-align: justify;
 }
 }
