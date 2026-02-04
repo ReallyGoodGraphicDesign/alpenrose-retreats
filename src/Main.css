@@ -817,6 +817,7 @@
 .text-panel-alpenrose > p {
         opacity: 1;
         padding: 0 0 18px 0;
+        text-align: justify;
 }
 }
 /* #endregion TEXT_PANEL_ALPENROSE */

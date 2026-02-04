@@ -98,34 +98,10 @@ const [activeModal, setActiveModal] = useState(null);
         </p>
         </button>
   </div>)}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <div className="image-panel panel-2"><p>2</p></div>
-
-
-
-
       <div className="image-panel panel-4"><p>4</p></div>
       <div className="image-panel panel-8"><p>8</p></div>
       <div className="image-panel panel-30"><p>30</p></div>
-
-
-
-
       <div className="image-panel panel-23"><p>23</p></div>
 {content.investment?.enabled && (
   <div className="text-panel text-panel-investment" id="investment">
@@ -137,21 +113,16 @@ const [activeModal, setActiveModal] = useState(null);
         if (e.detail !== 0) { 
         e.currentTarget.blur();
         }
-        setActiveModal("investment");
+        setActiveModal({ type: "section", sectionId: "investment" });
         }}>
         <p>{content.investment.cta_label || "Learn More"}</p>
         </button>
   </div>
 )}
-
-
       <div className="image-panel panel-33"><p>33</p></div>
       <div className="image-panel panel-25"><p>25</p></div>
       <div className="image-panel panel-27"><p>27</p></div>
-
       <div className="image-panel panel-9_"><p>9</p></div>
-
-
 {content.accommodations?.enabled && (
   <div className="text-panel text-panel-accommodations" id="accommodations">
     <h2 className="section-title">{content.accommodations.title}</h2>
@@ -162,7 +133,7 @@ const [activeModal, setActiveModal] = useState(null);
         if (e.detail !== 0) { 
         e.currentTarget.blur();
         }
-        setActiveModal("accommodations");
+        setActiveModal({ type: "section", sectionId: "accommodations" });
         }}
         >
         <p>
@@ -193,7 +164,7 @@ const [activeModal, setActiveModal] = useState(null);
         if (e.detail !== 0) { 
         e.currentTarget.blur();
         }
-        setActiveModal("our_story");
+        setActiveModal({ type: "section", sectionId: "our_story" });
         }}
         >
         <p>
