@@ -18,6 +18,9 @@ function renderBlocks(blocks) {
       case "h3":
         return <h3 key={i}>{block.text}</h3>;
 
+      case "h4":
+        return <h4 key={i}>{block.text}</h4>;
+
       case "p":
         return <p key={i}>{block.text}</p>;
 
@@ -29,11 +32,21 @@ function renderBlocks(blocks) {
             ))}
           </ul>
         );
-
+        case "cta":
+                return (
+                        <button key={i} className="cta"
+                        onClick={() => handleCTA(block.url)}>
+                                <p>{block.label}</p>
+                        </button>
+                );
       default:
         return null;
     }
   });
+}
+function handleCTA(url) {
+  if (!url) return;
+  window.open(url, "_blank", "noopener,noreferrer");
 }
 function SectionModal({ section, onClose }) {
   const blocks = parseBlocks(section.long_text);
@@ -41,7 +54,7 @@ function SectionModal({ section, onClose }) {
   return (
     <Modal onClose={onClose}>
       <div className="modal-content">
-        <h2 className="section-title">{section.title}</h2>
+        <h2>{section.title}</h2>
         {renderBlocks(blocks)}
       </div>
     </Modal>

@@ -1,0 +1,142 @@
+.schedule-table {
+        width: 100%;
+        border-collapse: collapse;     /* collapse | separate */
+        border-spacing: 0;             /* used only if border-collapse: separate */
+        table-layout: fixed;           /* fixed | auto */
+        font-size: 0.9rem;
+        line-height: 1.3;
+        text-align: left;              /* left | center | right */
+        margin: 30px 0 0 0;
+}
+.schedule-table caption {
+        caption-side: top;             /* top | bottom */
+        padding: 0.75rem 0;
+        font-weight: 600;
+        text-align: left;              /* left | center | right */
+}
+.schedule-table thead {
+        background-color: var(--table-head-bg, #f4f4f4);
+}
+.schedule-table th {
+        padding: 0.75rem 0.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        /* 
+        text-align: center;             left | center | right 
+        */
+        vertical-align: middle;        /* top | middle | bottom */
+        border-bottom: 2px solid #ccc;
+        white-space: nowrap;           /* normal | nowrap */
+}
+.schedule-table tbody {
+  background-color: var(--table-body-bg, transparent);
+}
+.schedule-table td {
+        padding: 0.6rem 0.5rem;
+        vertical-align: top;           /* top | middle | bottom */
+        /*
+        text-align: center;             left | center | right 
+        */
+        border-bottom: 1px solid #e0e0e0;
+        word-break: break-word;        /* normal | break-word | break-all */
+        hyphens: auto;                 /* none | manual | auto */
+}
+/* TIME / ROW HEADER COLUMN */
+.schedule-table td.time-cell,
+.schedule-table th.time-cell {
+        text-align: left;
+        font-weight: 600;
+        white-space: nowrap;
+        background-color: var(--table-time-bg, #fafafa);
+}
+/* ZEBRA STRIPES */
+.schedule-table tbody tr:nth-child(even) {
+  background-color: var(--table-row-alt, #fcfcfc);
+}
+.schedule-table tbody tr:nth-child(odd) {
+  background-color: var(--table-row, transparent);
+}
+/* INTERACTION STATES */
+.schedule-table tbody tr:hover {
+  background-color: var(--table-hover-bg, #f0f6ff);
+}
+.schedule-table td:focus,
+.schedule-table th:focus {
+  outline: 2px solid #0077ff;
+  outline-offset: -2px;
+}
+/* PLACEHOLDERS IN EMPTY CELLS 
+.schedule-table td:empty::before {
+  content: "—0";                  
+  opacity: 0.4;
+} */
+/* BORDER VARIANTS */
+/* Full grid */
+.schedule-table.grid th,
+.schedule-table.grid td {
+  border: 1px solid #ddd;
+}
+/* Minimal (horizontal only) */
+.schedule-table.minimal td,
+.schedule-table.minimal th {
+  border-left: none;
+  border-right: none;
+}
+/* No borders */
+.schedule-table.borderless td,
+.schedule-table.borderless th {
+  border: none;
+}
+/* ALIGNMENT HELPERS */
+.schedule-table .align-left {
+  text-align: left;
+}
+.schedule-table .align-center {
+  text-align: center;
+}
+.schedule-table .align-right {
+  text-align: right;
+}
+/* COLUMN WIDTHS */
+.schedule-table .col-narrow {
+  width: 10%;
+}
+.schedule-table .col-medium {
+  width: 20%;
+}
+.schedule-table .col-wide {
+  width: 30%;
+}
+/* STICKY OPTIONS */
+.schedule-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: var(--table-head-bg, #f4f4f4);
+}
+/* Sticky first column */
+.schedule-table .time-cell {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+/* TABLE FOOTER */
+.schedule-table tfoot {
+  background-color: #f8f8f8;
+}
+.schedule-table tfoot td {
+  font-weight: 600;
+  border-top: 2px solid #ccc;
+}
+/* RESPONSIVE OPTIONS */
+/* Horizontal scroll container */
+.schedule-table-wrapper {
+  overflow-x: auto;
+}
+/* Condensed version */
+.schedule-table.compact td,
+.schedule-table.compact th {
+  padding: 0.35rem 0.4rem;
+  font-size: 0.8rem;
+}

@@ -1,15 +1,14 @@
 import SectionModal from "./SectionModal";
+import ScheduleModal from "./ScheduleModal";
 import "./Main.css";
 import { useEffect, useState } from "react";
 
 function Main() {
-const [activeSection, setActiveSection] = useState(null);
+const [activeModal, setActiveModal] = useState(null);
   const [content, setContent] = useState(null);
-
   useEffect(() => {
     fetch("https://script.google.com/macros/s/AKfycbwHj5C9YjvfjzYzp7Fu0qzKDB2ED1EYlDG89_3ZloCsj3f624o4EoQ504UPfOX2iBkJIg/exec")
       .then((res) => res.json())
-
       .then(rows => {
         const normalized = Object.fromEntries(
           rows.map(row => [row.section_id, row])
@@ -18,17 +17,11 @@ const [activeSection, setActiveSection] = useState(null);
       })
       .catch(err => console.error(err));
   }, []);
-
   if (!content) return null; // or a loading state
-
   return (
         <>
     <div className="main">
 {content.alpenrose?.enabled && (
-
-
-
-
   <div className="text-panel text-panel-alpenrose" id="alpenrose">
     <h2 className="section-title">{content.alpenrose.title}</h2>
     <p className="section-text">{content.alpenrose.text}</p>
@@ -38,25 +31,31 @@ const [activeSection, setActiveSection] = useState(null);
         if (e.detail !== 0) { 
         e.currentTarget.blur();
         }
-        setActiveSection("alpenrose");
+        setActiveModal({ type: "section", sectionId: "alpenrose" });
         }}
         >
-        <p className="learn-more">
+        <p>
         {content.alpenrose.cta_label || "Learn More"}
         </p>
         </button>
   </div>
 )}
-
-
-
       <div className="image-panel panel-17"><p>17</p></div>
       <div className="image-panel panel-5"><p>5</p></div>
       <div className="image-panel panel-21"><p>21</p></div>
 
 
-
       <div className="image-panel panel-10"><p>10</p></div>
+
+
+
+
+
+
+
+
+
+
 {content.silvies?.enabled && (
   <div className="text-panel text-panel-silvies" id="silvies">
     <h2 className="section-title">{content.silvies.title}</h2>
@@ -67,12 +66,9 @@ const [activeSection, setActiveSection] = useState(null);
         if (e.detail !== 0) { 
         e.currentTarget.blur();
         }
-        setActiveSection("silvies");
-        }}
-        >
-        <p className="learn-more">
-        {content.silvies.cta_label || "Learn More"}
-        </p>
+        setActiveModal({ type: "section", sectionId: "silvies" });
+        }}>
+        <p>{content.silvies.cta_label || "Learn More"}</p>
         </button>
   </div>)}
 
@@ -94,14 +90,30 @@ const [activeSection, setActiveSection] = useState(null);
         if (e.detail !== 0) { 
         e.currentTarget.blur();
         }
-        setActiveSection("schedule");
+        setActiveModal({type: "schedule"});
         }}
         >
-        <p className="learn-more">
+        <p>
         {content.schedule.cta_label || "Learn More"}
         </p>
         </button>
   </div>)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div className="image-panel panel-2"><p>2</p></div>
 
 
@@ -125,12 +137,9 @@ const [activeSection, setActiveSection] = useState(null);
         if (e.detail !== 0) { 
         e.currentTarget.blur();
         }
-        setActiveSection("investment");
-        }}
-        >
-        <p className="learn-more">
-        {content.investment.cta_label || "Learn More"}
-        </p>
+        setActiveModal("investment");
+        }}>
+        <p>{content.investment.cta_label || "Learn More"}</p>
         </button>
   </div>
 )}
@@ -153,10 +162,10 @@ const [activeSection, setActiveSection] = useState(null);
         if (e.detail !== 0) { 
         e.currentTarget.blur();
         }
-        setActiveSection("accommodations");
+        setActiveModal("accommodations");
         }}
         >
-        <p className="learn-more">
+        <p>
         {content.accommodations.cta_label || "Learn More"}
         </p>
         </button>
@@ -184,10 +193,10 @@ const [activeSection, setActiveSection] = useState(null);
         if (e.detail !== 0) { 
         e.currentTarget.blur();
         }
-        setActiveSection("our_story");
+        setActiveModal("our_story");
         }}
         >
-        <p className="learn-more">
+        <p>
         {content.our_story.cta_label || "Learn More"}
         </p>
         </button>
@@ -212,12 +221,19 @@ const [activeSection, setActiveSection] = useState(null);
         <div className="image-panel panel-35 dregs"><p>35</p></div>
 </div>
 
-{activeSection && (
+{activeModal?.type === "section" && (
   <SectionModal
-    section={content[activeSection]}
-    onClose={() => setActiveSection(null)}
+    section={content[activeModal.sectionId]}
+    onClose={() => setActiveModal(null)}
   />
 )}
+
+{activeModal?.type === "schedule" && (
+  <ScheduleModal
+    onClose={() => setActiveModal(null)}
+  />
+)}
+
 </>
 );
 }

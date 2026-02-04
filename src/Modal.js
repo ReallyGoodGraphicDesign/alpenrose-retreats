@@ -1,11 +1,3 @@
-// 01 first modal primitive      
-// 02 added escape key      
-// 03 blurred triggering button (change in main.js, not here)
-// 04 added bg scroll lock
-// 05 added focus trap, BUT bg scrolls to top on mm & doesn't return on mu, & sb disappears
-// 06 FT now works and main returns to trigger on mu. Sb still gone with modal, but oh well. 
-// 07 sbw fix??? We'll see!
-
 import { useEffect, useRef } from "react";
 import "./Modal.css";
 
