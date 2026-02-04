@@ -48,14 +48,6 @@ const [activeModal, setActiveModal] = useState(null);
       <div className="image-panel panel-10"><p>10</p></div>
 
 
-
-
-
-
-
-
-
-
 {content.silvies?.enabled && (
   <div className="text-panel text-panel-silvies" id="silvies">
     <h2 className="section-title">{content.silvies.title}</h2>
