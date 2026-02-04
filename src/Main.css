@@ -757,7 +757,7 @@
 @media (min-width: 601px) and (max-width: 1024px) {
 .text-panel {
         opacity: 1;
-        padding: 2px;
+        padding: 20px;
         grid-column: span 24;
 }
 }
@@ -829,7 +829,6 @@
 .text-panel-alpenrose > p {
         opacity: 1;
         margin: 20px 0 0 0;
-        text-align: justify;
 }
 }
 /* #endregion TEXT_PANEL_ALPENROSE */
