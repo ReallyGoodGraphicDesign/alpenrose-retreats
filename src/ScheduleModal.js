@@ -11,26 +11,6 @@ useEffect(() => {
     .catch(err => console.error(err));
 }, []);
 
-function calculateRowSpans(rows, key) {
-  const spans = [];
-  let start = 0;
-  while (start < rows.length) {
-    let end = start + 1;
-    while (
-      end < rows.length &&
-      rows[end][key] === rows[start][key]
-    ) {
-      end++;
-    }
-    spans[start] = end - start;
-    for (let i = start + 1; i < end; i++) {
-      spans[i] = 0; // suppressed rows
-    }
-    start = end;
-  }
-  return spans;
-}
-
 function fillDownAll(rows, keys) {
   const last = {};
   return rows.map(row => {
