@@ -70,13 +70,16 @@ button:active, .button:active {
         background-color:var(--list_close_btn_bg);
         color: var(--list_close_btn_text);
         display: none;
+        font-size: 2.25rem;
+}
+.mobile-nav-overlay .list_close_btn {
         position: absolute;
-        top: 6px;
-        right: 6px;        
-        font-size: 2.5rem;
+        top: 9px;
+        right: 8px;
 }
 .modal-header > .list_close_btn {
         display: block;
+        margin: 0 2px 0 0;
 }
 /* hover */
 @media (hover: hover) and (pointer: fine) {
@@ -95,6 +98,7 @@ button:active, .button:active {
 .list_close_btn {
         opacity: 1;
         display: block;
+        
 }
 }
 /* normal cell */
@@ -237,6 +241,9 @@ button:active, .button:active {
                 rgba(var(--alpenrose-3-alpha),.25),
                 rgba(var(--alpenrose-3-alpha),.25)), 
                 rgb(255, 255, 255);
+        --table-head-bg: var(--alpenrose-1);
+        --table-body-bg: none;
+        --table-borders: rgba(var(--alpenrose-1-alpha),.65);
 }
 :root[data-theme='test'] {
         --button-bg: rgba(255,200,9,1);

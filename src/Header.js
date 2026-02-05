@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const navItems = [
   { href: "#alpenrose", label: "Alpenrose Retreats" },
-  { href: "#silvies", label: "1552 2026" },
+  { href: "#silvies", label: "Silvies 2026" },
   { href: "#schedule", label: "Schedule" },
   { href: "#investment", label: "Investment" },
   { href: "#accommodations", label: "Accommodations" },
