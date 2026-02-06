@@ -1,7 +1,7 @@
 /* #region BUTTONS */
 button,
 .button {
-  background-color: var(--button-bg2);
+  background: var(--button-bg2);
   color: var(--button-text);
   border: none;
   margin: 0;
@@ -10,12 +10,10 @@ button,
   text-decoration: none;
   cursor: pointer;
   line-height: 0;
+  text-transform: uppercase;
   transition:
     background-color 0.5s ease,
     color 0.5s ease;
-  /*
-        transition: color 2s ease;
-        */
   font-weight: bold;
   border-radius: 4px;
 }
@@ -33,23 +31,12 @@ button:active,
 }
 /* normal large */
 .cta {
-  background-color: var(--button-bg2);
   margin: 25px 0 0 0;
-  padding: 14px;
+  padding: 20px 15px;
   font-weight: bold;
   transition:
     background-color 0.5s ease,
     color 0.5s ease;
-}
-/* hover */
-@media (hover: hover) and (pointer: fine) {
-  .cta:hover {
-    background-color: var(--button-bg2-hover);
-  }
-}
-/* active */
-.cta:active {
-  background-color: var(--button-bg2-active);
 }
 /* normal tablet */
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -63,20 +50,9 @@ button:active,
     opacity: 1;
   }
 }
-.cta p {
-  opacity: 0.85;
-  color: var(--header-footer-text);
-  font-size: 1rem;
-  line-height: 1;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-}
 /* normal large */
 .list_close_btn {
-  background-color: var(--list_close_btn_bg);
-  color: var(--list_close_btn_text);
-  display: none;
+  display: none; 
   font-size: 2.25rem;
 }
 .mobile-nav-overlay .list_close_btn {
@@ -85,20 +61,19 @@ button:active,
   right: 8px;
 }
 .modal-header > .list_close_btn {
+        color: rgb(255, 255, 255);
   display: block;
   margin: 0 2px 0 0;
 }
 /* hover */
 @media (hover: hover) and (pointer: fine) {
   .list_close_btn:hover {
-    background-color: var(--list_close_btn_bg_hover);
-    color: var(--list_close_btn_text_hover);
+    opacity: 1;
   }
 }
 /* active */
 .list_close_btn:active {
-  background-color: var(--list_close_btn_bg_active);
-  color: var(--list_close_btn_text_active);
+    opacity: 1;
 }
 /* normal tablet */
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -166,43 +141,29 @@ button:active,
 /* #region COLORS */
 :root,
 :root[data-theme='actual'] {
-  --button-bg: rgba(var(--alpenrose-1-alpha), 0.25);
-  --button-bg-hover: rgba(var(--alpenrose-1-alpha), 0.25);
-  --button-bg-active: rgba(var(--alpenrose-1-alpha), 0.25);
-  --button-bg2: rgba(var(--alpenrose-1-alpha), 0.25);
-  --button-bg2-hover: rgba(var(--alpenrose-1-alpha), 0.45);
-  --button-bg2-active: rgba(var(--alpenrose-1-alpha), 0.65);
-  --button-bg3: linear-gradient(90deg, #eca8cf, #b0c6f1, #9bfcf6);
-  --button-bg3-hover: linear-gradient(90deg, #d16ba5, #86a8e7, #5ffbf1);
-  --button-bg3-active: linear-gradient(90deg, #b14683, #416ab6, #25b6ac);
-  --button-text: var(--header-footer-text);
-  --button-text-hover: rgb(255, 255, 255);
-  --button-text-active: rgba(255, 255, 255, 1);
-  --cta-alpenrose-bg: #d982b346;
-  --cta-alpenrose-bg-hover: #d982b36f;
-  --cta-alpenrose-bg-active: #d982b3ba;
-  --cta-alpenrose-bg2: #d982b346;
-  --cta-alpenrose-bg2-hover: #d982b36f;
-  --cta-alpenrose-bg2-active: #d982b3ba;
-  --list_close_btn_bg: rgba(var(--alpenrose-1-alpha), 0);
-  --list_close_btn_bg_hover: rgba(var(--alpenrose-1-alpha), 0.25);
-  --list_close_btn_bg_active: rgba(var(--alpenrose-1-alpha), 0.5);
-  --list_close_btn_text: rgb(175, 175, 175);
-  --list_close_btn_text_hover: rgb(122, 122, 122);
-  --list_close_btn_text_active: rgb(88, 88, 88);
-  --text-color-p: rgba(var(--text-color-all), 0.85);
-  --text-color-h4: rgba(var(--text-color-all), 0.75);
-  --text-color-h3: rgba(var(--text-color-all), 0.65);
-  --text-color-h2: rgba(var(--text-color-all), 0.55);
-  --text-color-allzzz: rgb(102, 102, 102);
-  --text-color-all: 102, 102, 102;
+  --button-bg: rgba(var(--alpenrose-1-alpha), 0.2);
+  --button-bg-hover: rgba(var(--alpenrose-1-alpha), 0.4);
+  --button-bg-active: rgba(var(--alpenrose-1-alpha), 0.6);
+  --button-bg2: rgba(var(--alpenrose-2-alpha), 0.2);
+  --button-bg2-hover: rgba(var(--alpenrose-2-alpha), 0.4);
+  --button-bg2-active: rgba(var(--alpenrose-2-alpha), 0.6);
+  --button-bg3: rgba(var(--alpenrose-3-alpha), 0.2);
+  --button-bg3-hover: rgba(var(--alpenrose-3-alpha), 0.4);
+  --button-bg3-active: rgba(var(--alpenrose-3-alpha), 0.6);
+  --button-text: var(--text-color-p);
+  --button-text-hover: var(--text-color-p);
+  --button-text-active: var(--text-color-p);
+  --text-color-p: rgba(0,0,0,.5);
+  --text-color-h4: rgba(0,0,0,.45);
+  --text-color-h3: rgba(0,0,0,.4);
+  --text-color-h2: rgba(0,0,0,.35);
   --html-bg: var(--header-footer-bg);
   --header-footer-bg: white;
   --modal-header-bg:
     linear-gradient(
-      90deg,
-      rgba(var(--alpenrose-2-alpha), 0.15),
-      rgba(var(--alpenrose-2-alpha), 0.15)
+      -90deg,
+      rgba(var(--alpenrose-2-alpha), 0),
+      rgba(var(--alpenrose-2-alpha), .2)
     ),
     rgb(255, 255, 255);
 
@@ -232,7 +193,7 @@ button:active,
     ),
     rgb(52, 52, 52);
   --row-bg: none;
-  --image-panel-bg: none;
+  --image-panel-bg: red;
   --text-panel-a: none;
   --text-panel-b: none;
   --text-panel-c: none;
@@ -254,6 +215,9 @@ button:active,
       rgba(var(--alpenrose-3-alpha), 0.25)
     ),
     rgb(255, 255, 255);
+  --alpenrose-title: linear-gradient(90deg, #eca8cf, #b0c6f1, #9bfcf6);
+  --alpenrose-title2: linear-gradient(90deg, #d16ba5, #86a8e7, #5ffbf1);
+  --alpenrose-title3: linear-gradient(90deg, #b14683, #416ab6, #25b6ac);
   --table-head-bg: var(--alpenrose-1);
   --table-body-bg: none;
   --table-borders: rgba(var(--alpenrose-1-alpha), 0.65);
@@ -352,16 +316,6 @@ h4 {
   font-size: 1.5rem;
   line-height: 1;
   margin: 0;
-}
-.button-text {
-  background: var(--button-bg);
-  color: var(--button-text);
-  font-family: var(--font-body);
-  font-weight: var(--weight-bold);
-  font-size: 0.875rem;
-  text-decoration: none;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .section-title {
   font-size: 2.5rem;

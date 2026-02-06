@@ -58,6 +58,9 @@
 .modal-content p {
   margin: 30px 0 0 0;
 }
+.modal-content button p {
+  margin: 0;
+}
 .modal-content p + p {
   margin: 20px 0 0 0;
 }

@@ -115,7 +115,7 @@
   box-sizing: border-box;
 }
 .image-panel {
-  background-color: peachpuff;
+  background-color: var(--image-panel-bg);
   height: 100%;
   padding: 0;
   margin: 0;
@@ -859,7 +859,7 @@
   flex-direction: column;
   margin: 0;
   box-sizing: border-box;
-  scroll-margin-top: 54px;
+  scroll-margin-top: 48px;
   height: auto;
   align-items: center;
   justify-content: center;
@@ -906,7 +906,7 @@
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  background: var(--button-bg3);
+  background: var(--alpenrose-title2);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -924,7 +924,6 @@
   }
 }
 .text-panel-alpenrose > p {
-  color: var(--header-footer-text);
   font-size: 1.375rem;
   line-height: 1.5;
   text-align: center;

@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const navItems = [
   { href: '#alpenrose', label: 'Alpenrose Retreats' },
-  { href: '#silvies', label: 'Thur 1634' },
+  { href: '#silvies', label: 'Silvies 2026' },
   { href: '#schedule', label: 'Schedule' },
   { href: '#investment', label: 'Investment' },
   { href: '#accommodations', label: 'Accommodations' },
@@ -23,7 +23,7 @@ function Header() {
         <nav className="header-nav">
           {navItems.map(({ href, label }) => (
             <a key={href} href={href}>
-              {label}
+                      {label}
             </a>
           ))}
         </nav>
