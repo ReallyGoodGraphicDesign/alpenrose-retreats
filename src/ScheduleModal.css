@@ -1,54 +1,54 @@
 .schedule-table {
-        width: 100%;
-        border-collapse: collapse;     /* collapse | separate */
-        border-spacing: 0;             /* used only if border-collapse: separate */
-        table-layout: fixed;           /* fixed | auto */
-        font-size: 0.8rem;
-        line-height: 1.3;
-        text-align: left;              /* left | center | right */
-        margin: 20px 0 0 0;
+  width: 100%;
+  border-collapse: collapse; /* collapse | separate */
+  border-spacing: 0; /* used only if border-collapse: separate */
+  table-layout: fixed; /* fixed | auto */
+  font-size: 0.8rem;
+  line-height: 1.3;
+  text-align: left; /* left | center | right */
+  margin: 20px 0 0 0;
 }
 .schedule-table caption {
-        caption-side: top;             /* top | bottom */
-        padding: 0.75rem 0;
-        font-weight: 600;
-        text-align: left;              /* left | center | right */
+  caption-side: top; /* top | bottom */
+  padding: 0.75rem 0;
+  font-weight: 600;
+  text-align: left; /* left | center | right */
 }
 .schedule-table thead {
-        background-color: var(--table-head-bg);
+  background-color: var(--table-head-bg);
 }
 .schedule-table th {
-        padding: 0.65rem 0.5rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        /* 
+  padding: 0.65rem 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  /* 
         text-align: center;             left | center | right 
         */
-        vertical-align: middle;        /* top | middle | bottom */
-        border: none;
-        white-space: nowrap;           /* normal | nowrap */
+  vertical-align: middle; /* top | middle | bottom */
+  border: none;
+  white-space: nowrap; /* normal | nowrap */
 }
 .schedule-table tbody {
   background-color: var(--table-body-bg, transparent);
 }
 .schedule-table td {
-        padding: 0.5rem 0.5rem;
-        vertical-align: top;           /* top | middle | bottom */
-        /*
+  padding: 0.5rem 0.5rem;
+  vertical-align: top; /* top | middle | bottom */
+  /*
         text-align: center;             left | center | right 
         */
-        border-bottom: 1px solid var(--table-borders);
-        word-break: break-word;        /* normal | break-word | break-all */
-        hyphens: auto;                 /* none | manual | auto */
+  border-bottom: 1px solid var(--table-borders);
+  word-break: break-word; /* normal | break-word | break-all */
+  hyphens: auto; /* none | manual | auto */
 }
 /* TIME / ROW HEADER COLUMN */
 .schedule-table td.time-cell,
 .schedule-table th.time-cell {
-        text-align: left;
-        font-weight: 600;
-        white-space: nowrap;
-        background-color: var(--table-time-bg, #fafafa);
+  text-align: left;
+  font-weight: 600;
+  white-space: nowrap;
+  background-color: var(--table-time-bg, #fafafa);
 }
 /* ZEBRA STRIPES 
 .schedule-table tbody tr:nth-child(even) {

@@ -1,13 +1,13 @@
 /* #region TOP_LEVEL_STUFF_AND_NOTES */
 
 .main {
-        display: grid;
-        padding: 0 4px 4px 4px;
-        width: 100%;
-        box-sizing: border-box;
-        gap: 4px;      
-        grid-template-columns: repeat(24, 1fr);
-        /*
+  display: grid;
+  padding: 0 4px 4px 4px;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 4px;
+  grid-template-columns: repeat(24, 1fr);
+  /*
         grid-auto-rows: minmax(19vw, auto);
 
         grid-template-rows: 
@@ -28,139 +28,141 @@
         var(--image-panel-height-1) 
         var(--image-panel-height-1) 
         */
-        grid-template-rows: 
-        auto 
-        var(--image-panel-height-1) 
-        auto 
-        var(--image-panel-height-1) 
-        auto 
-        var(--image-panel-height-1) 
-        auto 
-        var(--image-panel-height-1) 
-        auto 
-        var(--image-panel-height-1) 
-        auto 
-        var(--image-panel-height-2) 
-        var(--image-panel-height-2) 
-        var(--image-panel-height-2); 
+  grid-template-rows:
+    auto
+    var(--image-panel-height-1)
+    auto
+    var(--image-panel-height-1)
+    auto
+    var(--image-panel-height-1)
+    auto
+    var(--image-panel-height-1)
+    auto
+    var(--image-panel-height-1)
+    auto
+    var(--image-panel-height-2)
+    var(--image-panel-height-2)
+    var(--image-panel-height-2);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.main {
-        opacity: 1;
-        grid-template-rows: 
-        auto 
-        var(--image-panel-height-3) 
-        var(--image-panel-height-3) 
-        auto 
-        var(--image-panel-height-3) 
-        var(--image-panel-height-3) 
-        auto 
-        var(--image-panel-height-3) 
-        var(--image-panel-height-3) 
-        auto 
-        var(--image-panel-height-3) 
-        var(--image-panel-height-3) 
-        auto 
-        var(--image-panel-height-3) 
-        var(--image-panel-height-3) 
-        auto 
-        var(--image-panel-height-4) 
-        var(--image-panel-height-4) 
-        var(--image-panel-height-4) 
-        var(--image-panel-height-4); 
-}
+  .main {
+    opacity: 1;
+    grid-template-rows:
+      auto
+      var(--image-panel-height-3)
+      var(--image-panel-height-3)
+      auto
+      var(--image-panel-height-3)
+      var(--image-panel-height-3)
+      auto
+      var(--image-panel-height-3)
+      var(--image-panel-height-3)
+      auto
+      var(--image-panel-height-3)
+      var(--image-panel-height-3)
+      auto
+      var(--image-panel-height-3)
+      var(--image-panel-height-3)
+      auto
+      var(--image-panel-height-4)
+      var(--image-panel-height-4)
+      var(--image-panel-height-4)
+      var(--image-panel-height-4);
+  }
 }
 @media (max-width: 600px) {
-.main {
-        opacity: 1;
-        grid-template-rows: 
-        auto 
-        var(--image-panel-height-3) 
-        var(--image-panel-height-3) 
-        auto 
-        var(--image-panel-height-3) 
-        var(--image-panel-height-3) 
-        auto 
-        var(--image-panel-height-3) 
-        var(--image-panel-height-3) 
-        auto 
-        var(--image-panel-height-3) 
-        var(--image-panel-height-3) 
-        auto 
-        var(--image-panel-height-3) 
-        var(--image-panel-height-3) 
-        auto 
-        var(--image-panel-height-4) 
-        var(--image-panel-height-4) 
-        var(--image-panel-height-4) 
-        var(--image-panel-height-4); 
-}
+  .main {
+    opacity: 1;
+    grid-template-rows:
+      auto
+      var(--image-panel-height-3)
+      var(--image-panel-height-3)
+      auto
+      var(--image-panel-height-3)
+      var(--image-panel-height-3)
+      auto
+      var(--image-panel-height-3)
+      var(--image-panel-height-3)
+      auto
+      var(--image-panel-height-3)
+      var(--image-panel-height-3)
+      auto
+      var(--image-panel-height-3)
+      var(--image-panel-height-3)
+      auto
+      var(--image-panel-height-4)
+      var(--image-panel-height-4)
+      var(--image-panel-height-4)
+      var(--image-panel-height-4);
+  }
 }
 /* #endregion TOP_LEVEL_STUFF_AND_NOTES */
 
-/* #region IMAGE_PANEL_COMMONALITIES */ 
-.image-panel p { /* this really goes after 'dregs', but, well, since you use it so much... */
-        opacity: 0;
-        color: rgb(255, 0, 208);
-        background-color: white;
-        width: 22px;
-        font-size: 1rem;
-        font-weight: bold;
-        line-height: 1;
-        margin: 8px;
-        padding: 3px 0;
-        text-align: center;
-        border-radius: 4px;
-        box-sizing: border-box;
-        }.image-panel { 
-        background-color: peachpuff;        
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        background-size: cover;    
-        background-position: center; 
-        background-repeat: no-repeat;
-        border-radius: 6px;
-        grid-column: span 8;
+/* #region IMAGE_PANEL_COMMONALITIES */
+.image-panel p {
+  /* this really goes after 'dregs', but, well, since you use it so much... */
+  opacity: 0;
+  color: rgb(255, 0, 208);
+  background-color: white;
+  width: 22px;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 8px;
+  padding: 3px 0;
+  text-align: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.image-panel {
+  background-color: peachpuff;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  grid-column: span 8;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.image-panel { 
-        opacity: 1;
-        grid-column: span 12;
-}
+  .image-panel {
+    opacity: 1;
+    grid-column: span 12;
+  }
 }
 @media (max-width: 600px) {
-.image-panel { 
-        opacity: 1;
-        grid-column: span 12;
+  .image-panel {
+    opacity: 1;
+    grid-column: span 12;
+  }
 }
-}
-.dregs { 
-        opacity: 1;
-        grid-column: span 4;
+.dregs {
+  opacity: 1;
+  grid-column: span 4;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.dregs { 
-        opacity: 1;
-        grid-column: span 6;
-}
+  .dregs {
+    opacity: 1;
+    grid-column: span 6;
+  }
 }
 @media (max-width: 600px) {
-.dregs { 
-        opacity: 1;
-        grid-column: span 6;
-}
+  .dregs {
+    opacity: 1;
+    grid-column: span 6;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
-.image-panel p { 
-        padding: 0;
-}
+  .image-panel p {
+    padding: 0;
+  }
 }
 @media (max-width: 600px) {
-.image-panel p { 
-        padding: 0;
-}
+  .image-panel p {
+    padding: 0;
+  }
 }
 /* #endregion IMAGE_PANEL_COMMONALITIES */
 
@@ -168,667 +170,777 @@
 /* panel-??? always matches photo-??? --- don't alter this. Also don't change the order of these panels. Should stay 1, 2, 3... Only change 'em up in html. */
 
 .panel-1 {
-        background-image: var(--photo-1);
-        background-position: calc(50% + 0px) calc(0% - 0px);
-        background-size: 106%;
+  background-image: var(--photo-1);
+  background-position: calc(50% + 0px) calc(0% - 0px);
+  background-size: 106%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-1 {
-        opacity: 1;
-}
+  .panel-1 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-1 {
-        opacity: 1;
-}
+  .panel-1 {
+    opacity: 1;
+  }
 }
 .panel-2 {
-        background-image: var(--photo-2);
-        background-position: 50% 85%;
-        background-size: 100%;
+  background-image: var(--photo-2);
+  background-position: 50% 85%;
+  background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-2 {
-        display: none;
-        opacity: 1;
-}
+  .panel-2 {
+    display: none;
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-2 {
-        display: none;
-        opacity: 1;
-}
+  .panel-2 {
+    display: none;
+    opacity: 1;
+  }
 }
 .panel-2_ {
-        display: none;
-        background-image: var(--photo-2);
-        background-position: 50% 85%;
-        background-size: 100%;
+  display: none;
+  background-image: var(--photo-2);
+  background-position: 50% 85%;
+  background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-2_ {
-        display: block;
-        opacity: 1;
-}
+  .panel-2_ {
+    display: block;
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-2_ {
-        display: block;
-        opacity: 1;
-}
+  .panel-2_ {
+    display: block;
+    opacity: 1;
+  }
 }
 .panel-3 {
-        background-image: var(--photo-3);
-        background-position: calc(77% + 0px) calc(43% - 0px);
-        background-size: 140%;
+  background-image: var(--photo-3);
+  background-position: calc(77% + 0px) calc(43% - 0px);
+  background-size: 140%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-3 {
-        opacity: 1;
-}
+  .panel-3 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-3 {
-        display: none;
-        opacity: 1;
-}
+  .panel-3 {
+    display: none;
+    opacity: 1;
+  }
 }
 .panel-4 {
-        background-image: var(--photo-4);
-        background-position: calc(50% + 0px) calc(50% - 0px);
-        background-size: 100%;
+  background-image: var(--photo-4);
+  background-position: calc(50% + 0px) calc(50% - 0px);
+  background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-4 {
-        opacity: 1;
-}
+  .panel-4 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-4 {
-        opacity: 1;
-}
+  .panel-4 {
+    opacity: 1;
+  }
 }
 .panel-5 {
-        background-image: var(--photo-5);
-        background-position: calc(50% + 0px) calc(100% - 0px);
-        background-size: 100%;
+  background-image: var(--photo-5);
+  background-position: calc(50% + 0px) calc(100% - 0px);
+  background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-5 {
-        opacity: 1;
-}
+  .panel-5 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-5 {
-        opacity: 1;
-}
+  .panel-5 {
+    opacity: 1;
+  }
 }
 .panel-6 {
-        background-image: var(--photo-6);
-        background-position: calc(0% + 0px) calc(100% - 0px);
-        background-size: 100%;
+  background-image: var(--photo-6);
+  background-position: calc(0% + 0px) calc(100% - 0px);
+  background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-6 {
-        opacity: 1;
-}
+  .panel-6 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-6 {
-        opacity: 1;
-}
+  .panel-6 {
+    opacity: 1;
+  }
 }
 .panel-7 {
-        background-image: var(--photo-7);
-        background-position: calc(80% - 0px) calc(50% - 0px);
-        background-size: 110%;
+  background-image: var(--photo-7);
+  background-position: calc(80% - 0px) calc(50% - 0px);
+  background-size: 110%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-7 {
-        opacity: 1;
-}
+  .panel-7 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-7 {
-        opacity: 1;
-}
+  .panel-7 {
+    opacity: 1;
+  }
 }
 .panel-8 {
-        background-image: var(--photo-8);
-        background-position: calc(0% - 0px) calc(90% - 0px);
-        background-size: 130%;
+  background-image: var(--photo-8);
+  background-position: calc(0% - 0px) calc(90% - 0px);
+  background-size: 130%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-8 {
-        opacity: 1;
-}
+  .panel-8 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-8 {
-        opacity: 1;
-}
+  .panel-8 {
+    opacity: 1;
+  }
 }
 .panel-9 {
-        background-image: var(--photo-9);
-        background-position: 60% 50%;
-        background-size: 150%;
+  background-image: var(--photo-9);
+  background-position: 60% 50%;
+  background-size: 150%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-9 {
-        opacity: 1;
-        display: none;
-}
+  .panel-9 {
+    opacity: 1;
+    display: none;
+  }
 }
 @media (max-width: 600px) {
-.panel-9 {
-        opacity: 1;
-        display: none;
-}
+  .panel-9 {
+    opacity: 1;
+    display: none;
+  }
 }
 .panel-9_ {
-        background-image: var(--photo-9);
-        background-position: 15% 35%;
-        background-size: 130%;
-        display: none;
+  background-image: var(--photo-9);
+  background-position: 15% 35%;
+  background-size: 130%;
+  display: none;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-9_ {
-        opacity: 1;
-        display: block;
-}
+  .panel-9_ {
+    opacity: 1;
+    display: block;
+  }
 }
 @media (max-width: 600px) {
-.panel-9_ {
-        opacity: 1;
-        display: block;
-}
+  .panel-9_ {
+    opacity: 1;
+    display: block;
+  }
 }
 .panel-10 {
-        background-image: var(--photo-10);
-        background-position: calc(50% + 0px) calc(22% - 0px);
-        background-size: 100%;
+  background-image: var(--photo-10);
+  background-position: calc(50% + 0px) calc(22% - 0px);
+  background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-10 {
-        opacity: 1;
-}
+  .panel-10 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-10 {
-        opacity: 1;
-}
+  .panel-10 {
+    opacity: 1;
+  }
 }
 .panel-11 {
-        background-image: var(--photo-11);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+  background-image: var(--photo-11);
+  background-position: calc(50% + 0px) calc(50% - 0px);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-11 {
-        opacity: 1;
-}
+  .panel-11 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-11 {
-        opacity: 1;
-}
+  .panel-11 {
+    opacity: 1;
+  }
 }
 .panel-12 {
-        background-image: var(--photo-12);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+  background-image: var(--photo-12);
+  background-position: calc(50% + 0px) calc(50% - 0px);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-12 {
-        opacity: 1;
-}
+  .panel-12 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-12 {
-        opacity: 1;
-}
+  .panel-12 {
+    opacity: 1;
+  }
 }
 .panel-13 {
-        background-image: var(--photo-13);
-        background-position: calc(50% + 0px) calc(40% - 0px);
-        background-size: 100%;
+  background-image: var(--photo-13);
+  background-position: calc(50% + 0px) calc(40% - 0px);
+  background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-13 {
-        opacity: 1;
-}
+  .panel-13 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-13 {
-        opacity: 1;
+  .panel-13 {
+    opacity: 1;
+  }
 }
+/* Loading skeleton and shimmer */
+.loading-skeleton {
+  padding: 24px;
+  box-sizing: border-box;
 }
+.skeleton-hero {
+  max-width: 980px;
+  margin: 0 auto 18px auto;
+  display: grid;
+  gap: 12px;
+}
+.skeleton-title {
+  height: 28px;
+  width: 50%;
+  border-radius: 6px;
+  background: #e6e6e6;
+}
+.skeleton-text {
+  height: 14px;
+  width: 80%;
+  border-radius: 6px;
+  background: #eee;
+}
+.skeleton-cta {
+  height: 36px;
+  width: 140px;
+  border-radius: 6px;
+  background: #e0e0e0;
+}
+.skeleton-grid {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+}
+.skeleton-image {
+  height: 140px;
+  border-radius: 8px;
+  background: #ddd;
+}
+
+/* shimmer animation */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  height: 100%;
+  width: 150%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shimmer 1.2s linear infinite;
+}
+@keyframes shimmer {
+  to {
+    transform: translateX(150%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .shimmer::after {
+    animation: none;
+  }
+}
+
+/* Error toast */
+.error-toast {
+  position: fixed;
+  right: 16px;
+  top: 16px;
+  background: #fff1f0;
+  color: #611a15;
+  border: 1px solid #f5c2c0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 9999;
+}
+.error-toast .error-message {
+  font-weight: 600;
+}
+.toast-actions {
+  display: flex;
+  gap: 8px;
+}
+.btn-retry {
+  background: #c53030;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-dismiss {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 .panel-14 {
-        background-image: var(--photo-14);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+  background-image: var(--photo-14);
+  background-position: calc(50% + 0px) calc(50% - 0px);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-14 {
-        opacity: 1;
-}
+  .panel-14 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-14 {
-        opacity: 1;
-}
+  .panel-14 {
+    opacity: 1;
+  }
 }
 .panel-15 {
-        background-image: var(--photo-15);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+  background-image: var(--photo-15);
+  background-position: calc(50% + 0px) calc(50% - 0px);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-15 {
-        opacity: 1;
-}
+  .panel-15 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-15 {
-        opacity: 1;
-}
+  .panel-15 {
+    opacity: 1;
+  }
 }
 .panel-16 {
-        background-image: var(--photo-16);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+  background-image: var(--photo-16);
+  background-position: calc(50% + 0px) calc(50% - 0px);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-16 {
-        opacity: 1;
-}
+  .panel-16 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-16 {
-        opacity: 1;
-}
+  .panel-16 {
+    opacity: 1;
+  }
 }
 .panel-17 {
-        background-image: var(--photo-17);
-        background-position: calc(50% + 0px) calc(50% - 0px);
-        background-size: 100%;
+  background-image: var(--photo-17);
+  background-position: calc(50% + 0px) calc(50% - 0px);
+  background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-17 {
-        opacity: 1;
-}
+  .panel-17 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-17 {
-        opacity: 1;
-}
+  .panel-17 {
+    opacity: 1;
+  }
 }
 .panel-18 {
-        background-image: var(--photo-18);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+  background-image: var(--photo-18);
+  background-position: calc(50% + 0px) calc(50% - 0px);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-18 {
-        opacity: 1;
-}
+  .panel-18 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-18 {
-        opacity: 1;
-}
+  .panel-18 {
+    opacity: 1;
+  }
 }
 .panel-19 {
-        background-image: var(--photo-19);
-        background-position: calc(50% + 0px) calc(12% - 0px);
-        background-size: 100%;
+  background-image: var(--photo-19);
+  background-position: calc(50% + 0px) calc(12% - 0px);
+  background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-19 {
-        opacity: 1;
-}
+  .panel-19 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-19 {
-        opacity: 1;
-}
+  .panel-19 {
+    opacity: 1;
+  }
 }
 .panel-20 {
-        background-image: var(--photo-20);
-        background-position: calc(50% + 0px) calc(44% - 0px);
-        background-size: 100%;
+  background-image: var(--photo-20);
+  background-position: calc(50% + 0px) calc(44% - 0px);
+  background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-20 {
-        opacity: 1;
-}
+  .panel-20 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-20 {
-        opacity: 1;
-}
+  .panel-20 {
+    opacity: 1;
+  }
 }
 .panel-21 {
-        background-image: var(--photo-21);
-        background-position: calc(50% - 0px) calc(50%);
-        background-size: 100%;
+  background-image: var(--photo-21);
+  background-position: calc(50% - 0px) calc(50%);
+  background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-21 {
-        opacity: 1;
-}
+  .panel-21 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-21 {
-        opacity: 1;
-}
+  .panel-21 {
+    opacity: 1;
+  }
 }
 .panel-22 {
-        background-image: var(--photo-22);
-        background-position: calc(50% + 0px) calc(50% - 0px);
-        background-size: 100%;
+  background-image: var(--photo-22);
+  background-position: calc(50% + 0px) calc(50% - 0px);
+  background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-22 {
-        opacity: 1;
-}
+  .panel-22 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-22 {
-        opacity: 1;
-}
+  .panel-22 {
+    opacity: 1;
+  }
 }
 .panel-23 {
-        background-image: var(--photo-23);
-        background-position: 70% 33%;
-        background-size: 138%;
+  background-image: var(--photo-23);
+  background-position: 70% 33%;
+  background-size: 138%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-23 {
-        opacity: 1;
-}
+  .panel-23 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-23 {
-        opacity: 1;
-}
+  .panel-23 {
+    opacity: 1;
+  }
 }
 .panel-24 {
-        background-image: var(--photo-24);
-        background-position: calc(50% + 0px) calc(30% - 0px);
-        background-size: 100%;
+  background-image: var(--photo-24);
+  background-position: calc(50% + 0px) calc(30% - 0px);
+  background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-24 {
-        opacity: 1;
-}
+  .panel-24 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-24 {
-        opacity: 1;
-}
+  .panel-24 {
+    opacity: 1;
+  }
 }
 .panel-25 {
-        background-image: var(--photo-25);
-        background-position: calc(50% + 0px) calc(100% - 0px);
-        background-size: 100%;
+  background-image: var(--photo-25);
+  background-position: calc(50% + 0px) calc(100% - 0px);
+  background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-25 {
-        opacity: 1;
-}
+  .panel-25 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-25 {
-        opacity: 1;
-}
+  .panel-25 {
+    opacity: 1;
+  }
 }
 .panel-26 {
-        background-image: var(--photo-26);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+  background-image: var(--photo-26);
+  background-position: calc(50% + 0px) calc(50% - 0px);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-26 {
-        opacity: 1;
-}
+  .panel-26 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-26 {
-        opacity: 1;
-}
+  .panel-26 {
+    opacity: 1;
+  }
 }
 .panel-27 {
-        background-image: var(--photo-27);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+  background-image: var(--photo-27);
+  background-position: calc(50% + 0px) calc(50% - 0px);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-27 {
-        opacity: 1;
-}
+  .panel-27 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-27 {
-        opacity: 1;
-}
+  .panel-27 {
+    opacity: 1;
+  }
 }
 .panel-28 {
-        background-image: var(--photo-28);
-        background-position: calc(50% + 0px) calc(100% - 0px);
-        background-size: 100%;
+  background-image: var(--photo-28);
+  background-position: calc(50% + 0px) calc(100% - 0px);
+  background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-28 {
-        opacity: 1;
-}
+  .panel-28 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-28 {
-        opacity: 1;
-}
+  .panel-28 {
+    opacity: 1;
+  }
 }
 .panel-29 {
-        background-image: var(--photo-29);
-        background-position: calc(15% + 0px) calc(50% - 0px);
-        background-size: 110%;
+  background-image: var(--photo-29);
+  background-position: calc(15% + 0px) calc(50% - 0px);
+  background-size: 110%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-29 {
-        opacity: 1;
-}
+  .panel-29 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-29 {
-        opacity: 1;
-}
+  .panel-29 {
+    opacity: 1;
+  }
 }
 .panel-30 {
-        background-image: var(--photo-30);
-        background-position: calc(50% + 0px) calc(60% - 0px);
-        background-size: 100%;
+  background-image: var(--photo-30);
+  background-position: calc(50% + 0px) calc(60% - 0px);
+  background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-30 {
-        opacity: 1;
-}
+  .panel-30 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-30 {
-        opacity: 1;
-}
+  .panel-30 {
+    opacity: 1;
+  }
 }
 .panel-31 {
-        background-image: var(--photo-31);
-        background-position: calc(100% + 0px) calc(40% - 0px);
-        background-size: 130%;
+  background-image: var(--photo-31);
+  background-position: calc(100% + 0px) calc(40% - 0px);
+  background-size: 130%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-31 {
-        opacity: 1;
-}
+  .panel-31 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-31 {
-        opacity: 1;
-}
+  .panel-31 {
+    opacity: 1;
+  }
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-31-tm {
-        display: block;
-        opacity: 1;
-}
+  .panel-31-tm {
+    display: block;
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-31-tm {
-        display: block;
-        opacity: 1;
-}
+  .panel-31-tm {
+    display: block;
+    opacity: 1;
+  }
 }
 .panel-32 {
-        background-image: var(--photo-32);
-        background-position: calc(20% + 0px) calc(15% - 0px);
-        background-size: 130%;
+  background-image: var(--photo-32);
+  background-position: calc(20% + 0px) calc(15% - 0px);
+  background-size: 130%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-32 {
-        opacity: 1;
-}
+  .panel-32 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-32 {
-        opacity: 1;
-}
+  .panel-32 {
+    opacity: 1;
+  }
 }
 .panel-33 {
-        background-image: var(--photo-33);
-        background-position: calc(50% + 0px) calc(50% - 0px);
+  background-image: var(--photo-33);
+  background-position: calc(50% + 0px) calc(50% - 0px);
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-33 {
-        opacity: 1;
-}
+  .panel-33 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-33 {
-        opacity: 1;
-}
+  .panel-33 {
+    opacity: 1;
+  }
 }
 .panel-34 {
-        background-image: var(--photo-34);
-        background-position: 50% 35%;
-        background-size: 142%;
+  background-image: var(--photo-34);
+  background-position: 50% 35%;
+  background-size: 142%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-34 {
-        opacity: 1;
-}
+  .panel-34 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-34 {
-        opacity: 1;
-}
+  .panel-34 {
+    opacity: 1;
+  }
 }
 .panel-35 {
-        background-image: var(--photo-35);
-        background-position: calc(50% + 0px) calc(20% - 0px);
-        background-size: 100%;
+  background-image: var(--photo-35);
+  background-position: calc(50% + 0px) calc(20% - 0px);
+  background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.panel-35 {
-        opacity: 1;
-}
+  .panel-35 {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
-.panel-35 {
-        opacity: 1;
-}
+  .panel-35 {
+    opacity: 1;
+  }
 }
 
 /* #endregion IMAGE_PANELS */
 
 /* #region TEXT_PANELS_COMMONALITIES */
 .text-panel {
-        background-color: var(--text-panel-a);      
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        box-sizing: border-box;
-        scroll-margin-top: 54px;
-        height: auto;
-        align-items: center;    
-        justify-content: center; 
-        padding: 25px;
-        grid-column: span 16;
+  background-color: var(--text-panel-a);
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-margin-top: 54px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  grid-column: span 16;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.text-panel {
-        opacity: 1;
-        padding: 20px;
-        grid-column: span 24;
-}
+  .text-panel {
+    opacity: 1;
+    padding: 20px;
+    grid-column: span 24;
+  }
 }
 @media (max-width: 600px) {
-.text-panel {
-        opacity: 1;
-        padding: 20px;
-        grid-column: span 24;
-}
+  .text-panel {
+    opacity: 1;
+    padding: 20px;
+    grid-column: span 24;
+  }
 }
 /* #endregion TEXT_PANELS_COMMONALITIES */
 
 /* #region TEXT_PANEL_ALPENROSE */
 .text-panel-alpenrose {
-        padding: 30px 50px; 
-        grid-column: span 24;
+  padding: 30px 50px;
+  grid-column: span 24;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.text-panel-alpenrose {
-        opacity: 1;
-        padding: 30px 40px; 
-}
+  .text-panel-alpenrose {
+    opacity: 1;
+    padding: 30px 40px;
+  }
 }
 @media (max-width: 600px) {
-.text-panel-alpenrose {
-        opacity: 1;
-        padding: 20px 30px; 
-}
+  .text-panel-alpenrose {
+    opacity: 1;
+    padding: 20px 30px;
+  }
 }
 .text-panel-alpenrose h2 {
-        font-weight: 400;
-        font-size: 5rem;
-        line-height: 1;
-        margin: 0;
-        padding: 0;
-        text-transform: uppercase;
-        background: var(--button-bg3);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  background: var(--button-bg3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.text-panel-alpenrose h2 {
-        opacity: 1;
-        font-size: 4.5rem;
-}
+  .text-panel-alpenrose h2 {
+    opacity: 1;
+    font-size: 4.5rem;
+  }
 }
 @media (max-width: 600px) {
-.text-panel-alpenrose h2 {
-        opacity: 1;
-        font-size: 4rem;
-}
+  .text-panel-alpenrose h2 {
+    opacity: 1;
+    font-size: 4rem;
+  }
 }
 .text-panel-alpenrose > p {
-        color: var(--header-footer-text);
-        font-size: 1.375rem;
-        line-height: 1.5;
-        text-align: center;
-        margin: 25px 0 0 0;
-        padding: 0;
+  color: var(--header-footer-text);
+  font-size: 1.375rem;
+  line-height: 1.5;
+  text-align: center;
+  margin: 25px 0 0 0;
+  padding: 0;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-.text-panel-alpenrose > p {
-        opacity: 1;
-        margin: 20px 0 0 0;
-}
+  .text-panel-alpenrose > p {
+    opacity: 1;
+    margin: 20px 0 0 0;
+  }
 }
 @media (max-width: 600px) {
-.text-panel-alpenrose > p {
-        opacity: 1;
-        margin: 20px 0 0 0;
-}
+  .text-panel-alpenrose > p {
+    opacity: 1;
+    margin: 20px 0 0 0;
+  }
 }
 /* #endregion TEXT_PANEL_ALPENROSE */

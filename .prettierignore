@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Generated files
+/build
+/dist
+/public
+package.json
+package-lock.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
