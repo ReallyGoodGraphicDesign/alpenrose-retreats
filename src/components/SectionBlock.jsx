@@ -1,5 +1,6 @@
 import React from 'react';
 import CTAButton from './CTAButton';
+import { sanitizeHtml } from '../utils/sanitize';
 
 function decodeHTMLEntities(str) {
   if (!str) return str;
@@ -19,7 +20,10 @@ export default function SectionBlock({
   return (
     <div className={`text-panel ${panelClassName}`} id={sectionId}>
       <h2 className="section-title">{decodeHTMLEntities(section.title)}</h2>
-      <p className="section-text">{section.text}</p>
+      <div
+        className="section-text"
+        dangerouslySetInnerHTML={{ __html: sanitizeHtml(section.text) }}
+      />
       <CTAButton
         label={section.cta_label || 'Learn More'}
         onClick={() => onCtaClick({ type: 'section', sectionId })}

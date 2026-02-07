@@ -6,6 +6,7 @@ import SectionBlock from './components/SectionBlock';
 import useModal from './hooks/useModal';
 import './Main.css';
 import { useEffect, useState } from 'react';
+import { sanitizeHtml } from './utils/sanitize';
 
 function Main() {
   const { activeModal, setActiveModal, closeModal } = useModal(null);
@@ -32,7 +33,15 @@ function Main() {
       .then((rows) => {
         if (!mounted) return;
         const normalized = Object.fromEntries(
-          rows.map((row) => [row.section_id, row])
+          rows.map((row) => [
+            row.section_id,
+            {
+              ...row,
+              // sanitize text/title at fetch time (defense in depth)
+              text: sanitizeHtml(row.text),
+              title: sanitizeHtml(row.title),
+            },
+          ])
         );
         setContent(normalized);
         setLoading(false);
