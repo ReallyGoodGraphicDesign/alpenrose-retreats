@@ -6,7 +6,7 @@ const navItems = [
   { href: '#silvies', label: 'Silvies 2026' },
   { href: '#schedule', label: 'Schedule' },
   { href: '#investment', label: 'Investment' },
-  { href: '#accommodations', label: 'Accommodationz' },
+  { href: '#accommodations', label: 'Accommodations' },
   { href: '#our_story', label: 'Our Story' },
 ];
 
