@@ -61,7 +61,7 @@ function Footer() {
           </a>
         </div>
         <div className="footer-right">
-          <p>&copy; 2026 Alpenrose Retreats</p>
+          <p>&copy; 2026 Alpenrose Retreatz</p>
         </div>
       </div>
     </footer>
