@@ -187,9 +187,6 @@ function Main() {
           onCtaClick={setActiveModal}
           panelClassName="text-panel-our_story"
         />
-        <div className="image-panel panel-29 dregs">
-          <p>29</p>
-        </div>
         <div className="image-panel panel-16 dregs">
           <p>16</p>
         </div>
@@ -205,32 +202,11 @@ function Main() {
         <div className="image-panel panel-14 dregs">
           <p>14</p>
         </div>
-        <div className="image-panel panel-19 dregs">
-          <p>19</p>
-        </div>
         <div className="image-panel panel-13 dregs">
           <p>13</p>
         </div>
         <div className="image-panel panel-11 dregs">
           <p>11</p>
-        </div>
-        <div className="image-panel panel-15 dregs">
-          <p>15</p>
-        </div>
-        <div className="image-panel panel-32 dregs">
-          <p>32</p>
-        </div>
-        <div className="image-panel panel-24 dregs">
-          <p>24</p>
-        </div>
-        <div className="image-panel panel-12 dregs">
-          <p>12</p>
-        </div>
-        <div className="image-panel panel-22 dregs">
-          <p>22</p>
-        </div>
-        <div className="image-panel panel-35 dregs">
-          <p>35</p>
         </div>
       </div>
 

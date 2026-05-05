@@ -101,7 +101,7 @@
 /* #region IMAGE_PANEL_COMMONALITIES */
 .image-panel p {
   /* this really goes after 'dregs', but, well, since you use it so much... */
-  opacity: 0;
+  opacity: 01;
   color: rgb(255, 0, 208);
   background-color: white;
   width: 22px;
