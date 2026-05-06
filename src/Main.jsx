@@ -115,7 +115,7 @@ function Main() {
           <p>34</p>
         </div>
         <div className="image-panel panel-26_mobiles">
-          <p>26</p>
+          <p>26 M</p>
         </div>
 
         <SectionBlock
@@ -155,8 +155,8 @@ function Main() {
         <div className="image-panel panel-27">
           <p>27</p>
         </div>
-        <div className="image-panel panel-9_">
-          <p>9</p>
+        <div className="image-panel panel-9_mobiles">
+          <p>9 M</p>
         </div>
 
         <SectionBlock
