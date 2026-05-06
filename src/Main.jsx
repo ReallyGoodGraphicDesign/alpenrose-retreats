@@ -100,7 +100,7 @@ function Main() {
         </div>
 
         <SectionBlock
-          sectionId="silvies"
+          sectionId="silvies"   
           section={content.silvies}
           onCtaClick={setActiveModal}
           panelClassName="text-panel-silvies"
@@ -111,11 +111,11 @@ function Main() {
         <div className="image-panel panel-31">
           <p>31</p>
         </div>
-        <div className="image-panel panel-18">
-          <p>18</p>
+        <div className="image-panel panel-34">
+          <p>34</p>
         </div>
-        <div className="image-panel panel-2_">
-          <p>2</p>
+        <div className="image-panel panel-26_mobiles">
+          <p>26</p>
         </div>
 
         <SectionBlock
@@ -124,8 +124,8 @@ function Main() {
           onCtaClick={() => setActiveModal({ type: 'schedule' })}
           panelClassName="text-panel-schedule"
         />
-        <div className="image-panel panel-2">
-          <p>2</p>
+        <div className="image-panel panel-26">
+          <p>26</p>
         </div>
         <div className="image-panel panel-4">
           <p>4</p>
@@ -177,8 +177,8 @@ function Main() {
         <div className="image-panel panel-6">
           <p>6</p>
         </div>
-        <div className="image-panel panel-34">
-          <p>34</p>
+        <div className="image-panel panel-3">
+          <p>3</p>
         </div>
 
         <SectionBlock
@@ -190,14 +190,8 @@ function Main() {
         <div className="image-panel panel-16 dregs">
           <p>16</p>
         </div>
-        <div className="image-panel panel-26 dregs">
-          <p>26</p>
-        </div>
         <div className="image-panel panel-1 dregs">
           <p>1</p>
-        </div>
-        <div className="image-panel panel-3 dregs">
-          <p>3</p>
         </div>
         <div className="image-panel panel-14 dregs">
           <p>14</p>

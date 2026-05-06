@@ -98,6 +98,116 @@
 }
 /* #endregion TOP_LEVEL_STUFF_AND_NOTES */
 
+/* #region Loading skeleton and shimmer AND TOAST */
+.loading-skeleton {
+  padding: 24px;
+  box-sizing: border-box;
+}
+.skeleton-hero {
+  max-width: 980px;
+  margin: 0 auto 18px auto;
+  display: grid;
+  gap: 12px;
+}
+.skeleton-title {
+  height: 28px;
+  width: 50%;
+  border-radius: 6px;
+  background: #e6e6e6;
+}
+.skeleton-text {
+  height: 14px;
+  width: 80%;
+  border-radius: 6px;
+  background: #eee;
+}
+.skeleton-cta {
+  height: 36px;
+  width: 140px;
+  border-radius: 6px;
+  background: #e0e0e0;
+}
+.skeleton-grid {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+}
+.skeleton-image {
+  height: 140px;
+  border-radius: 8px;
+  background: #ddd;
+}
+
+/* shimmer animation */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  height: 100%;
+  width: 150%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shimmer 1.2s linear infinite;
+}
+@keyframes shimmer {
+  to {
+    transform: translateX(150%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .shimmer::after {
+    animation: none;
+  }
+}
+
+.error-toast {
+  position: fixed;
+  right: 16px;
+  top: 16px;
+  background: #fff1f0;
+  color: #611a15;
+  border: 1px solid #f5c2c0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 9999;
+}
+.error-toast .error-message {
+  font-weight: 600;
+}
+.toast-actions {
+  display: flex;
+  gap: 8px;
+}
+.btn-retry {
+  background: #c53030;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-dismiss {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* #endregion Loading skeleton and shimmer AND TOAST */
+
 /* #region IMAGE_PANEL_COMMONALITIES */
 .image-panel p {
   /* this really goes after 'dregs', but, well, since you use it so much... */
@@ -167,7 +277,7 @@
 /* #endregion IMAGE_PANEL_COMMONALITIES */
 
 /* #region IMAGE_PANELS_UNIQUETIES */
-/* panel-??? always matches photo-??? --- don't alter this. Also don't change the order of these panels. Should stay 1, 2, 3... Only change 'em up in html. */
+/* panel-??? always matches photo-??? --- don't alter this. Also don't change the order of the panels in this css file. Should stay 1, 2, 3... Only change 'em up in html. */
 
 .panel-1 {
   background-image: var(--photo-1);
@@ -201,20 +311,20 @@
     opacity: 1;
   }
 }
-.panel-2_ {
+.panel-2_mobiles {
   display: none;
   background-image: var(--photo-2);
   background-position: 50% 85%;
   background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-  .panel-2_ {
+  .panel-2_mobiles {
     display: block;
     opacity: 1;
   }
 }
 @media (max-width: 600px) {
-  .panel-2_ {
+  .panel-2_mobiles {
     display: block;
     opacity: 1;
   }
@@ -402,115 +512,6 @@
   .panel-13 {
     opacity: 1;
   }
-}
-/* Loading skeleton and shimmer */
-.loading-skeleton {
-  padding: 24px;
-  box-sizing: border-box;
-}
-.skeleton-hero {
-  max-width: 980px;
-  margin: 0 auto 18px auto;
-  display: grid;
-  gap: 12px;
-}
-.skeleton-title {
-  height: 28px;
-  width: 50%;
-  border-radius: 6px;
-  background: #e6e6e6;
-}
-.skeleton-text {
-  height: 14px;
-  width: 80%;
-  border-radius: 6px;
-  background: #eee;
-}
-.skeleton-cta {
-  height: 36px;
-  width: 140px;
-  border-radius: 6px;
-  background: #e0e0e0;
-}
-.skeleton-grid {
-  display: grid;
-  gap: 8px;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-}
-.skeleton-image {
-  height: 140px;
-  border-radius: 8px;
-  background: #ddd;
-}
-
-/* shimmer animation */
-.shimmer {
-  position: relative;
-  overflow: hidden;
-}
-.shimmer::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -150%;
-  height: 100%;
-  width: 150%;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  animation: shimmer 1.2s linear infinite;
-}
-@keyframes shimmer {
-  to {
-    transform: translateX(150%);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .shimmer::after {
-    animation: none;
-  }
-}
-
-/* Error toast */
-.error-toast {
-  position: fixed;
-  right: 16px;
-  top: 16px;
-  background: #fff1f0;
-  color: #611a15;
-  border: 1px solid #f5c2c0;
-  padding: 12px 14px;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  z-index: 9999;
-}
-.error-toast .error-message {
-  font-weight: 600;
-}
-.toast-actions {
-  display: flex;
-  gap: 8px;
-}
-.btn-retry {
-  background: #c53030;
-  color: white;
-  border: none;
-  padding: 6px 10px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-.btn-dismiss {
-  background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  padding: 6px 8px;
-  border-radius: 6px;
-  cursor: pointer;
 }
 
 .panel-14 {
@@ -700,6 +701,24 @@
 }
 @media (max-width: 600px) {
   .panel-26 {
+    opacity: 1;
+  }
+}
+.panel-26_mobiles {
+  display: none;
+  background-image: var(--photo-2);
+  background-position: 50% 85%;
+  background-size: 100%;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .panel-26_mobiles {
+    display: block;
+    opacity: 1;
+  }
+}
+@media (max-width: 600px) {
+  .panel-26_mobiles {
+    display: block;
     opacity: 1;
   }
 }

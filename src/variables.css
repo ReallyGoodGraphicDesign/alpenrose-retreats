@@ -193,7 +193,7 @@ button:active,
     ),
     rgb(52, 52, 52);
   --row-bg: none;
-  --image-panel-bg: red;
+  --image-panel-bg: none;
   --text-panel-a: none;
   --text-panel-b: none;
   --text-panel-c: none;
