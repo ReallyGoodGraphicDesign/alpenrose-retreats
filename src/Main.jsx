@@ -87,16 +87,16 @@ function Main() {
           panelClassName="text-panel-alpenrose"
         />
         <div className="image-panel panel-17">
-          <p>17</p>
+          <p><span>17</span></p>
         </div>
         <div className="image-panel panel-5">
-          <p>5</p>
+          <p><span>5</span></p>
         </div>
         <div className="image-panel panel-21">
-          <p>21</p>
+          <p><span>21</span></p>
         </div>
         <div className="image-panel panel-10">
-          <p>10</p>
+          <p><span>10</span></p>
         </div>
 
         <SectionBlock
@@ -106,16 +106,16 @@ function Main() {
           panelClassName="text-panel-silvies"
         />
         <div className="image-panel panel-7">
-          <p>7</p>
+          <p><span>7</span></p>
         </div>
         <div className="image-panel panel-31">
-          <p>31</p>
+          <p><span>31</span></p>
         </div>
         <div className="image-panel panel-34">
-          <p>34</p>
+          <p><span>34</span></p>
         </div>
         <div className="image-panel panel-26_mobiles">
-          <p>26 M</p>
+          <p><span><span>26M</span></span></p>
         </div>
 
         <SectionBlock
@@ -125,19 +125,19 @@ function Main() {
           panelClassName="text-panel-schedule"
         />
         <div className="image-panel panel-26">
-          <p>26</p>
+          <p><span>26</span></p>
         </div>
         <div className="image-panel panel-4">
-          <p>4</p>
+          <p><span>4</span></p>
         </div>
         <div className="image-panel panel-8">
-          <p>8</p>
+          <p><span>8</span></p>
         </div>
         <div className="image-panel panel-30">
-          <p>30</p>
+          <p><span>30</span></p>
         </div>
         <div className="image-panel panel-23">
-          <p>23</p>
+          <p><span>23</span></p>
         </div>
 
         <SectionBlock
@@ -147,16 +147,16 @@ function Main() {
           panelClassName="text-panel-investment"
         />
         <div className="image-panel panel-33">
-          <p>33</p>
+          <p><span>33</span></p>
         </div>
         <div className="image-panel panel-25">
-          <p>25</p>
+          <p><span>25</span></p>
         </div>
         <div className="image-panel panel-27">
-          <p>27</p>
+          <p><span>27</span></p>
         </div>
         <div className="image-panel panel-9_mobiles">
-          <p>9 M</p>
+          <p><span>9M</span></p>
         </div>
 
         <SectionBlock
@@ -166,19 +166,19 @@ function Main() {
           panelClassName="text-panel-accommodations"
         />
         <div className="image-panel panel-9">
-          <p>9</p>
+          <p><span>9</span></p>
         </div>
         <div className="image-panel panel-20">
-          <p>20</p>
+          <p><span>20</span></p>
         </div>
         <div className="image-panel panel-28">
-          <p>28</p>
+          <p><span>28</span></p>
         </div>
         <div className="image-panel panel-6">
-          <p>6</p>
+          <p><span>6</span></p>
         </div>
         <div className="image-panel panel-3">
-          <p>3</p>
+          <p><span>3</span></p>
         </div>
 
         <SectionBlock
@@ -187,21 +187,6 @@ function Main() {
           onCtaClick={setActiveModal}
           panelClassName="text-panel-our_story"
         />
-        <div className="image-panel panel-16 dregs">
-          <p>16</p>
-        </div>
-        <div className="image-panel panel-1 dregs">
-          <p>1</p>
-        </div>
-        <div className="image-panel panel-14 dregs">
-          <p>14</p>
-        </div>
-        <div className="image-panel panel-13 dregs">
-          <p>13</p>
-        </div>
-        <div className="image-panel panel-11 dregs">
-          <p>11</p>
-        </div>
       </div>
 
       {activeModal?.type === 'section' && (
