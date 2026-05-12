@@ -85,6 +85,7 @@ function Main() {
           section={content.alpenrose}
           onCtaClick={setActiveModal}
           panelClassName="text-panel-alpenrose"
+          href="mailto:vdullack@gmail.com?subject=Alpenrose%20Retreats%20inquiry"
         />
         <div className="image-panel panel-17">
           <p><span>17</span></p>

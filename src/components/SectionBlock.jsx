@@ -14,19 +14,21 @@ export default function SectionBlock({
   section,
   onCtaClick,
   panelClassName,
+  href,
 }) {
   if (!section?.enabled) return null;
 
   return (
     <div className={`text-panel ${panelClassName}`} id={sectionId}>
       <h2 className="section-title">{decodeHTMLEntities(section.title)}</h2>
-      <div
+      <p
         className="section-text"
         dangerouslySetInnerHTML={{ __html: sanitizeHtml(section.text) }}
       />
       <CTAButton
         label={section.cta_label || 'Learn More'}
         onClick={() => onCtaClick({ type: 'section', sectionId })}
+        href={href}
       />
     </div>
   );

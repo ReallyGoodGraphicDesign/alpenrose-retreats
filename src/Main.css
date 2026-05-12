@@ -195,6 +195,7 @@
         border-radius: 4px;
 }
 .image-panel {
+        display: none;
         background-color: var(--image-panel-bg);
         height: 100%;
         padding: 0;
@@ -679,7 +680,7 @@
 .panel-26_mobiles {
   display: none;
   background-image: var(--photo-26);
-  background-position: 50% 50%;ß
+  background-position: 50% 50%;
   background-size: 100%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -844,32 +845,35 @@
 
 /* #region TEXT_PANELS_COMMONALITIES */
 .text-panel {
-  background-color: var(--text-panel-a);
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  box-sizing: border-box;
-  scroll-margin-top: 48px;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-  padding: 25px;
-  grid-column: span 16;
+        background-color: var(--text-panel-a);
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        box-sizing: border-box;
+        scroll-margin-top: 48px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        grid-column: span 16;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-  .text-panel {
-    opacity: 1;
-    padding: 20px;
-    grid-column: span 24;
-  }
+.text-panel {
+        opacity: 1;
+        padding: 20px;
+        grid-column: span 24;
+}
 }
 @media (max-width: 600px) {
-  .text-panel {
-    opacity: 1;
-    padding: 20px;
-    grid-column: span 24;
-  }
+.text-panel {
+        opacity: 1;
+        padding: 20px;
+        grid-column: span 24;
+}
+}
+.text-panel ~ .text-panel {
+        display: none;
 }
 /* #endregion TEXT_PANELS_COMMONALITIES */
 
@@ -915,9 +919,9 @@
   }
 }
 .text-panel-alpenrose > p {
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   line-height: 1.5;
-  text-align: center;
+  text-align: justify;
   margin: 25px 0 0 0;
   padding: 0;
 }
