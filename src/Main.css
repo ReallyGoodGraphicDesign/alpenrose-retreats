@@ -9,6 +9,7 @@
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows:
     auto
+    /*
     var(--image-panel-height-1)
     auto
     var(--image-panel-height-1)
@@ -19,12 +20,14 @@
     auto
     var(--image-panel-height-1)
     auto
+    */
 }
 @media (min-width: 601px) and (max-width: 1024px) {
   .main {
     opacity: 1;
     grid-template-rows:
       auto
+    /*
       var(--image-panel-height-3)
       var(--image-panel-height-3)
       auto
@@ -40,6 +43,7 @@
       var(--image-panel-height-3)
       var(--image-panel-height-3)
       auto
+    */
   }
 }
 @media (max-width: 600px) {
@@ -47,6 +51,7 @@
     opacity: 1;
     grid-template-rows:
       auto
+    /*
       var(--image-panel-height-3)
       var(--image-panel-height-3)
       auto
@@ -62,6 +67,7 @@
       var(--image-panel-height-3)
       var(--image-panel-height-3)
       auto
+    */
   }
 }
 /* #endregion TOP_LEVEL_STUFF_AND_NOTES */
@@ -178,7 +184,7 @@
 
 /* #region IMAGE_PANEL_COMMONALITIES */
 .image-panel p {
-        opacity: 0;
+        opacity: 01;
         color: rgb(255, 0, 208);
         width: 40px;
         font-size: 1rem;
@@ -417,15 +423,17 @@
 @media (min-width: 601px) and (max-width: 1024px) {
 .panel-9_mobiles {
     opacity: 1;
-    display: block;
+    display: none;
+    /* NOTE: in not-ready-for-prime-time mode, this is 'none'. In normal mode, it's 'block'. */
   }
 }
 @media (max-width: 600px) {
 .panel-9_mobiles {
     opacity: 1;
-    display: block;
+    display: none;
+    /* NOTE: in not-ready-for-prime-time mode, this is 'none'. In normal mode, it's 'block'. */
   }
-}
+  }
 .panel-10 {
   background-image: var(--photo-10);
   background-position: calc(50% + 0px) calc(22% - 0px);
@@ -685,14 +693,16 @@
 }
 @media (min-width: 601px) and (max-width: 1024px) {
   .panel-26_mobiles {
-    display: block;
     opacity: 1;
+    display: none;
+    /* NOTE: in not-ready-for-prime-time mode, this is 'none'. In normal mode, it's 'block'. */
   }
 }
 @media (max-width: 600px) {
   .panel-26_mobiles {
-    display: block;
     opacity: 1;
+    display: none;
+    /* NOTE: in not-ready-for-prime-time mode, this is 'none'. In normal mode, it's 'block'. */
   }
 }
 .panel-27 {
