@@ -239,7 +239,7 @@ a.cta:active {
   --table-body-bg: none;
   --table-borders: rgba(var(--alpenrose-1-alpha), 0.65);
 }
-:root[data-theme='test'] {
+:root[data-theme='test'] { 
   --button-bg: rgba(255, 200, 9, 1);
   --button-bg-hover: rgb(96, 183, 88);
   --button-bg-active: rgba(0, 255, 255, 1);
