@@ -24,29 +24,32 @@ footer {
   height: auto;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   box-sizing: border-box;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-  .footer-inner {
-    opacity: 1;
-    padding: 0 1rem 0 1rem;
-  }
+.footer-inner {
+        opacity: 1;
+        padding: 0 1rem 0 1rem;
+}
 }
 @media (max-width: 600px) {
-  .footer-inner {
-    opacity: 1;
-    padding: 0 1rem 0 1rem;
-  }
+.footer-inner {
+        opacity: 1;
+        padding: 0 1rem 0 1rem;
+}
 }
 .footer-left {
-  opacity: 1;
-  background-color: var(--header-footer-inner-bg);
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
-  padding: 0;
+        opacity: 1;
+        background-color: var(--header-footer-inner-bg);
+        display: none;
+        /*
+        display: flex;
+        */
+        gap: 1.5rem;
+        align-items: center;
+        padding: 0;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
   .footer-left {

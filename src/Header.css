@@ -1,5 +1,6 @@
 .header {
-        display: none;
+        /* full regalia: hide; standby: show
+        display: none; */
         background: var(--header-footer-bg);
         color: var(--header-footer-text);
         width: 100%;
