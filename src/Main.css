@@ -9,7 +9,7 @@
         grid-template-columns: repeat(24, 1fr);
         grid-template-rows:
         auto
-        /* full regalia: show rows 2-last; standby: hide */
+        /* full regalia: show rows 2-last; standby: hide
         var(--image-panel-height-1)
         auto
         var(--image-panel-height-1)
@@ -19,14 +19,14 @@
         var(--image-panel-height-1)
         auto
         var(--image-panel-height-1)
-        auto
+        auto */
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .main {
         opacity: 1;
         grid-template-rows:
         auto
-        /* full regalia: show rows 2-last; standby: hide */
+        /* full regalia: show rows 2-last; standby: hide
         var(--image-panel-height-3)
         var(--image-panel-height-3)
         auto
@@ -41,7 +41,7 @@
         auto
         var(--image-panel-height-3)
         var(--image-panel-height-3)
-        auto
+        auto */
 }
 }
 @media (max-width: 600px) {
@@ -49,7 +49,7 @@
         opacity: 1;
         grid-template-rows:
         auto
-        /* full regalia: show rows 2-last; standby: hide */
+        /* full regalia: show rows 2-last; standby: hide
         var(--image-panel-height-3)
         var(--image-panel-height-3)
         auto
@@ -64,7 +64,7 @@
         auto
         var(--image-panel-height-3)
         var(--image-panel-height-3)
-        auto
+        auto */
 }
 }
 /* #endregion TOP_LEVEL_STUFF_AND_NOTES */
@@ -181,8 +181,8 @@
 
 /* #region IMAGE_PANEL_COMMONALITIES */
 .image-panel {
-        /* full regalia: hide; standby: show
-        display: none; */
+        /* full regalia: hide; standby: show */
+        display: none;
         background-color: var(--image-panel-bg);
         height: 100%;
         padding: 0;
@@ -882,8 +882,8 @@
 }
 .text-panel ~ .text-panel {
         opacity: 1;
-        /* full regalia: hide; standby: show
-        display: none; */
+        /* full regalia: hide; standby: show */
+        display: none;
 }
 
 /* #endregion TEXT_PANELS_COMMONALITIES */
@@ -892,10 +892,10 @@
 .text-panel-alpenrose {
         padding: 30px 50px;
         grid-column: span 24;
-        /* full regalia: hide; standby: show
-        max-width: 800px; */
-        /* full regalia: hide; standby: show
-        margin: auto; */
+        /* full regalia: hide; standby: show */
+        max-width: 800px;
+        /* full regalia: hide; standby: show */
+        margin: auto;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
   .text-panel-alpenrose {
