@@ -891,10 +891,10 @@
 .text-panel-alpenrose {
         padding: 30px 50px;
         grid-column: span 24;
-        /* full regalia: hide; standby: show
-        max-width: 800px; */
-        /* full regalia: hide; standby: show
-        margin: auto; */
+        /* full regalia: hide; standby: show */
+        max-width: 800px;
+        /* full regalia: hide; standby: show */
+        margin: auto;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .text-panel-alpenrose {
