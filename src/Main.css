@@ -891,23 +891,23 @@
 .text-panel-alpenrose {
         padding: 30px 50px;
         grid-column: span 24;
-        /* full regalia: hide; standby: show */
-        max-width: 800px;
-        /* full regalia: hide; standby: show */
-        margin: auto;
+        /* full regalia: hide; standby: show
+        max-width: 800px; */
+        /* full regalia: hide; standby: show
+        margin: auto; */
 }
 @media (min-width: 601px) and (max-width: 1024px) {
 .text-panel-alpenrose {
         opacity: 1;
         padding: 30px 40px;
-        max-width: 100vw;
+        max-width: 100dvw;
 }
 }
 @media (max-width: 600px) {
 .text-panel-alpenrose {
         opacity: 1;
         padding: 20px 30px;
-        max-width: 100vw;
+        max-width: 100dvw;
 }
 }
 .text-panel-alpenrose h2 {
