@@ -88,7 +88,7 @@ function Main() {
           href="mailto:vdullack@gmail.com?subject=Alpenrose%20Retreats%20inquiry"
         />
         <div className="image-panel panel-17">
-          <p><span>17</span></p>
+          <p><span>hey17</span></p>
         </div>
         <div className="image-panel panel-5">
           <p><span>5</span></p>
