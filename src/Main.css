@@ -901,6 +901,7 @@
         opacity: 1;
         padding: 30px 40px;
         max-width: 100dvw;
+        margin: 0;
 }
 }
 @media (max-width: 600px) {
@@ -908,6 +909,7 @@
         opacity: 1;
         padding: 20px 30px;
         max-width: 100dvw;
+        margin: 0;
 }
 }
 .text-panel-alpenrose h2 {
