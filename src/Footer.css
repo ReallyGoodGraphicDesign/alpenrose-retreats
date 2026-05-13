@@ -31,20 +31,22 @@ footer {
 @media (min-width: 601px) and (max-width: 1024px) {
 .footer-inner {
         opacity: 1;
-        padding: 0 1rem 0 1rem;
+        /* 
+        padding: 0 1rem 0 1rem; */
 }
 }
 @media (max-width: 600px) {
 .footer-inner {
         opacity: 1;
-        padding: 0 1rem 0 1rem;
+        /* 
+        padding: 0 1rem 0 1rem; */
 }
 }
 .footer-left {
         opacity: 1;
         background-color: var(--header-footer-inner-bg);
         display: none;
-        /*
+        /* if you decide to show the logos again, check whether you need to uncomment the padding in footer-inner. 
         display: flex;
         */
         gap: 1.5rem;
@@ -84,12 +86,12 @@ footer {
   padding: 0;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-  .footer-right {
+  .footer-right p {
     opacity: 1;
   }
 }
 @media (max-width: 600px) {
-  .footer-right {
+  .footer-right p {
     opacity: 1;
   }
 }
