@@ -13,6 +13,39 @@ function ScheduleModal({ onClose }) {
       .catch((err) => console.error(err));
   }, []);
 
+  function renderCell(text) {
+    if (!text) return null;
+    const lines = text
+      .split(/\r?\n/)
+      .map((l) => l.trim())
+      .filter(Boolean);
+    const blocks = [];
+    let bullets = null;
+    lines.forEach((line) => {
+      if (line.startsWith('•')) {
+        if (!bullets) {
+          bullets = [];
+          blocks.push({ type: 'ul', items: bullets });
+        }
+        bullets.push(line.replace(/^•\s*/, ''));
+      } else {
+        bullets = null;
+        blocks.push({ type: 'line', text: line });
+      }
+    });
+    return blocks.map((block, i) =>
+      block.type === 'ul' ? (
+        <ul key={i} className="cell-bullets">
+          {block.items.map((item, j) => (
+            <li key={j}>{item}</li>
+          ))}
+        </ul>
+      ) : (
+        <div key={i}>{block.text}</div>
+      )
+    );
+  }
+
   function fillDownAll(rows, keys) {
     const last = {};
     return rows.map((row) => {
@@ -93,7 +126,7 @@ function ScheduleModal({ onClose }) {
 
                   return (
                     <td key={day} rowSpan={span}>
-                      {row[day]}
+                      {renderCell(row[day])}
                     </td>
                   );
                 })}

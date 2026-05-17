@@ -36,11 +36,19 @@
   padding: 0.5rem 0.5rem;
   vertical-align: top; /* top | middle | bottom */
   /*
-        text-align: center;             left | center | right 
+        text-align: center;             left | center | right
         */
   border-bottom: 1px solid var(--table-borders);
   word-break: break-word; /* normal | break-word | break-all */
   hyphens: auto; /* none | manual | auto */
+}
+.schedule-table td ul.cell-bullets {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.schedule-table td ul.cell-bullets li {
+  margin-left: 0;
+  padding-left: 0;
 }
 /* TIME / ROW HEADER COLUMN */
 .schedule-table td.time-cell,
