@@ -22,6 +22,8 @@ function parseBlocks(longText) {
 function renderBlocks(blocks) {
   return blocks.map((block, i) => {
     switch (block.type) {
+      case 'h2':
+        return <h2 key={i}>{block.text}</h2>;
       case 'h3':
         return <h3 key={i}>{block.text}</h3>;
       case 'h4':
