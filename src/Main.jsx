@@ -58,6 +58,8 @@ function Main() {
       })
       .finally(() => clearTimeout(timeoutId));
 
+
+
     return () => {
       mounted = false;
       controller.abort();
@@ -77,16 +79,20 @@ function Main() {
       </div>
     );
 
-  return (
+const alpenroseUseMailto = false;
+
+return (
     <>
       <div className="main">
-        <SectionBlock
-          sectionId="alpenrose"
-          section={content.alpenrose}
-          onCtaClick={setActiveModal}
-          panelClassName="text-panel-alpenrose"
-          href="mailto:vdullack@gmail.com?subject=Alpenrose%20Retreats%20inquiry"
-        />
+
+<SectionBlock
+  sectionId="alpenrose"
+  section={content.alpenrose}
+  onCtaClick={setActiveModal}
+  panelClassName="text-panel-alpenrose"
+  href={alpenroseUseMailto ? 'mailto:vdullack@gmail.com?subject=Alpenrose%20Retreats%20inquiry' : undefined}
+/>
+
         <div className="image-panel panel-17">
           <p><span>17</span></p>
         </div>
@@ -101,10 +107,10 @@ function Main() {
         </div>
 
         <SectionBlock
-          sectionId="silvies"   
-          section={content.silvies}
+          sectionId="bloom"   
+          section={content.bloom}
           onCtaClick={setActiveModal}
-          panelClassName="text-panel-silvies"
+          panelClassName="text-panel-bloom"
         />
         <div className="image-panel panel-7">
           <p><span>7</span></p>
