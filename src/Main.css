@@ -179,7 +179,7 @@
 }
 /* #endregion Loading skeleton and shimmer AND TOAST */
 
-/* #region IMAGE_PANEL_COMMONALITIES */
+/* #region IMAGE_PANEL_COMMONALITIES */ 
 .image-panel {
         /* full regalia: hide; standby: show
         display: none; */
@@ -889,7 +889,7 @@
 
 /* #region TEXT_PANEL_ALPENROSE */
 .text-panel-alpenrose {
-        padding: 30px 50px;
+        padding: 30px;
         grid-column: span 24;
         /* full regalia: hide; standby: show
         max-width: 800px; */
@@ -899,7 +899,7 @@
 @media (min-width: 601px) and (max-width: 1024px) {
 .text-panel-alpenrose {
         opacity: 1;
-        padding: 30px 40px;
+        padding: 15px;
         max-width: 100dvw;
         margin: 0;
 }
@@ -907,14 +907,14 @@
 @media (max-width: 600px) {
 .text-panel-alpenrose {
         opacity: 1;
-        padding: 20px 30px;
+        padding: 0;
         max-width: 100dvw;
         margin: 0;
 }
 }
 .text-panel-alpenrose h2 {
   font-weight: 400;
-  font-size: 5rem;
+  font-size: 4.5rem;
   line-height: 1;
   margin: 0;
   padding: 0;
@@ -927,13 +927,13 @@
 @media (min-width: 601px) and (max-width: 1024px) {
   .text-panel-alpenrose h2 {
     opacity: 1;
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 }
 @media (max-width: 600px) {
   .text-panel-alpenrose h2 {
     opacity: 1;
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 .text-panel-alpenrose > p {
