@@ -907,7 +907,7 @@
 @media (max-width: 600px) {
 .text-panel-alpenrose {
         opacity: 1;
-        padding: 0;
+        padding: 10;
         max-width: 100dvw;
         margin: 0;
 }
