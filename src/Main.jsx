@@ -216,7 +216,7 @@ return (
         <div className="image-panel panel-20">
           <p><span>20</span></p>
         </div>
-        <div className="image-panel panel-28">
+        <div className="image-panel panel-28"> 
           <p><span>28</span></p>
         </div>
         <div className="image-panel panel-6">
