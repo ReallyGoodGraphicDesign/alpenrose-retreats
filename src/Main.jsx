@@ -204,7 +204,7 @@ return (
           <p><span>9M</span></p>
         </div>
 
-        <SectionBlock
+        <SectionBlock 
           sectionId="accommodations"
           section={content.accommodations}
           onCtaClick={setActiveModal}
