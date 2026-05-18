@@ -24,7 +24,7 @@ button,
     background-color: var(--button-bg2-hover);
     color: var(--button-text-hover);
   }
-  a.cta:hover {
+  .cta:hover {
     background-color: var(--button-bg2-hover);
     color: var(--button-text-hover);
   }
@@ -34,34 +34,29 @@ button:active,
   background-color: var(--button-bg2-active);
   color: var(--button-text-active);
 }
-a.cta {
-        background: var(--button-bg2);
-        color: var(--button-text);
-        border: none;
-        margin: 25px 0 0 0;
-        padding: 20px 15px;
-        border-radius: 4px;
-        text-decoration: none;
-        cursor: pointer;
-        line-height: 0;
-        text-transform: uppercase;
-        transition:
-        background-color 0.5s ease,
-        color 0.5s ease;
-        border-radius: 4px;
-        display: inline-block;
-        font-size: .875rem;
+/* Single source of truth for all CTAs — works for <button class="cta"> and <a class="cta"> alike. */
+.cta {
+  display: inline-block;
+  margin: 25px 0 0 0;
+  padding: 20px 15px;
+  background: var(--button-bg2);
+  color: var(--button-text);
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 0;
+  text-transform: uppercase;
+  font-family: var(--font-body);
+  font-size: .875rem;
+  font-weight: bold;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
 }
-a.cta:active {
+.cta:active {
   background-color: var(--button-bg2-active);
   color: var(--button-text-active);
-}
-/* normal large */
-.cta {
-        margin: 25px 0 0 0;
-        padding: 20px 15px;
-        font-weight: bold;
-        transition: background-color 0.5s ease, color 0.5s ease;
 }
 .cta-row {
   display: flex;
