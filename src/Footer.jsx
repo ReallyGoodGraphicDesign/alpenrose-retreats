@@ -1,6 +1,4 @@
 import './Footer.css';
-import MBE from './assets/MBE-Large.png';
-import WBE from './assets/WBE-Large.png';
 function Footer() {
   return (
     <footer>

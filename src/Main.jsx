@@ -5,7 +5,7 @@ import ErrorToast from './components/ErrorToast';
 import SectionBlock from './components/SectionBlock';
 import useModal from './hooks/useModal';
 import './Main.css';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { sanitizeHtml } from './utils/sanitize';
 
 const CACHE_KEY = 'alpenrose:content:v1';
@@ -32,8 +32,7 @@ function writeCachedContent(content) {
 function Main() {
   const { activeModal, setActiveModal, closeModal } = useModal(null);
   const [content, setContent] = useState(readCachedContent);
-  const hadCacheOnMount = useRef(content != null);
-  const [loading, setLoading] = useState(!hadCacheOnMount.current);
+  const [loading, setLoading] = useState(() => content == null);
   const [error, setError] = useState(null);
   const [retryCount, setRetryCount] = useState(0);
 
@@ -71,9 +70,9 @@ function Main() {
       .catch((err) => {
         if (!mounted) return;
         console.error(err);
-        // If we already have content to show (cached or fresh from a prior load),
-        // keep showing it instead of replacing the page with an error toast.
-        if (!hadCacheOnMount.current) {
+        // If we have anything cached to show, suppress the error toast and
+        // keep displaying the cached page.
+        if (!readCachedContent()) {
           setError(
             err.name === 'AbortError'
               ? 'Request timed out'
