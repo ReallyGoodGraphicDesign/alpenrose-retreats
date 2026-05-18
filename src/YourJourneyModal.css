@@ -1,4 +1,4 @@
-.schedule-table {
+.your_journey-table {
   width: 100%;
   border-collapse: collapse; /* collapse | separate */
   border-spacing: 0; /* used only if border-collapse: separate */
@@ -8,16 +8,16 @@
   text-align: left; /* left | center | right */
   margin: 20px 0 0 0;
 }
-.schedule-table caption {
+.your_journey-table caption {
   caption-side: top; /* top | bottom */
   padding: 0.75rem 0;
   font-weight: 600;
   text-align: left; /* left | center | right */
 }
-.schedule-table thead {
+.your_journey-table thead {
   background-color: var(--table-head-bg);
 }
-.schedule-table th {
+.your_journey-table th {
   padding: 0.65rem 0.5rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -29,10 +29,10 @@
   border: none;
   white-space: nowrap; /* normal | nowrap */
 }
-.schedule-table tbody {
+.your_journey-table tbody {
   background-color: var(--table-body-bg, transparent);
 }
-.schedule-table td {
+.your_journey-table td {
   padding: 0.5rem 0.5rem;
   vertical-align: top; /* top | middle | bottom */
   /*
@@ -42,110 +42,110 @@
   word-break: break-word; /* normal | break-word | break-all */
   hyphens: auto; /* none | manual | auto */
 }
-.schedule-table td ul.cell-bullets {
+.your_journey-table td ul.cell-bullets {
   margin: 0;
   padding-left: 1.25rem;
 }
-.schedule-table td ul.cell-bullets li {
+.your_journey-table td ul.cell-bullets li {
   margin-left: 0;
   padding-left: 0;
 }
 /* TIME / ROW HEADER COLUMN */
-.schedule-table td.time-cell,
-.schedule-table th.time-cell {
+.your_journey-table td.time-cell,
+.your_journey-table th.time-cell {
   text-align: left;
   font-weight: 600;
   white-space: nowrap;
   background-color: var(--table-time-bg, #fafafa);
 }
 /* ZEBRA STRIPES 
-.schedule-table tbody tr:nth-child(even) {
+.your_journey-table tbody tr:nth-child(even) {
   background-color: var(--table-row-alt, #fcfcfc);
 } 
 */
-.schedule-table tbody tr:nth-child(odd) {
+.your_journey-table tbody tr:nth-child(odd) {
   background-color: var(--table-row, transparent);
 }
 /* INTERACTION STATES */
-.schedule-table tbody td:hover {
+.your_journey-table tbody td:hover {
   background-color: var(--table-hover-bg, #f0f6ff);
 }
-.schedule-table td:focus,
-.schedule-table th:focus {
+.your_journey-table td:focus,
+.your_journey-table th:focus {
   outline: 2px solid #0077ff;
   outline-offset: -2px;
 }
 /* PLACEHOLDERS IN EMPTY CELLS 
-.schedule-table td:empty::before {
+.your_journey-table td:empty::before {
   content: "—0";                  
   opacity: 0.4;
 } */
 /* BORDER VARIANTS */
 /* Full grid */
-.schedule-table.grid th,
-.schedule-table.grid td {
+.your_journey-table.grid th,
+.your_journey-table.grid td {
   border: 1px solid #ddd;
 }
 /* Minimal (horizontal only) */
-.schedule-table.minimal td,
-.schedule-table.minimal th {
+.your_journey-table.minimal td,
+.your_journey-table.minimal th {
   border-left: none;
   border-right: none;
 }
 /* No borders */
-.schedule-table.borderless td,
-.schedule-table.borderless th {
+.your_journey-table.borderless td,
+.your_journey-table.borderless th {
   border: none;
 }
 /* ALIGNMENT HELPERS */
-.schedule-table .align-left {
+.your_journey-table .align-left {
   text-align: left;
 }
-.schedule-table .align-center {
+.your_journey-table .align-center {
   text-align: center;
 }
-.schedule-table .align-right {
+.your_journey-table .align-right {
   text-align: right;
 }
 /* COLUMN WIDTHS */
-.schedule-table .col-narrow {
+.your_journey-table .col-narrow {
   width: 10%;
 }
-.schedule-table .col-medium {
+.your_journey-table .col-medium {
   width: 20%;
 }
-.schedule-table .col-wide {
+.your_journey-table .col-wide {
   width: 30%;
 }
 /* STICKY OPTIONS */
-.schedule-table thead th {
+.your_journey-table thead th {
   position: sticky;
   top: 50px;
   z-index: 2;
   background-color: var(--table-head-bg, #f4f4f4);
 }
 /* Sticky first column */
-.schedule-table .time-cell {
+.your_journey-table .time-cell {
   position: sticky;
   left: 0;
   z-index: 1;
 }
 /* TABLE FOOTER */
-.schedule-table tfoot {
+.your_journey-table tfoot {
   background-color: #f8f8f8;
 }
-.schedule-table tfoot td {
+.your_journey-table tfoot td {
   font-weight: 600;
   border-top: 2px solid #ccc;
 }
 /* RESPONSIVE OPTIONS */
 /* Horizontal scroll container */
-.schedule-table-wrapper {
+.your_journey-table-wrapper {
   overflow-x: auto;
 }
 /* Condensed version */
-.schedule-table.compact td,
-.schedule-table.compact th {
+.your_journey-table.compact td,
+.your_journey-table.compact th {
   padding: 0.35rem 0.4rem;
   font-size: 0.8rem;
 }

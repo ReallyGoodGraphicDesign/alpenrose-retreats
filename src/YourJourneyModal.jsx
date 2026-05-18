@@ -1,15 +1,15 @@
 import Modal from './Modal';
-import './ScheduleModal.css';
+import './YourJourneyModal.css';
 import { useEffect, useState } from 'react';
 
-function ScheduleModal({ onClose }) {
-  const [schedule, setSchedule] = useState(null);
+function YourJourneyModal({ onClose }) {
+  const [your_journey, setYourJourney] = useState(null);
   useEffect(() => {
     fetch(
-      'https://script.google.com/macros/s/AKfycbwW71SdmGQka91sCqaOLU4vHaYnogadIvnUzTj0bhZhlaBYdK5Y8xedweyIO3DGPRH6sw/exec?sheet=schedule'
+      'https://script.google.com/macros/s/AKfycbwW71SdmGQka91sCqaOLU4vHaYnogadIvnUzTj0bhZhlaBYdK5Y8xedweyIO3DGPRH6sw/exec?sheet=your_journey'
     )
       .then((res) => res.json())
-      .then((data) => setSchedule(data))
+      .then((data) => setYourJourney(data))
       .catch((err) => console.error(err));
   }, []);
 
@@ -61,7 +61,7 @@ function ScheduleModal({ onClose }) {
     });
   }
 
-  if (!schedule) return null;
+  if (!your_journey) return null;
 
   function calculateColumnSpans(rows, key) {
     const spans = [];
@@ -82,7 +82,7 @@ function ScheduleModal({ onClose }) {
   }
 
   // 1) Find the real time column key (handles TIME, Time, time, "TIME " etc.)
-  const keys = Object.keys(schedule[0] || {});
+  const keys = Object.keys(your_journey[0] || {});
   const timeKey = keys.find((k) => k.trim().toLowerCase() === 'time');
 
   // If you want a hard fail instead of weird rendering:
@@ -95,17 +95,17 @@ function ScheduleModal({ onClose }) {
   const days = keys.filter((k) => k !== timeKey);
 
   // 3) Row spans based on the real time key
-  const normalizedSchedule = fillDownAll(schedule, days);
+  const normalizedYourJourney = fillDownAll(your_journey, days);
 
   const columnSpans = Object.fromEntries(
-    days.map((day) => [day, calculateColumnSpans(normalizedSchedule, day)])
+    days.map((day) => [day, calculateColumnSpans(normalizedYourJourney, day)])
   );
 
   return (
     <Modal onClose={onClose}>
-      <div className="schedule-modal">
+      <div className="your_journey-modal">
         <h2>Daily Schedule</h2>
-        <table className="schedule-table">
+        <table className="your_journey-table">
           <thead>
             <tr>
               <th>{timeKey}</th>
@@ -115,7 +115,7 @@ function ScheduleModal({ onClose }) {
             </tr>
           </thead>
           <tbody>
-            {normalizedSchedule.map((row, rowIndex) => (
+            {normalizedYourJourney.map((row, rowIndex) => (
               <tr key={rowIndex}>
                 {/* TIME is NEVER merged */}
                 <td>{row[timeKey]}</td>
@@ -138,4 +138,4 @@ function ScheduleModal({ onClose }) {
     </Modal>
   );
 }
-export default ScheduleModal;
+export default YourJourneyModal;

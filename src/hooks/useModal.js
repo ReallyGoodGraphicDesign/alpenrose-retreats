@@ -8,7 +8,7 @@ export default function useModal(initialState = null) {
     setActiveModal,
     openSectionModal: (sectionId) =>
       setActiveModal({ type: 'section', sectionId }),
-    openScheduleModal: () => setActiveModal({ type: 'schedule' }),
+    openYourJourneyModal: () => setActiveModal({ type: 'your_journey' }),
     closeModal: () => setActiveModal(null),
   };
 }

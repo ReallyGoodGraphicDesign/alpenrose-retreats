@@ -25,7 +25,7 @@ src/
 ├── hooks/              # Custom React hooks
 │   └── useModal.js     # Modal state management
 ├── Modal.jsx           # Modal base component
-├── ScheduleModal.jsx   # Schedule/availability modal
+├── YourJourneyModal.jsx   # YourJourney/availability modal
 ├── SectionModal.jsx    # Content section modal
 ├── Main.jsx            # Primary app container
 ├── App.jsx             # Root component

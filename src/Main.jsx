@@ -1,17 +1,39 @@
 import SectionModal from './SectionModal';
-import ScheduleModal from './ScheduleModal';
+import YourJourneyModal from './YourJourneyModal';
 import LoadingSkeleton from './components/LoadingSkeleton';
 import ErrorToast from './components/ErrorToast';
 import SectionBlock from './components/SectionBlock';
 import useModal from './hooks/useModal';
 import './Main.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { sanitizeHtml } from './utils/sanitize';
+
+const CACHE_KEY = 'alpenrose:content:v1';
+
+function readCachedContent() {
+  try {
+    const raw = localStorage.getItem(CACHE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === 'object' ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
+function writeCachedContent(content) {
+  try {
+    localStorage.setItem(CACHE_KEY, JSON.stringify(content));
+  } catch {
+    // localStorage may be unavailable (Safari private mode, quota) — ignore
+  }
+}
 
 function Main() {
   const { activeModal, setActiveModal, closeModal } = useModal(null);
-  const [content, setContent] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [content, setContent] = useState(readCachedContent);
+  const hadCacheOnMount = useRef(content != null);
+  const [loading, setLoading] = useState(!hadCacheOnMount.current);
   const [error, setError] = useState(null);
   const [retryCount, setRetryCount] = useState(0);
 
@@ -19,7 +41,6 @@ function Main() {
     let mounted = true;
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), 10000);
-    setLoading(true);
     setError(null);
 
     fetch(
@@ -44,16 +65,21 @@ function Main() {
           ])
         );
         setContent(normalized);
+        writeCachedContent(normalized);
         setLoading(false);
       })
       .catch((err) => {
         if (!mounted) return;
         console.error(err);
-        setError(
-          err.name === 'AbortError'
-            ? 'Request timed out'
-            : err.message || 'Failed to load'
-        );
+        // If we already have content to show (cached or fresh from a prior load),
+        // keep showing it instead of replacing the page with an error toast.
+        if (!hadCacheOnMount.current) {
+          setError(
+            err.name === 'AbortError'
+              ? 'Request timed out'
+              : err.message || 'Failed to load'
+          );
+        }
         setLoading(false);
       })
       .finally(() => clearTimeout(timeoutId));
@@ -126,10 +152,10 @@ return (
         </div>
 
         <SectionBlock
-          sectionId="schedule"
-          section={content.schedule}
-          onCtaClick={() => setActiveModal({ type: 'schedule' })}
-          panelClassName="text-panel-schedule"
+          sectionId="your_journey"
+          section={content.your_journey}
+          onCtaClick={() => setActiveModal({ type: 'your_journey' })}
+          panelClassName="text-panel-your_journey"
         />
         <div className="image-panel panel-26">
           <p><span>26</span></p>
@@ -148,10 +174,10 @@ return (
         </div>
 
         <SectionBlock
-          sectionId="investment"
-          section={content.investment}
+          sectionId="dates_rates"
+          section={content.dates_rates}
           onCtaClick={setActiveModal}
-          panelClassName="text-panel-investment"
+          panelClassName="text-panel-dates_rates"
         />
         <div className="image-panel panel-33">
           <p><span>33</span></p>
@@ -203,8 +229,8 @@ return (
         />
       )}
 
-      {activeModal?.type === 'schedule' && (
-        <ScheduleModal onClose={closeModal} />
+      {activeModal?.type === 'your_journey' && (
+        <YourJourneyModal onClose={closeModal} />
       )}
     </>
   );
