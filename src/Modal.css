@@ -71,9 +71,6 @@
 .modal-content p {
   margin: 10px 0 0 0;
 }
-.modal-content ul + p {
-  margin: 0;
-}
 .modal-content ul {
   margin: 10px 0 0 0;
 }

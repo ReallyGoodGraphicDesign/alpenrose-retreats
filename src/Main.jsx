@@ -32,17 +32,17 @@ function writeCachedContent(content) {
 function Main() {
   const { activeModal, setActiveModal, closeModal } = useModal(null);
   const [content, setContent] = useState(readCachedContent);
-  const [loading, setLoading] = useState(() => content == null);
-  const [error, setError] = useState(null);
-  const [retryCount, setRetryCount] = useState(0);
+        const [loading, setLoading] = useState(() => content == null);
+        const [error, setError] = useState(null);
+        const [retryCount, setRetryCount] = useState(0);
 
-  useEffect(() => {
-    let mounted = true;
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 10000);
-    setError(null);
+        useEffect(() => {
+        let mounted = true;
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 10000);
+        setError(null);
 
-    fetch(
+        fetch(
       'https://script.google.com/macros/s/AKfycbwHj5C9YjvfjzYzp7Fu0qzKDB2ED1EYlDG89_3ZloCsj3f624o4EoQ504UPfOX2iBkJIg/exec',
       { signal: controller.signal }
     )
@@ -60,6 +60,19 @@ function Main() {
               // sanitize text/title at fetch time (defense in depth)
               text: sanitizeHtml(row.text),
               title: sanitizeHtml(row.title),
+              // accept boolean true OR the strings "TRUE"/"true" from the sheet
+              enabled:
+                row.enabled === true ||
+                (typeof row.enabled === 'string' &&
+                  row.enabled.trim().toLowerCase() === 'true'),
+              cta_enabled:
+                row.cta_enabled === true ||
+                (typeof row.cta_enabled === 'string' &&
+                  row.cta_enabled.trim().toLowerCase() === 'true'),
+              cta2_enabled:
+                row.cta2_enabled === true ||
+                (typeof row.cta2_enabled === 'string' &&
+                  row.cta2_enabled.trim().toLowerCase() === 'true'),
             },
           ])
         );

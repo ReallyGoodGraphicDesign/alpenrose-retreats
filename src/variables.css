@@ -63,6 +63,12 @@ a.cta:active {
         font-weight: bold;
         transition: background-color 0.5s ease, color 0.5s ease;
 }
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
 /* normal tablet */
 @media (min-width: 601px) and (max-width: 1024px) {
   .cta {

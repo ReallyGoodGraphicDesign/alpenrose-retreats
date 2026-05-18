@@ -25,11 +25,25 @@ export default function SectionBlock({
         className="section-text"
         dangerouslySetInnerHTML={{ __html: sanitizeHtml(section.text) }}
       />
-      <CTAButton
-        label={section.cta_label || 'Learn More'}
-        onClick={() => onCtaClick({ type: 'section', sectionId })}
-        href={href}
-      />
+      {(section.cta_enabled || (section.cta2_enabled && section.cta2_url)) && (
+        <div className="cta-row">
+          {section.cta_enabled && (
+            <CTAButton
+              label={section.cta_label || 'Learn More'}
+              onClick={() => onCtaClick({ type: 'section', sectionId })}
+              href={href}
+            />
+          )}
+          {section.cta2_enabled && section.cta2_url && (
+            <CTAButton
+              label={section.cta2_label || 'Learn More'}
+              href={section.cta2_url}
+              target="_blank"
+              rel="noopener noreferrer"
+            />
+          )}
+        </div>
+      )}
     </div>
   );
 }

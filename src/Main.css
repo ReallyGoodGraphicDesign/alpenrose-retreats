@@ -306,7 +306,7 @@
 }
 .panel-3 {
   background-image: var(--photo-3);
-  background-position: calc(77% + 0px) calc(43% - 0px);
+  background-position: calc(77% + 0px) calc(47% - 0px);
   background-size: 140%;
 }
 @media (min-width: 601px) and (max-width: 1024px) {
