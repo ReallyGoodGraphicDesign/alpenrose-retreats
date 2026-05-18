@@ -2,7 +2,7 @@ import './Header.css';
 import { useState } from 'react';
 
 const navItems = [
-  { href: '#alpenrose', label: 'Alpenrose Retreats' },
+  { href: '#alpenrose', label: 'Xlpenrose Retreats' },
   { href: '#bloom', label: 'Bloom 2026' },
   { href: '#your_journey', label: 'Your Journey' },
   { href: '#dates_rates', label: 'Dates & Rates' },
